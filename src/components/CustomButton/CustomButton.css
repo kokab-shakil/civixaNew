@@ -1,0 +1,12 @@
+.btn.btn-green {
+  background-color: #5cdb95;
+}
+
+.btn.btnSize {
+  font-size: 0.8125rem;
+  height: 48px;
+}
+
+.btn.btn-white {
+  background-color: white;
+}

@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+body,
+div {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg-prussian-blue {
+  background-color: #12356a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-transparent {
+  background-color: transparent;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-lightgray {
+  background-color: #05386b0a;
+}
+
+.text-prussian-blue {
+  color: #12356a !important;
+}
+
+.icon-white {
+  fill: white;
+}
+
+.padding-x {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.bg-grayish {
+  background-color: #12356a33;
+}
+
+h1,
+h2,
+h3 {
+  color: #12356a;
+}
+
+p {
+  color: #58595b;
+  font-size: 16px;
+}
+
+.data-heading {
+  font-weight: bold;
+  font-size: 34px;
+}
+.underlineSm {
+  z-index: -1;
+  bottom: 25%;
+  border-bottom: 8px solid #00d9ac;
+  width: 100%;
+  left: 0;
+}
+.upper-grid {
+  height: auto;
+  width: 90%;
+  object-fit: none;
+}
+
+.upper-grid.top {
+  padding-left: 6%;
+  padding-bottom: 12%;
+}
+
+.hide-grid {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.padding-all {
+  padding: 10vw;
+}
+
+.min-full-height {
+  min-height: 100vh;
+}
+
+.light-gray-color {
+  background-color: #05386b1a;
+}
+.text-lg {
+  font-size: 5.5vw;
+  font-weight: normal;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.padding-left {
+  padding-left: 10vw;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.text-small {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-xs {
+  font-size: 11px;
+}
+
+.text-xxs {
+  font-size: 7px;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.underline-green {
+  border-bottom: 1px solid #5cdb95;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.border-bottom-green {
+  border-bottom: 3px solid #5cdb95;
+}
+
+.header-margin {
+  margin-top: 107px;
 }

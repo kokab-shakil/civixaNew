@@ -1,0 +1,18 @@
+.card .card-heading {
+  font-size: 20px;
+}
+
+.card.cardList {
+  height: 248px;
+  width: 169px;
+  border: 1px dashed #12356a;
+  border-radius: 10px;
+}
+
+.card.cardList:hover {
+  box-shadow: 10px 10px 10px #00000029;
+  border-style: solid;
+}
+.w-min-content {
+  width: min-content;
+}

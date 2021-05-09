@@ -1,0 +1,49 @@
+.customTabs .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #12356a;
+}
+
+.customTabs .nav-pills .nav-link,
+.nav-pills .show > .nav-link {
+  padding: 0.7em 2.2em;
+  border: 0.1em solid rgb(209, 208, 208);
+  color: rgb(209, 208, 208);
+  text-decoration: none;
+  background-color: white;
+  margin-top: 10px;
+}
+
+/* .customTabs .nav-pills :first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.customTabs .nav-pills :last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+} */
+
+.childTab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #12356a;
+  background-color: white;
+  border-bottom: 3px solid #5cdb95;
+}
+
+.childTab .nav-pills .nav-link,
+.nav-pills .show > .nav-link {
+  padding: 5px 5px;
+  border: none;
+  color: rgb(209, 208, 208);
+  text-decoration: none;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 0px;
+  margin-right: 15px;
+}
+
+.childTab .nav-pills .nav-link,
+.nav-pills .show > .nav-link .tabIcon {
+  border-radius: 0;
+}
