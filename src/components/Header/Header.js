@@ -55,8 +55,8 @@ export default function Header({ headercolor }) {
           <Nav.Link href="/" className="px-3">
             How It Works
           </Nav.Link>
-          <Nav.Link href="/" className="px-3">
-            Assured Quality
+          <Nav.Link href="/covid" className="px-3">
+            Covid
           </Nav.Link>
         </Nav>
         <Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
