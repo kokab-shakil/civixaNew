@@ -42,14 +42,14 @@ export default function Header({ headercolor }) {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto pl-5">
+        <Nav className="mr-auto pl-5 align-items-lg-center">
           <Nav.Link href="/" className="px-3">
             Home
           </Nav.Link>
           <Nav.Link href="/" className="px-3">
             About
           </Nav.Link>
-          <Nav.Link href="/" className="px-3">
+          <Nav.Link href="/service" className="px-3">
             Services
           </Nav.Link>
           <Nav.Link href="/" className="px-3">
@@ -59,9 +59,13 @@ export default function Header({ headercolor }) {
             Assured Quality
           </Nav.Link>
         </Nav>
-        <Nav className="d-flex align-items-center justify-content-center">
-          <Nav.Link href="#deets">Support</Nav.Link>
-          <Nav.Link href="#deets">Login</Nav.Link>
+        <Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
+          <Nav.Link href="/" className="px-3 ">
+            Support
+          </Nav.Link>
+          <Nav.Link href="/" className="px-3 ">
+            Login
+          </Nav.Link>
           <button className="btnReqDemo py-2 px-4 ml-4">Request Demo</button>
         </Nav>
       </Navbar.Collapse>

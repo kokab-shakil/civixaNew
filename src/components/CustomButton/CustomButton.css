@@ -4,9 +4,16 @@
 
 .btn.btnSize {
   font-size: 0.8125rem;
-  height: 48px;
+  border-radius: 8px;
+  max-width: 210px;
+  height: 47px;
+  box-shadow: 2px 4px 8px #00000029;
 }
 
 .btn.btn-white {
   background-color: white;
+}
+
+.btn.btn-atomic-tangerine {
+  background-color: #ff9171;
 }

@@ -9,13 +9,27 @@ import polylines from "./TabIcons/polylines.svg";
 import segmentation from "./TabIcons/segmentation.svg";
 import transcription from "./TabIcons/Transcription.svg";
 import TabData from "./TabData";
+import Heading from "../Heading";
 
-export default function ChildTab() {
+export default function ChildTab({ left }) {
   return (
     <Tab.Container id="Tabs" defaultActiveKey="classification">
-      <Row className="childTab d-flex justify-content-center">
-        <Col sm={12} md="auto" className="d-flex flex-column">
-          <Nav variant="pills" className="d-flex justify-content-center mb-2">
+      <Row
+        className={`childTab d-flex justify-content-center ${left && "left"}`}
+      >
+        <Col sm={12} md={left ? 3 : "auto"} className="d-flex flex-column">
+          {left && (
+            <Heading
+              HeadingText="Types Of Annotation"
+              headingClass="text-small font-weight-bold"
+            />
+          )}
+          <Nav
+            variant="pills"
+            className={`d-flex justify-content-center mb-2 ${
+              left && "flex-row flex-lg-column w-max"
+            }`}
+          >
             <Nav.Item>
               <Nav.Link eventKey="classification">
                 <img
@@ -82,7 +96,7 @@ export default function ChildTab() {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={12}>
+        <Col sm={12} md={left ? 9 : 12}>
           <Tab.Content>
             <Tab.Pane eventKey="classification">
               <TabData />

@@ -19,7 +19,7 @@ export const Footer = () => {
           className="d-flex align-items-center justify-content-center flex-column"
         >
           <Heading
-            headingClass="footer-heading"
+            headingClass="footer-heading text-center text-height-1"
             HeadingText="Get Started With Civixa.Ai Today"
           />
           <CustomButton

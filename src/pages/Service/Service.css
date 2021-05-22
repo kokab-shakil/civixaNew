@@ -4,3 +4,48 @@
 .height-770 {
   min-height: 770px;
 }
+
+.card.serviceCard {
+  width: 304px;
+  height: 400px;
+  box-shadow: 0px 5px 20px #00000029;
+  border-radius: 10px;
+}
+.serviceCardHeading {
+  font: normal normal bold 24px/32px Source Sans Pro;
+}
+
+.typeofservices .nav.nav-pills {
+  border: 2px solid #12356a;
+  border-radius: 20px;
+}
+
+.typeofservices .nav.nav-pills .nav-item {
+  font-size: 16px;
+  padding: 0px;
+  text-align: center;
+}
+
+.typeofservices .nav.nav-pills .nav-link {
+  background-color: transparent;
+  color: #12356a;
+  padding: 4px 24px;
+  font-weight: bold;
+}
+
+.typeofservices .nav.nav-pills .nav-link.active {
+  background-color: #12356a;
+  color: white;
+  border-radius: 20px;
+}
+
+.top-heading-bottom {
+  margin-bottom: -26px;
+  font-size: 57px;
+}
+
+.service-banner-button {
+  margin-left: -15px;
+}
+
+/* 544 */

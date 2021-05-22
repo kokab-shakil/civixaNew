@@ -7,11 +7,12 @@
 .header.navbar {
   padding-left: 10vw;
   padding-right: 10vw;
+  height: 94px;
 }
 
 .header .navbar-nav .nav-link {
   color: #ffffff;
-  font: normal normal 600 13px/10px Source Sans Pro;
+  font: normal normal 600 13px/20px Source Sans Pro;
 }
 .btnReqDemo {
   font-size: 14px;
