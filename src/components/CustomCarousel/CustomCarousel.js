@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Carousel } from "react-bootstrap";
-import google from "../../images/CarouselImages/Google.svg";
+import React from "react";
 import udemy from "../../images/CarouselImages/udemy.svg";
 import "./CustomCarousel.css";
 import InfiniteCarousel from "react-leaf-carousel";

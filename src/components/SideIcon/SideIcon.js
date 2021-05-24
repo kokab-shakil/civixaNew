@@ -11,9 +11,10 @@ export const SideIcon = ({
   paraClass,
   iconClass,
   iconHeading,
+  children,
 }) => {
   return (
-    <div className="d-flex flex-row">
+    <div className="d-flex flex-column flex-lg-row align-items-lg-start align-items-center">
       <img src={icon} alt={altText} className={iconClass} />
       <div className={iconHeading}>
         <Heading
@@ -23,6 +24,7 @@ export const SideIcon = ({
           paraClass={paraClass}
           paraText={paraText}
         />
+        {children}
       </div>
     </div>
   );

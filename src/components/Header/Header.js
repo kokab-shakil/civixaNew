@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavLink } from "react-bootstrap";
 import civixaWhite from "./images/civixaWhite.svg";
 import civixa from "./images/civixa.svg";
 
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export default function Header({ headercolor }) {
   const [headersticky, setHeaderSticky] = useState(false);
@@ -43,29 +44,29 @@ export default function Header({ headercolor }) {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto pl-5 align-items-lg-center">
-          <Nav.Link href="/" className="px-3">
+          <Link to="/" className="px-3 nav-link">
             Home
-          </Nav.Link>
-          <Nav.Link href="/" className="px-3">
+          </Link>
+          <Link to="/" className="px-3 nav-link">
             About
-          </Nav.Link>
-          <Nav.Link href="/service" className="px-3">
+          </Link>
+          <Link to="/service" className="px-3 nav-link">
             Services
-          </Nav.Link>
-          <Nav.Link href="/" className="px-3">
+          </Link>
+          <Link to="/" className="px-3 nav-link">
             How It Works
-          </Nav.Link>
-          <Nav.Link href="/covid" className="px-3">
+          </Link>
+          <Link to="/covid" className="px-3 nav-link">
             Covid
-          </Nav.Link>
+          </Link>
         </Nav>
         <Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
-          <Nav.Link href="/" className="px-3 ">
+          <Link href="/" className="px-3 nav-link ">
             Support
-          </Nav.Link>
-          <Nav.Link href="/" className="px-3 ">
+          </Link>
+          <Link href="/" className="px-3 nav-link ">
             Login
-          </Nav.Link>
+          </Link>
           <button className="btnReqDemo py-2 px-4 ml-4">Request Demo</button>
         </Nav>
       </Navbar.Collapse>

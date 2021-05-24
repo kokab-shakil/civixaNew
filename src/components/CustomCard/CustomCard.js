@@ -12,10 +12,11 @@ export default function CustomCard({
   para,
   paraText,
   paraClass,
+  children,
 }) {
   return (
     <div className={`card ${CardClasses}`}>
-      <img src={icon} className={iconClass} alt={cardalt} />
+      {icon !== "" && <img src={icon} className={iconClass} alt={cardalt} />}
       <Heading
         headingClass={headingClass}
         HeadingText={HeadingText}
@@ -23,6 +24,7 @@ export default function CustomCard({
         paraClass={paraClass}
         paraText={paraText}
       />
+      {children}
     </div>
   );
 }
