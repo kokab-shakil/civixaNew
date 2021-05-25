@@ -9,6 +9,7 @@ export const OurWork = ({ classes }) => {
   return (
     <Row className={classes}>
       <Heading
+        headingClass="font-weight-900"
         HeadingText="Our Work Speaks For Itself"
         para
         paraClass="pt-2 w-70 text-center"
@@ -85,47 +86,59 @@ export const OurWork = ({ classes }) => {
                 paraClass="text-xs mb-0 text-danger"
               />
             </Col>
+            <Col xs={6} className="pb-4">
+              <SideIcon
+                iconHeading="d-flex flex-column pl-2"
+                icon={sideicon}
+                altText="sideIcon"
+                HeadingText="Score"
+                headingClass="text-small mb-0"
+                para
+                paraText="97.02%"
+                paraClass="text-xs mb-0 text-danger"
+              />
+            </Col>
           </Row>
         </Col>
       </Row>
-      <Row className="pt-4">
+      <Row className="pt-5">
         <Col xs={12} md={6} lg={4} className="pb-4">
           <SideIcon
-            iconHeading="d-flex flex-column pl-2"
+            iconHeading="d-flex flex-column align-items-lg-start align-items-center pl-2"
             icon={sideicon}
-            iconClass="mb-auto"
+            iconClass="mb-auto pb-3"
             altText="sideIcon"
             HeadingText="Transparency"
             headingClass=""
             para
             paraText="We keep our whole process transparent for you by keeping you involved in each step."
-            paraClass=""
+            paraClass="w-70 text-center text-lg-left"
           />
         </Col>
         <Col xs={12} md={6} lg={4} className="pb-4">
           <SideIcon
-            iconHeading="d-flex flex-column pl-2"
+            iconHeading="d-flex flex-column align-items-lg-start align-items-center pl-2"
             icon={sideicon}
-            iconClass="mb-auto"
+            iconClass="mb-auto pb-3"
             altText="sideIcon"
             HeadingText="Excellence"
             headingClass=""
             para
             paraText="We are extremely flexible as far as the requirement of quality and annotations is concerned"
-            paraClass=""
+            paraClass="w-70 text-center text-lg-left"
           />
         </Col>
         <Col xs={12} md={6} lg={4} className="pb-4">
           <SideIcon
-            iconHeading="d-flex flex-column pl-2"
+            iconHeading="d-flex flex-column align-items-lg-start align-items-center pl-2"
             icon={sideicon}
-            iconClass="mb-auto"
+            iconClass="mb-auto pb-3"
             altText="sideIcon"
             HeadingText="Accuracy"
             headingClass=""
             para
             paraText="All our team is in-house and we focus on training them as per customer needs. We take pride in our accuracy that is up to 99.99%"
-            paraClass=""
+            paraClass="w-70 text-center text-lg-left"
           />
         </Col>
       </Row>

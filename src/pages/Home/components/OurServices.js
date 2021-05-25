@@ -7,6 +7,7 @@ export default function SectionTwo({ classes }) {
   return (
     <Row className={classes}>
       <Heading
+        headingClass="font-weight-900"
         HeadingText="Behold Our Services"
         para
         paraClass="w-50 text-center"

@@ -21,7 +21,7 @@ export const HappyClient = ({ classes }) => {
           paraClass="text-center"
         />
       </Col>
-      <Col xs={12}>
+      <Col xs={12} className="py-3">
         <CustomCarousel />
       </Col>
       <Col xs={12} md={12} lg={8}>

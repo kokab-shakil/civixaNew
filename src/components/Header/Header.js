@@ -31,7 +31,7 @@ export default function Header({ headercolor }) {
         headersticky ? "sticky" : ""
       }`}
     >
-      <Navbar.Brand href="#home" className="d-flex align-items-center">
+      <Navbar.Brand href="/" className="d-flex align-items-center">
         <img
           alt="Civixa"
           src={`${headersticky ? civixaWhite : civixa}`}
@@ -47,7 +47,7 @@ export default function Header({ headercolor }) {
           <Link to="/" className="px-3 nav-link">
             Home
           </Link>
-          <Link to="/" className="px-3 nav-link">
+          <Link to="/about" className="px-3 nav-link">
             About
           </Link>
           <Link to="/service" className="px-3 nav-link">

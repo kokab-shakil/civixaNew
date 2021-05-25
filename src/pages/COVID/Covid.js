@@ -16,9 +16,9 @@ export const Covid = () => {
       <CustomSection
         height="h-auto header-margin"
         bgColor="bg-prussian-blue"
-        classes={"h-768"}
+        classes={"h-auto"}
       >
-        <CovidBanner classes={`${commonClasses} m-0 padding-all pb-0`} />
+        <CovidBanner classes={`${commonClasses} m-0 padding-all `} />
       </CustomSection>
       <CustomSection height="h-auto" bgColor="bg-white" classes="covidModels">
         <CovidModels classes={`${commonClasses} padding-all`} />

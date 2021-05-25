@@ -139,10 +139,6 @@ p {
 }
 /* Width */
 
-.w-70 {
-  width: 70%;
-}
-
 .w-86 {
   width: 85px;
 }
@@ -188,6 +184,23 @@ p {
   min-height: 674px;
 }
 
+.card.border-all {
+  border-radius: 0.5rem;
+}
+
+.border-left {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+/* Image */
+.image-fit {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* end */
+
 /* end */
 
 /* Margin */
@@ -211,16 +224,6 @@ p {
 
 .padding-left {
   padding-left: 10vw;
-}
-
-/* end */
-
-/* Media Queries */
-
-@media srceen and (min-width: 992) {
-  .text-lg {
-    font-size: 10.5vw;
-  }
 }
 
 /* end */

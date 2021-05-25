@@ -6,13 +6,14 @@ import HomeBannerImage from "../../../images/home/HomeBanner.png";
 import Teamcore from "../../../images/home/teamcore.png";
 import Forcast from "../../../images/home/Forcast.png";
 import Tars from "../../../images/home/Tars.png";
+import { Link } from "react-router-dom";
 
 export default function HomeBanner({ classes }) {
   return (
     <Row className={classes}>
       <Col xs={12} md={12} lg={5} className={"z-1 py-3"}>
         <Heading
-          headingClass={"text-lg font-weight-900"}
+          headingClass={"text-lg font-weight-900 d-flex"}
           HeadingText={"Enabling AI Transformation"}
           para
           paraClass={""}
@@ -21,7 +22,7 @@ export default function HomeBanner({ classes }) {
           }
         />
         <Row className="d-flex">
-          <Col xs={10} md={5}>
+          <Col xs={10} md={6}>
             <CustomButton
               btnSize="md"
               btnColor="green"
@@ -29,18 +30,21 @@ export default function HomeBanner({ classes }) {
               btnClasses="text-white w-100"
             />
           </Col>
-          <Col xs={10} md={7}>
+          <Col xs={10} md={6}>
             <div className={"px-2"}>
               <p className={"m-0"}>Start annotations with Civixa.ai</p>
-              <p className={"m-0"}>
-                Questions? <span>Contact our sales team</span>
+              <p className="m-0 question">
+                Questions?
+                <Link className="question">Contact our sales team</Link>
               </p>
             </div>
           </Col>
         </Row>
-        <Row className="pt-4 d-flex flex-column">
+        <Row className="pt-5 d-flex flex-column">
           <Col>
-            <span>YOU ARE IN A LOVED COMPANY</span>
+            <span className="text-prussian-blue">
+              YOU ARE IN A LOVED COMPANY
+            </span>
           </Col>
           <Col className="pt-3">
             <img src={Teamcore} alt="TeamCore" />

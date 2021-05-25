@@ -3,6 +3,9 @@ import udemy from "../../images/CarouselImages/udemy.svg";
 import "./CustomCarousel.css";
 import InfiniteCarousel from "react-leaf-carousel";
 export const CustomCarousel = () => {
+  const handleClick = () => {
+    console.log("clicked");
+  };
   return (
     <InfiniteCarousel
       breakpoints={[
@@ -30,37 +33,37 @@ export const CustomCarousel = () => {
       //   scrollOnDevice={true}
     >
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
       <div>
-        <img alt="" src={udemy} />
+        <img alt="" src={udemy} onClick={handleClick} />
       </div>
     </InfiniteCarousel>
   );

@@ -6,6 +6,7 @@ import group24 from "../../../images/home/group24.svg";
 import group69 from "../../../images/home/group69.svg";
 import group2640 from "../../../images/home/Group2640.svg";
 import repeatGrid from "../../../images/RepeatGrid.svg";
+import Heading from "../../../components/Heading";
 
 export default function SectionOne({ classes }) {
   return (
@@ -18,8 +19,18 @@ export default function SectionOne({ classes }) {
         ></img>
         <img className={"hide-grid"} src={repeatGrid} alt="data-label-web" />
       </Col>
-      <Col xs={12} md={6} className={"pt-4"}>
-        <h1 className={"data-heading"}>
+      <Col xs={12} md={6} className={"pt-4 pr-5"}>
+        <Heading
+          headingClass="font-weight-900 w-70"
+          HeadingText="One stop shop for data labeling"
+          para
+          paraClass=""
+          paraText="Civixa.ai empowers organisations by providing a combination of
+          pre-requisite services for the training of any AI-model. Civixa.ai
+          empowers organisations by providing a combination of pre-requisite
+          services for the training of any AI-model."
+        />
+        {/* <h1 className={"data-heading"}>
           One stop shop for
           <span className={"data-heading"}>
             <h1 className={"position-relative data-heading w-auto"}>
@@ -33,8 +44,8 @@ export default function SectionOne({ classes }) {
           pre-requisite services for the training of any AI-model. Civixa.ai
           empowers organisations by providing a combination of pre-requisite
           services for the training of any AI-model.
-        </p>
-        <Row className="data-square-icon  d-flex justify-content-between align-items-center">
+        </p> */}
+        <Row className="data-square-icon  d-flex justify-content-between align-items-center pt-4">
           <SquareIcon
             className={"icon-size"}
             titleOne="99%"

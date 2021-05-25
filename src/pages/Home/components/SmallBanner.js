@@ -8,14 +8,18 @@ export default function SmallBanner({ classes }) {
     <Row className={classes}>
       <Col xs={12} md={7}>
         <Heading
-          headingClass="text-white"
+          headingClass="text-white font-weight-900"
           HeadingText="Make Civixa your competitive advantage"
           para
-          paraClass="text-white"
+          paraClass="text-white w-70"
           paraText="It’s easy to get started. Reachout to us and our representative will get in touch with you."
         />
       </Col>
-      <Col xs={12} md={5} className={"p-0 d-flex justify-content-start"}>
+      <Col
+        xs={12}
+        md={5}
+        className={"p-0 d-flex justify-content-center justify-content-lg-start"}
+      >
         <CustomButton
           btnColor="green"
           btnClasses="text-white mr-2"

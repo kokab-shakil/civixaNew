@@ -96,7 +96,7 @@ export default function ChildTab({ left }) {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={12} md={left ? 9 : 12}>
+        <Col sm={8} md={left ? 9 : 8} className="pt-5">
           <Tab.Content>
             <Tab.Pane eventKey="classification">
               <TabData />

@@ -1,4 +1,4 @@
-.customTabs .nav-pills .nav-link.active,
+/* .customTabs .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #12356a;
@@ -12,7 +12,7 @@
   text-decoration: none;
   background-color: white;
   margin-top: 10px;
-}
+} */
 
 /* .customTabs .nav-pills :first-child {
   border-top-left-radius: 10px;
@@ -46,4 +46,43 @@
 .childTab .nav-pills .nav-link,
 .nav-pills .show > .nav-link .tabIcon {
   border-radius: 0;
+}
+
+.ourServiceParentTab.nav.nav-pills {
+  border: 2px solid #12356a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ourServiceParentTab.nav.nav-pills .nav-item {
+  font-size: 16px;
+  padding: 0px;
+  text-align: center;
+}
+
+.ourServiceParentTab.nav.nav-pills .nav-link {
+  background-color: transparent;
+  color: #12356a;
+  padding: 4px 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ourServiceParentTab.nav.nav-pills .nav-link.active {
+  background-color: #12356a;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .ourServiceParentTab.nav.nav-pills {
+    border: none;
+  }
+}
+
+.responsive-carousel .tabIcon {
+  width: auto;
+}
+
+.responsive-carousel .InfiniteCarouselArrowIcon {
+  padding: 5px;
 }

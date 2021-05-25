@@ -48,7 +48,7 @@ export default function PreTrainedModels({ classes }) {
           headingClass="card-heading w-min-content text-center"
         />
       </Col>
-      <Col xs={12} md={3}>
+      <Col xs={12} md={3} className="d-flex flex-column">
         <Heading
           HeadingText="Pre-trained models"
           headingClass="font-weight-900"

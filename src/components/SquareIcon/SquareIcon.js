@@ -20,8 +20,12 @@ export default function SquareIcon({
       >
         <div className={"sq-icon d-flex flex-column align-items-center"}>
           <img className={className} src={Icon} alt="data-label-web" />
-          <p className={"mt-2 text-center"}>{titleOne}</p>
-          <p className={"lineHeight text-center"}>{titleTwo}</p>
+          <p className={"mt-2 text-center mb-0 text-prussian-blue"}>
+            {titleOne}
+          </p>
+          <p className={"lineHeight text-center my-0 pt-1 text-prussian-blue"}>
+            {titleTwo}
+          </p>
         </div>
       </Col>
     </>

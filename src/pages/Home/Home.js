@@ -9,6 +9,7 @@ import SmallBanner from "./components/SmallBanner";
 import OurServices from "./components/OurServices";
 import { OurWork } from "./components/OurWork";
 import { HappyClient } from "./components/HappyClient";
+import "./Home.css";
 
 export default function Home() {
   const commonClasses =

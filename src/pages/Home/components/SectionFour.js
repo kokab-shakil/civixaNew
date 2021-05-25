@@ -11,12 +11,12 @@ export default function SectionFour({ classes }) {
     <Row className={classes}>
       <Col>
         <h1 className={"data-heading text-center"}>A FULLSTACK CV COMPANY</h1>
-        <p className={"text-center"}>
+        <p className={"text-center w-70 m-auto"}>
           We provide complete services for the companies in need to incorporate
           AI in their businesses from scratch. From data gathering to deployment
           of highly trained AI-models, Civixa.ai is the right choice
         </p>
-        <Row className="data-square-icon d-flex align-items-center flex-column flex-xl-row flex-lg-row">
+        <Row className="data-square-icon d-flex align-items-center flex-column flex-xl-row flex-lg-row w-70 m-auto">
           <SquareIcon
             className={"icon-size"}
             titleOne="Raw Data"
@@ -35,13 +35,13 @@ export default function SectionFour({ classes }) {
             Icon={Engineers}
           />
         </Row>
-        <Row>
+        <Row className="pt-5 d-flex justify-content-lg-start justify-content-center">
           <Col xs={6} md={4}>
             <Heading
               headingClass={"data-heading text-center text-lg"}
               HeadingText={"2.2M"}
               para
-              paraClass={"text-center"}
+              paraClass={"text-center text-prussian-blue font-weight-600"}
               paraText={"Images annotated"}
             />
           </Col>
@@ -50,7 +50,7 @@ export default function SectionFour({ classes }) {
               headingClass={"data-heading text-center text-lg"}
               HeadingText={"250+"}
               para
-              paraClass={"text-center"}
+              paraClass={"text-center text-prussian-blue font-weight-600"}
               paraText={"Expert labelers"}
             />
           </Col>
@@ -59,7 +59,7 @@ export default function SectionFour({ classes }) {
               headingClass={"data-heading text-center text-lg"}
               HeadingText={"07"}
               para
-              paraClass={"text-center"}
+              paraClass={"text-center text-prussian-blue font-weight-600"}
               paraText={"Engineers"}
             />
           </Col>
