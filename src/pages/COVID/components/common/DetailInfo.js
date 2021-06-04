@@ -10,7 +10,7 @@ export const DetailInfo = ({ cardCol, imageCol, cardData, children }) => {
         {data.map((item) => {
           return (
             <CustomCard
-              CardClasses={`${item.CardClass} covidCardClass d-flex flex-column mr-3 mb-4`}
+              CardClasses={`${item.CardClass} covidCardClass d-flex flex-column  mb-4`}
               HeadingText={item.headingText}
               headingClass={`covidCardHeading ${item.headingClass}`}
               para

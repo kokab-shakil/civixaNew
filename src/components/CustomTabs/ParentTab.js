@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Col, Nav, Row, Tab } from "react-bootstrap";
+import { ItemCarousel } from "../ItemCarousel/ItemCarousel";
 import ChildTab from "./ChildTab";
 import "./CustomTabs.css";
 import { ResponsiveCarousel } from "./ResponsiveCarousel";
@@ -7,12 +8,6 @@ import { ResponsiveCarousel } from "./ResponsiveCarousel";
 export default function ParentTab() {
   let width = window.innerWidth;
 
-  // useEffect(() => {
-  //   handleComponent();
-  // });
-  // const handleComponent = {
-  //   if(width >)
-  // };
   return (
     <Tab.Container id="Tabs" defaultActiveKey="annotation">
       <Row className="customTabs d-flex justify-content-center w-100">
@@ -32,16 +27,16 @@ export default function ParentTab() {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={12} className="pt-5">
-          <Tab.Content>
+        <Col sm={12} className="py-2">
+          <Tab.Content className="w-100">
             <Tab.Pane eventKey="annotation">
-              {width > 768 ? <ChildTab /> : <ResponsiveCarousel />}
+              {width > 768 ? <ChildTab /> : <ItemCarousel />}
             </Tab.Pane>
             <Tab.Pane eventKey="datageneration">
-              <h2>Tab 2</h2>
+              {width > 768 ? <ChildTab /> : <ItemCarousel />}
             </Tab.Pane>
             <Tab.Pane eventKey="aiservices">
-              <h2>Tab 2</h2>
+              {width > 768 ? <ChildTab /> : <ItemCarousel />}
             </Tab.Pane>
           </Tab.Content>
         </Col>

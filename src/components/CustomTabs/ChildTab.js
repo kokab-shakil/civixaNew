@@ -10,14 +10,16 @@ import segmentation from "./TabIcons/segmentation.svg";
 import transcription from "./TabIcons/Transcription.svg";
 import TabData from "./TabData";
 import Heading from "../Heading";
+import { TabLeft } from "./TabLeft";
+import RightImage from "./RightImage.png";
 
 export default function ChildTab({ left }) {
   return (
     <Tab.Container id="Tabs" defaultActiveKey="classification">
       <Row
-        className={`childTab d-flex justify-content-center ${left && "left"}`}
+        className={`childTab d-flex justify-content-center  ${left && "left"}`}
       >
-        <Col sm={12} md={left ? 3 : "auto"} className="d-flex flex-column">
+        <Col sm={12} md={left ? 3 : "auto"} className="d-flex flex-column pb-3">
           {left && (
             <Heading
               HeadingText="Types Of Annotation"
@@ -96,31 +98,31 @@ export default function ChildTab({ left }) {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={8} md={left ? 9 : 8} className="pt-5">
+        <Col sm={8} md={left ? 9 : 8} className="">
           <Tab.Content>
             <Tab.Pane eventKey="classification">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="polylines">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="points">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="boundingbox">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="cuboid">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="polygons">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="transcription">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
             <Tab.Pane eventKey="segmentation">
-              <TabData />
+              {left ? <TabLeft tabLeftImage={RightImage} /> : <TabData />}
             </Tab.Pane>
           </Tab.Content>
         </Col>

@@ -10,23 +10,23 @@ import OurServices from "./components/OurServices";
 import { OurWork } from "./components/OurWork";
 import { HappyClient } from "./components/HappyClient";
 import "./Home.css";
+import useWindowSize from "../../WindowSize";
 
-export default function Home() {
+export default function Home({ handleHeaderColor }) {
+  const [width] = useWindowSize();
+
+  handleHeaderColor("prussian-blue");
   const commonClasses =
     "d-flex align-items-center justify-content-center h-100";
   return (
     <>
-      <CustomSection
-        height="h-auto header-margin"
-        bgColor="bg-white"
-        classes={"p-0"}
-      >
+      <CustomSection height="h-auto " bgColor="white" classes={"p-0"}>
         <HomeBanner classes={`${commonClasses} m-0 padding-left pb-0`} />
       </CustomSection>
       <CustomSection height="min-full-height" bgColor="bg-grayish" classes={""}>
         <SectionOne classes={`${commonClasses} padding-all`} />
       </CustomSection>
-      <CustomSection height="h-auto" bgColor="bg-white" classes="">
+      <CustomSection height="h-auto" bgColor="white" classes="">
         <OurServices
           classes={`${commonClasses} padding-all flex-wrap flex-column`}
         />
@@ -38,7 +38,7 @@ export default function Home() {
       >
         <SectionFour classes={`${commonClasses} padding-all`} />
       </CustomSection>
-      <CustomSection height="h-auto" bgColor="bg-white" classes="">
+      <CustomSection height="h-auto" bgColor="white" classes="">
         <PreTrainedModels classes={`${commonClasses} padding-all`} />
       </CustomSection>
       <CustomSection height="h-auto" bgColor="bg-prussian-blue" classes="">
@@ -47,7 +47,7 @@ export default function Home() {
       <CustomSection height="h-auto" bgColor="bg-lightgray" classes="">
         <OurWork classes={`${commonClasses} padding-all`} />
       </CustomSection>
-      <CustomSection height="h-auto" bgColor="bg-white" classes="">
+      <CustomSection height="h-auto" bgColor="white" classes="">
         <HappyClient classes={`${commonClasses} padding-all`} />
       </CustomSection>
     </>

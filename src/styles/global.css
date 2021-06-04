@@ -11,11 +11,34 @@
 .w-70 {
   width: 70%;
 }
+
+.w-60 {
+  width: 60%;
+}
+
+.w-sm-50 {
+  width: 100%;
+}
+.padding-right {
+  padding-right: 10vw;
+}
 @media (max-width: 767px) {
   .w-70 {
     width: 100%;
   }
+  .w-60 {
+    width: 90%;
+  }
   .data-heading {
     text-align: center;
+  }
+  .w-sm-50 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .padding-right {
+    padding-right: 0vw;
   }
 }

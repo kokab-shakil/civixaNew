@@ -10,12 +10,21 @@ export default function SectionFour({ classes }) {
   return (
     <Row className={classes}>
       <Col>
-        <h1 className={"data-heading text-center"}>A FULLSTACK CV COMPANY</h1>
-        <p className={"text-center w-70 m-auto"}>
-          We provide complete services for the companies in need to incorporate
+        <Heading
+          headingClass="font-weight-900 d-flex align-items-center justify-content-center flex-column flex-md-row"
+          HeadingText={[
+            "A",
+            <span className="position-relative">
+              <span className="px-2 underlined">FULLSTACK</span>
+            </span>,
+            "CV COMPANY",
+          ]}
+          para
+          paraClass="w-70 text-center m-auto"
+          paraText="We provide complete services for the companies in need to incorporate
           AI in their businesses from scratch. From data gathering to deployment
-          of highly trained AI-models, Civixa.ai is the right choice
-        </p>
+          of highly trained AI-models, Civixa.ai is the right choice"
+        />
         <Row className="data-square-icon d-flex align-items-center flex-column flex-xl-row flex-lg-row w-70 m-auto">
           <SquareIcon
             className={"icon-size"}
@@ -39,7 +48,16 @@ export default function SectionFour({ classes }) {
           <Col xs={6} md={4}>
             <Heading
               headingClass={"data-heading text-center text-lg"}
-              HeadingText={"2.2M"}
+              HeadingText={"1M+"}
+              para
+              paraClass={"text-center text-prussian-blue font-weight-600"}
+              paraText={"Data Generated"}
+            />
+          </Col>
+          <Col xs={6} md={4}>
+            <Heading
+              headingClass={"data-heading text-center text-lg"}
+              HeadingText={"7.2M+"}
               para
               paraClass={"text-center text-prussian-blue font-weight-600"}
               paraText={"Images annotated"}
@@ -48,19 +66,10 @@ export default function SectionFour({ classes }) {
           <Col xs={6} md={4}>
             <Heading
               headingClass={"data-heading text-center text-lg"}
-              HeadingText={"250+"}
+              HeadingText={"06+"}
               para
               paraClass={"text-center text-prussian-blue font-weight-600"}
-              paraText={"Expert labelers"}
-            />
-          </Col>
-          <Col xs={6} md={4}>
-            <Heading
-              headingClass={"data-heading text-center text-lg"}
-              HeadingText={"07"}
-              para
-              paraClass={"text-center text-prussian-blue font-weight-600"}
-              paraText={"Engineers"}
+              paraText={"Deployed"}
             />
           </Col>
         </Row>

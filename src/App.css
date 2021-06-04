@@ -14,7 +14,7 @@ div {
 }
 
 .bg-lightgray {
-  background-color: #05386b0a;
+  background-color: #f9fafb;
 }
 
 .text-prussian-blue {
@@ -27,6 +27,10 @@ div {
 
 .text-green-dark {
   color: #379683;
+}
+
+.text-gray {
+  color: #58595b;
 }
 
 .icon-white {
@@ -94,11 +98,15 @@ p {
 }
 
 .font-weight-600 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .font-weight-700 {
   font-weight: 700 !important;
+}
+
+.text-medium {
+  font-size: 28px;
 }
 
 .text-normal {
@@ -126,9 +134,9 @@ p {
   border-bottom: 3px solid #5cdb95;
 }
 
-.header-margin {
+/* .header-margin {
   margin-top: 94px;
-}
+} */
 
 .box-shadow-2 {
   box-shadow: 2px 4px 8px #00000029;
@@ -155,22 +163,37 @@ p {
   line-height: 1;
 }
 
+.underlineback {
+  z-index: -1;
+  bottom: 25%;
+  border-bottom: 8px solid #00d9ac;
+  width: 80%;
+  left: 15px;
+}
+
+.underlined-bottom {
+  border-bottom: 8px solid #00d9ac;
+  width: 70%;
+  line-height: 1.5;
+}
+
 .underlined {
   float: left;
-  height: 92px;
+  /* height: 92px; */
   position: relative;
+  z-index: 1;
 }
 .underlined:before {
   display: block;
   content: "";
   position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: #f66;
+  width: 90%;
+  bottom: 16%;
+  left: 2%;
+  border-bottom: 12px solid #00d9ac;
   z-index: -1;
-  height: 15px;
-  margin-bottom: 20px;
+  /* height: 15px; */
+  /* margin-bottom: 13px; */
 }
 /* end */
 
@@ -209,6 +232,9 @@ p {
   margin-bottom: auto;
 }
 
+.margin-right {
+  margin-right: 10vw;
+}
 /* end */
 
 /* Padding */
@@ -216,6 +242,11 @@ p {
 .padding-x {
   padding-left: 10vw;
   padding-right: 10vw;
+}
+
+.padding-y {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
 }
 
 .padding-all {

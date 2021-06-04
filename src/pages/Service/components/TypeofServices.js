@@ -11,7 +11,7 @@ export const TypeofServices = ({ classes }) => {
             <Col sm={12} className="z-1">
               <Nav
                 variant="pills"
-                className="flex-row align-items-center justify-content-center mt-4 w-max mx-auto"
+                className="flex-column flex-sm-row align-items-center justify-content-center mt-4 w-max mx-auto"
               >
                 <Nav.Item>
                   <Nav.Link eventKey="annotation">Annotation</Nav.Link>
@@ -24,7 +24,7 @@ export const TypeofServices = ({ classes }) => {
                 </Nav.Item>
               </Nav>
             </Col>
-            <Col sm={12} className="position-absolute">
+            <Col sm={12} className="">
               <Tab.Content>
                 <Tab.Pane eventKey="annotation">
                   <img

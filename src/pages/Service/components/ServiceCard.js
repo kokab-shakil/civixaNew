@@ -28,7 +28,7 @@ export const ServiceCard = ({ classes }) => {
         {data.map((item) => {
           return (
             <CustomCard
-              CardClasses="serviceCard d-flex flex-column align-items-center justify-content-around mr-3 mb-4"
+              CardClasses="serviceCard d-flex flex-column align-items-center justify-content-around mr-3 mb-4 p-2 "
               icon={Accuracy}
               iconClass="pt-4"
               HeadingText={item.HeadingText}

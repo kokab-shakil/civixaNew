@@ -11,10 +11,16 @@ import { Link } from "react-router-dom";
 export default function HomeBanner({ classes }) {
   return (
     <Row className={classes}>
-      <Col xs={12} md={12} lg={5} className={"z-1 py-3"}>
+      <Col xs={12} md={12} lg={6} className={"z-1 py-3"}>
         <Heading
-          headingClass={"text-lg font-weight-900 d-flex"}
-          HeadingText={"Enabling AI Transformation"}
+          headingClass={"text-lg font-weight-900 d-flex flex-wrap"}
+          HeadingText={[
+            <span className="pr-2 pr-md-4 underlined">Enabling </span>,
+            "AI",
+            <h1 className="text-lg font-weight-900 ml-2 ml-md-0">
+              Transformation
+            </h1>,
+          ]}
           para
           paraClass={""}
           paraText={
@@ -53,7 +59,7 @@ export default function HomeBanner({ classes }) {
           </Col>
         </Row>
       </Col>
-      <Col xs={12} md={7} className={"p-0 d-none d-lg-block"}>
+      <Col xs={12} md={6} className={"p-0 d-none d-lg-block"}>
         <img src={HomeBannerImage} className={"w-100 h-100"} />
       </Col>
     </Row>

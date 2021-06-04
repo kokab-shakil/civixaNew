@@ -13,13 +13,13 @@ export const SmallBanner = ({ classes }) => {
           icon={Civixa}
           top
           iconClass="w-86"
-          headingClass="font-weight-600 text-center py-2 w-50"
+          headingClass="font-weight-600 text-center py-2 w-70"
           HeadingText="Annotation platform for videos"
         />
       </Col>
       <Col md={8} sm={12} xs={12}>
         <Heading
-          headingClass="font-weight-900"
+          headingClass="font-weight-900 text-left"
           HeadingText="Accelerate the Development of AI Applications"
           para
           paraText="We provide assisted data collection, labeling and, model training with the help of our AI tools and ML algorithms. We have a rich interface of APIs for our clients to push huge volumes of data to our system and integrate results back to their systems."

@@ -12,7 +12,7 @@ export const ServiceBanner = ({ classes }) => {
       </Col>
       <Col md={8} sm={6} xs={12}>
         <Heading
-          headingClass="text-green text-lg font-weight-bold"
+          headingClass="text-green text-lg font-weight-bold top-heading"
           HeadingText="Annotations"
           para
           paraClass="text-white"
@@ -24,12 +24,12 @@ export const ServiceBanner = ({ classes }) => {
           <div>
             <CustomButton
               btnClasses="text-white"
-              btnColor="green"
+              btnColor="green mr-2"
               btnText="REQUEST DEMO"
             />
             <CustomButton
               btnClasses="text-prussian-blue"
-              btnColor="white service-banner-button"
+              btnColor="white"
               btnText="REQUEST DEMO"
             />
           </div>

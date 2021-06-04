@@ -19,8 +19,14 @@ export const Footer = () => {
           className="d-flex align-items-center justify-content-center flex-column pb-2"
         >
           <Heading
-            headingClass="footer-heading text-center text-height-1"
-            HeadingText="Get Started With Civixa.Ai Today"
+            headingClass="footer-heading text-center text-height-1 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+            HeadingText={[
+              "Get",
+              <span className="position-relative">
+                <span className="px-2 underlined">Started</span>
+              </span>,
+              "With Civixa.Ai Today",
+            ]}
           />
           <CustomButton
             btnColor="green"
@@ -30,22 +36,22 @@ export const Footer = () => {
         </Col>
         <Col xs={12} className="pt-4 pb-3">
           <Row className="d-flex justify-content-between px-5">
-            <Col xs={12} md={8} className="d-flex ">
-              <div>
+            <Col xs={12} md={8} className="d-flex flex-wrap ">
+              <div className="pb-3">
                 <h1 className="text-xs font-weight-bold pr-5">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
               </div>
-              <div>
+              <div className="pb-3">
                 <h1 className="text-xs font-weight-bold pr-5">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
               </div>
-              <div>
+              <div className="pb-3">
                 <h1 className="text-xs font-weight-bold pr-5">Services</h1>
                 <h1 className="text-xs ">Services</h1>
                 <h1 className="text-xs ">Services</h1>
@@ -53,7 +59,13 @@ export const Footer = () => {
                 <h1 className="text-xs ">Services</h1>
               </div>
             </Col>
-            <Col xs={12} md={4} lg={2} className="text-right pt-3 pt-lg-0">
+            <Col
+              xs={8}
+              sm={4}
+              md={4}
+              lg={2}
+              className="text-right pt-3 pt-lg-0"
+            >
               <h1 className="footer-follow text-xs underline-green text-left font-weight-600">
                 Follow Us
               </h1>
@@ -67,7 +79,7 @@ export const Footer = () => {
         </Col>
         <Col xs={12}>
           <Row className="d-flex align-items-end justify-content-center justify-content-md-between pb-0 border-bottom">
-            <Col xs={12} md={6} className="pl-0 pt-2 order-lg-first order-last">
+            <Col xs={12} md={6} className="pl-0 pt-2 order-md-first order-last">
               <img src={logoFooter} alt="Logo Footer" />
               <Heading
                 HeadingText="CIVIXA"

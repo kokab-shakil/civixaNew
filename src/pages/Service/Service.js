@@ -10,25 +10,28 @@ import { TypeofServices } from "./components/TypeofServices";
 import { TypesofAnnotion } from "./components/TypesofAnnotion";
 import "./Service.css";
 
-export default function Service() {
+export default function Service({ handleHeaderColor }) {
+  handleHeaderColor("prussian-blue");
   const commonClasses =
     "d-flex align-items-center justify-content-center h-100";
   return (
     <>
-      <CustomSection
-        height="h-auto header-margin"
-        bgColor="bg-prussian-blue"
-        classes="h-768"
-      >
-        <ServiceBanner classes={`${commonClasses} padding-all`} />
+      <CustomSection height="h-500 " bgColor="bg-prussian-blue" classes="">
+        <ServiceBanner
+          classes={`${commonClasses} align-items-lg-start padding-all`}
+        />
       </CustomSection>
-      {/* <CustomSection height="h-auto" bgColor="bg-white">
+      <CustomSection height="h-auto" bgColor="bg-white">
         <TypesofAnnotion classes={`${commonClasses} padding-all`} />
-      </CustomSection> */}
+      </CustomSection>
       <CustomSection height="h-auto" bgColor="bg-lightgray">
         <SmallBanner classes={`${commonClasses} padding-all`} />
       </CustomSection>
-      <CustomSection height="h-768" bgColor="bg-white" classes="typeofservices">
+      <CustomSection
+        height="h-auto"
+        bgColor="bg-white"
+        classes="typeofservices"
+      >
         <TypeofServices classes={`${commonClasses} padding-all`} />
       </CustomSection>
       <CustomSection height="h-auto" bgColor="bg-white">

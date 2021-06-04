@@ -14,7 +14,7 @@ export default function SquareIcon({
       <Col
         xs={6}
         md={4}
-        className={`d-flex align-items-center justify-content-center ${
+        className={`d-flex align-items-center justify-content-center justify-content-md-start mb-4 ${
           arrowAfter ? "arrow-after flex-column flex-xl-row flex-lg-row" : ""
         }`}
       >

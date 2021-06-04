@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
 import TextDetectionImage from "../../../images/TextDetection-img.png";
@@ -6,13 +6,36 @@ import Construction from "../../../images/construction.svg";
 import tick from "../../../images/tick.svg";
 
 const data = [
-  "Custom Pricing for High Volume",
-  "Dedicated Account Managers",
-  "24/7 Support",
-  "Custom Workflows",
+  {
+    id: 1,
+    itemText: "Custom Pricing for High Volume",
+    itemImage: TextDetectionImage,
+  },
+  {
+    id: 2,
+    itemText: "Dedicated Account Managers",
+    itemImage: TextDetectionImage,
+  },
+  {
+    id: 3,
+    itemText: "24/7 Support",
+    itemImage: TextDetectionImage,
+  },
+  {
+    id: 4,
+    itemText: "Custom Workflows",
+    itemImage: TextDetectionImage,
+  },
 ];
 
 export const TextDetection = ({ classes }) => {
+  const [dataImage, setDataImage] = useState(TextDetectionImage);
+
+  // const handleClick = (itemImage) => {
+  //   setDataImage(itemImage);
+  //   console.log(itemImage);
+  // };
+
   return (
     <Row className={classes}>
       <Col xs={12} md={4}>
@@ -28,21 +51,24 @@ export const TextDetection = ({ classes }) => {
         />
         {data.map((item) => {
           return (
-            <Heading
-              iconBefore
-              icon={tick}
-              headingClass="text-small font-weight-normal pl-3"
-              HeadingText={item}
-            />
+            <div
+              onClick={() => {
+                setDataImage(item.itemImage);
+                console.log(item.id);
+              }}
+            >
+              <Heading
+                iconBefore
+                icon={tick}
+                headingClass="text-small font-weight-normal pl-3"
+                HeadingText={item.itemText}
+              />
+            </div>
           );
         })}
       </Col>
       <Col xs={12} md={8} className={"pt-4"}>
-        <img
-          src={TextDetectionImage}
-          className={"upper-grid"}
-          alt="data-label-web"
-        />
+        <img src={dataImage} className={"upper-grid"} alt="data-label-web" />
       </Col>
     </Row>
   );

@@ -6,7 +6,7 @@
   font-size: 0.8125rem;
   border-radius: 8px;
 
-  height: 47px;
+  /* height: 47px; */
   box-shadow: 2px 4px 8px #00000029;
 }
 
@@ -28,4 +28,8 @@
 
 .btn.btnSize {
   box-shadow: 2px 4px 8px #00000029;
+}
+
+.btn.btn-prussian-blue {
+  background-color: #12356a;
 }

@@ -28,7 +28,7 @@ export default function PreTrainedModels({ classes }) {
           CardClasses={
             "d-flex flex-column align-items-center justify-content-around mr-3 mb-4 cardList"
           }
-          HeadingText="COVID19 Model"
+          HeadingText="Retail Plus"
           headingClass="card-heading w-min-content text-center"
         />
         <CustomCard
@@ -36,7 +36,7 @@ export default function PreTrainedModels({ classes }) {
           CardClasses={
             "d-flex flex-column align-items-center justify-content-around mr-3 mb-4 cardList"
           }
-          HeadingText="COVID19 Model"
+          HeadingText="Autonomous Mobility"
           headingClass="card-heading w-min-content text-center"
         />
         <CustomCard
@@ -44,14 +44,19 @@ export default function PreTrainedModels({ classes }) {
           CardClasses={
             "d-flex flex-column align-items-center justify-content-around mr-3 mb-4 cardList"
           }
-          HeadingText="COVID19 Model"
+          HeadingText="Sentiment Analysis"
           headingClass="card-heading w-min-content text-center"
         />
       </Col>
       <Col xs={12} md={3} className="d-flex flex-column">
         <Heading
-          HeadingText="Pre-trained models"
-          headingClass="font-weight-900"
+          HeadingText={[
+            <span className="position-relative">
+              <span className="pr-2 underlined">Pre-trained</span>
+            </span>,
+            "models",
+          ]}
+          headingClass="font-weight-900 text-left"
           para
           paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
         />

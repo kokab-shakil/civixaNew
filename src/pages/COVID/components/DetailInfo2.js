@@ -5,7 +5,7 @@ import DetainInfoImage from "../../../images/deatailinfo-image-01.png";
 
 const cardData = [
   {
-    CardClass: "p-5",
+    CardClass: "p-5 ml-auto",
     headingText: "EFFICIENCY & ACCURACY",
     headingClass: "font-weight-900 text-green",
     paraText:
@@ -13,7 +13,7 @@ const cardData = [
     paraClass: "",
   },
   {
-    CardClass: "p-5",
+    CardClass: "p-5 ml-auto",
     headingText: "ON-TIME AI-MODEL",
     headingClass: "font-weight-900 text-green",
     paraText:

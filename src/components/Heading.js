@@ -14,6 +14,8 @@ export default function Heading({
   altText,
   top,
   iconClass,
+  iconBeforeClass,
+  HeadingContainer,
   children,
 }) {
   return (
@@ -21,6 +23,8 @@ export default function Heading({
       <div
         className={`${iconBefore ? "d-flex align-items-center" : ""} ${
           top ? "flex-column" : ""
+        } ${iconBeforeClass ? iconBeforeClass : ""} ${
+          HeadingContainer ? HeadingContainer : ""
         }`}
       >
         {topHeading && (

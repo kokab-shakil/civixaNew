@@ -5,8 +5,6 @@
 }
 
 .header.navbar {
-  padding-left: 10vw;
-  padding-right: 10vw;
   height: 94px;
 }
 
@@ -43,7 +41,9 @@
   background-image: url(./images/cross.svg);
 }
 
-.bg-white.navbar-light .navbar-nav .nav-link {
+.bg-white.navbar-light .navbar-nav .nav-link,
+.bg-white.navbar-light .navbar-nav .nav-link:hover,
+.bg-white.navbar-light .navbar-nav .nav-link:any-link {
   color: #12356a;
 }
 
@@ -51,8 +51,9 @@
   color: #12356a;
 }
 
-.bg-prussian-blue.navbar-light .navbar-nav .nav-link {
-  color: #ffffff;
+.bg-prussian-blue.navbar-light .navbar-nav .nav-link,
+.bg-prussian-blue.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
 }
 
 .navbar.bg-prussian-blue .logo-heading {
@@ -75,3 +76,91 @@
 .header.sticky.navbar .navbar-nav .nav-link {
   color: #ffffff;
 }
+
+/* .header.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+} */
+
+.bg-prussian-blue.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.header.navbar .navbar-collapse.collapse.show {
+  background-color: #12356a;
+}
+
+.bg-white.navbar-light .navbar-collapse.collapse.show .navbar-nav .nav-link,
+.bg-white.navbar-light
+  .navbar-collapse.collapse.show
+  .navbar-nav
+  .nav-link:hover {
+  color: #ffffff;
+}
+
+#responsive-navbar-nav .nav-link {
+  /* animation: fadeIn 10s 0 5s 1; */
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+/* 
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @media (max-width: 991px) {
+  nav.header.navbar.navbar-expand-lg.fixed-top {
+    background-color: #12356a !important;
+  }
+} */

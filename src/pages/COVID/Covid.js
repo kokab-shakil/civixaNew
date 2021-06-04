@@ -9,12 +9,13 @@ import { SmallBanner } from "./components/SmallBanner";
 import { CovidDemo } from "./components/CovidDemo";
 import "./Covid.css";
 
-export const Covid = () => {
+const Covid = ({ handleHeaderColor }) => {
+  handleHeaderColor("prussian-blue");
   const commonClasses = "d-flex justify-content-center h-100";
   return (
     <>
       <CustomSection
-        height="h-auto header-margin"
+        height="h-auto "
         bgColor="bg-prussian-blue"
         classes={"h-auto"}
       >
@@ -56,3 +57,5 @@ export const Covid = () => {
     </>
   );
 };
+
+export default Covid;

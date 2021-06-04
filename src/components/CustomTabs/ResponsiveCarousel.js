@@ -61,11 +61,18 @@ export const ResponsiveCarousel = () => {
   // };
   return (
     <>
-      <Row className="d-block responsive-carousel">
+      <Row className="d-block responsive-carousel overflow-hidden">
         <InfiniteCarousel
           breakpoints={[
             {
               breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 600,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,

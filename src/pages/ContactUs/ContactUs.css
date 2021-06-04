@@ -1,0 +1,25 @@
+/* .contactDetails .w-80vw {
+  width: 80vw;
+} */
+
+.contactDetails {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+}
+
+.contactIcon {
+  width: 24px;
+  height: 20px;
+}
+
+.contactDetails-card {
+  right: 15%;
+  position: absolute;
+}
+
+@media (max-width: 992px) {
+  .contactDetails-card {
+    right: 0%;
+    position: relative;
+  }
+}

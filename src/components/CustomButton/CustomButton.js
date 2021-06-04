@@ -12,8 +12,8 @@ export default function CustomButton({
   return (
     <Button
       variant={btnColor}
-      size={btnSize}
-      className={`customButton text-uppercase font-weight-900 btnSize box-shadow-2 mb-2 px-lg-5 ${btnClasses}`}
+      size={`${btnSize ? btnSize : "small"}`}
+      className={`customButton text-uppercase font-weight-900 btnSize box-shadow-2 mb-2 btn-lg px-4 px-lg-5 ${btnClasses}`}
       onClick={handlebtn}
     >
       {btnText}

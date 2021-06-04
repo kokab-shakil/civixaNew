@@ -7,7 +7,7 @@
 
 .card.serviceCard {
   width: 304px;
-  height: 400px;
+  height: auto;
   box-shadow: 0px 5px 20px #00000029;
   border-radius: 10px;
 }
@@ -39,13 +39,26 @@
   border-radius: 20px;
 }
 
-.top-heading-bottom {
+/* .top-heading-bottom {
   margin-bottom: -26px;
   font-size: 57px;
+} */
+.h-500 {
+  height: 500px;
+}
+.top-heading {
+  line-height: 0.5;
 }
 
-.service-banner-button {
-  margin-left: -15px;
+.top-heading-bottom {
+  font-size: 4rem;
 }
 
-/* 544 */
+@media (max-width: 575px) {
+  .typeofservices .nav.nav-pills {
+    border: none;
+  }
+  .top-heading-bottom {
+    font-size: 2rem;
+  }
+}

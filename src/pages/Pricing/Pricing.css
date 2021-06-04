@@ -1,0 +1,34 @@
+.pricingBanner {
+  height: 430px;
+}
+
+.pricingServiceCard {
+  margin-top: -190px;
+}
+
+.package-heading {
+  letter-spacing: 3.6px;
+}
+
+.package-details .package-btn {
+  font-size: 1rem;
+  box-shadow: 2px 4px 8px #00000029;
+  border-radius: 28px;
+}
+
+.pricing-table-heading-container {
+  border-bottom: 1px solid #00000029;
+}
+
+.pricing-table-heading {
+  letter-spacing: 3.6px;
+}
+
+.btn.btn-lg.pricing-package-button {
+  font-size: 1.35rem;
+  font-weight: bold;
+  border-radius: 0%;
+}
+.btn.btn-lg.pricing-package-button::after {
+  content: "";
+}
