@@ -26,11 +26,13 @@ export default function TabData() {
 					/>
 				</Col>
 			</div>
-			<CustomButton
-				btnText="Request a Demo"
-				btnClasses="text-white "
-				btnColor="green"
-			/>
+			<div className="pt-4">
+				<CustomButton
+					btnText="Request a Demo"
+					btnClasses="text-white "
+					btnColor="green"
+				/>
+			</div>
 		</Row>
 	);
 }
