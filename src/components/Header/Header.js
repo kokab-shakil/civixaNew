@@ -95,7 +95,15 @@ export default function Header({ headercolor }) {
 					onClick={() => setExpanded(!expanded)}
 					aria-controls="responsive-navbar-nav "
 					className="mr-4 mr-lg-0"
-				/>
+				>
+					<span
+						className={`navbar-toggler-icon ${
+							color === "prussian-blue"
+								? "icon-prussian-blue"
+								: "icon-white"
+						}`}
+					></span>
+				</Navbar.Toggle>
 				<Navbar.Collapse
 					id="responsive-navbar-nav"
 					className={`${

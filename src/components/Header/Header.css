@@ -56,11 +56,11 @@
 	border-color: rgba(255, 255, 255, 0.5);
 }
 
-.header .navbar-toggler.collapsed .navbar-toggler-icon {
+.header .navbar-toggler.collapsed .navbar-toggler-icon.icon-prussian-blue {
 	background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
-.header .navbar-toggler .navbar-toggler-icon {
+.header .navbar-toggler .navbar-toggler-icon.icon-prussian-blue {
 	background-image: url(./images/cross.svg);
 }
 
@@ -194,3 +194,9 @@
     background-color: #12356a !important;
   }
 } */
+
+.navbar-toggler-icon.icon-white::before {
+	/* color: black; */
+	filter: invert(0%) sepia(91%) saturate(7464%) hue-rotate(41deg)
+		brightness(104%) contrast(107%);
+}

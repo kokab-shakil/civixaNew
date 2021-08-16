@@ -69,10 +69,13 @@ export const ServicesCarousel = () => {
 				</div>
 			</Swiper>
 			<Container>
-				<Row className="py-5 padding-right-sm">
+				<Row className="py-5">
 					{childData.map((item, key) => {
 						return (
-							<Col key={key} className="px-3 col-sm">
+							<div
+								key={key}
+								className="service-carousel-smallIcon"
+							>
 								<div
 									className={`d-flex py-2 cursor-pointer ${
 										childSelected === key
@@ -89,7 +92,7 @@ export const ServicesCarousel = () => {
 									/>
 									{item.value}
 								</div>
-							</Col>
+							</div>
 						);
 					})}
 				</Row>
