@@ -1,4 +1,32 @@
 .question {
-  font: normal normal 300 14px/28px Source Sans Pro;
-  color: #58595b;
+	font: normal normal 300 14px/28px Source Sans Pro;
+	color: #58595b;
+}
+
+.question-underlined {
+	font: normal normal 300 14px/28px Source Sans Pro;
+	color: #58595b;
+	text-decoration: underline;
+}
+
+/* .homebanner-heading {
+	font-size: 3rem;
+} */
+
+@media screen and (max-width: 1024px) {
+	.homebanner-heading {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.homebanner-heading {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.homebanner-heading {
+		font-size: 2rem;
+	}
 }
