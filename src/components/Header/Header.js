@@ -15,6 +15,7 @@ export default function Header({ headercolor }) {
 	const [logoColor, setLogoColor] = useState(
 		headercolor == "prussian-blue" ? civixaWhite : civixa
 	);
+	const [color, setColor] = useState(headercolor);
 	const history = useHistory();
 
 	useEffect(() => {
@@ -33,8 +34,10 @@ export default function Header({ headercolor }) {
 	useEffect(() => {
 		if (headersticky || headercolor === "prussian-blue") {
 			setLogoColor(civixaWhite);
+			setColor("prussian-blue");
 		} else {
 			setLogoColor(civixa);
+			setColor("white");
 		}
 	}, [headersticky, headercolor]);
 
@@ -93,7 +96,12 @@ export default function Header({ headercolor }) {
 					aria-controls="responsive-navbar-nav "
 					className="mr-4 mr-lg-0"
 				/>
-				<Navbar.Collapse id="responsive-navbar-nav">
+				<Navbar.Collapse
+					id="responsive-navbar-nav"
+					className={`${
+						color === "prussian-blue" ? "prussian-blue" : "white"
+					}`}
+				>
 					<Nav className="mr-auto pl-5 align-items-lg-center">
 						<Link
 							eventKey="1"
@@ -139,7 +147,7 @@ export default function Header({ headercolor }) {
 					<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
 						<input
 							type="email"
-							className="inputReqDemo pl-2"
+							className="inputReqDemo pl-2 d-none d-lg-block"
 							placeholder="test@test.com"
 							value={inputValue}
 							onChange={hanldeInputChange}

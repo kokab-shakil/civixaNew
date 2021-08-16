@@ -261,4 +261,17 @@ p {
 	padding-right: 10vw;
 }
 
+.w-md-40 {
+	width: 40%;
+}
+
+@media screen and (max-width: 740px) {
+	.padding-right-sm {
+		padding-right: 10vw;
+	}
+	.w-md-40 {
+		width: 100%;
+	}
+}
+
 /* end */

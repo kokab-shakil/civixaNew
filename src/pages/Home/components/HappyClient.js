@@ -12,51 +12,52 @@ import { LogoCarousel } from "../../../components/ItemCarousel/LogoCarousel";
 import TestCarousel from "../../../components/ItemCarousel/TestCarousel";
 
 export const HappyClient = ({ classes }) => {
-  return (
-    <Row className={classes}>
-      <Col xs={12}>
-        <Heading
-          headingClass="d-flex justify-content-center"
-          HeadingText={[
-            "Our",
-            <span className="position-relative">
-              <span className="px-2 underlined">Happy</span>
-            </span>,
-            "Clients",
-          ]}
-          para
-          paraText="We are trusted by leading machine learning teams for the training of their AI-models"
-          paraClass="text-center"
-        />
-      </Col>
-      <Col xs={12} className="py-3">
-        <LogoCarousel />
-      </Col>
-      <Col xs={12} md={12} lg={8}>
-        <img src={car2} alt="" style={{ width: "68vw" }}></img>
-      </Col>
-      <Col xs={12} md={12} lg={4}>
-        <Card
-          style={{
-            boxShadow: "0px 3px 6px #00000029",
-          }}
-        >
-          <Card.Body>
-            <Card.Title>
-              <img src={Manychat} alt="" />
-            </Card.Title>
-            <Card.Text className={"border-bottom pb-3"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis d minim veniam, quis
-            </Card.Text>
-            <Card.Link href="#">
-              <img src={facebook} alt="" />
-              <h1 className="text-xs">Larry Page</h1>
-            </Card.Link>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
-  );
+	return (
+		<Row className={classes}>
+			<Col xs={12}>
+				<Heading
+					headingClass="d-flex justify-content-center"
+					HeadingText={[
+						"Our",
+						<span className="position-relative">
+							<span className="px-2 underlined">Happy</span>
+						</span>,
+						"Clients",
+					]}
+					para
+					paraText="We are trusted by leading machine learning teams for the training of their AI-models"
+					paraClass="text-center"
+				/>
+			</Col>
+			<Col xs={12} className="py-3">
+				<LogoCarousel />
+			</Col>
+			<Col xs={12} md={12} lg={7}>
+				<img src={car2} alt="" style={{ width: "68vw" }}></img>
+			</Col>
+			<Col xs={12} md={12} lg={5}>
+				<Card
+					style={{
+						boxShadow: "0px 3px 6px #00000029",
+					}}
+				>
+					<Card.Body>
+						<Card.Title>
+							<img src={Manychat} alt="" />
+						</Card.Title>
+						<Card.Text className={"border-bottom pb-3"}>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis d
+							minim veniam, quis
+						</Card.Text>
+						<Card.Link href="#">
+							<img src={facebook} alt="" />
+							<h1 className="text-xs">Larry Page</h1>
+						</Card.Link>
+					</Card.Body>
+				</Card>
+			</Col>
+		</Row>
+	);
 };

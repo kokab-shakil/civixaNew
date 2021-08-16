@@ -35,7 +35,7 @@ export const ServicesCarousel = () => {
 	const [option, selectedOption] = useState(TabData);
 
 	const handleClick = (e, selected) => {
-		const optionValue = childData.find((element) => element.value == e);
+		const optionValue = childData.find((element) => element.value === e);
 		selectedOption(optionValue.component);
 		setChildSelected(selected);
 		console.log(childSelected);
@@ -51,7 +51,7 @@ export const ServicesCarousel = () => {
 				className={"sizeCarousel"}
 				slidesPerView={"auto"}
 			>
-				<div className="abcd">
+				<div className="">
 					{data.map((item, key) => {
 						return (
 							<SwiperSlide>
@@ -69,10 +69,10 @@ export const ServicesCarousel = () => {
 				</div>
 			</Swiper>
 			<Container>
-				<Row className="py-3">
+				<Row className="py-5 padding-right-sm">
 					{childData.map((item, key) => {
 						return (
-							<Col key={key} xs md>
+							<Col key={key} className="px-3 col-sm">
 								<div
 									className={`d-flex py-2 cursor-pointer ${
 										childSelected === key
@@ -83,7 +83,7 @@ export const ServicesCarousel = () => {
 									onClick={() => handleClick(item.value, key)}
 								>
 									<img
-										src={box}
+										src={item.icon}
 										alt="box"
 										className={"tabIcon pr-2"}
 									/>
@@ -94,7 +94,7 @@ export const ServicesCarousel = () => {
 					})}
 				</Row>
 			</Container>
-			<div className="padding-right">{option}</div>
+			<div className="padding-right-sm max-width-md">{option}</div>
 		</>
 	);
 };
@@ -118,33 +118,41 @@ const childData = [
 	{
 		value: "Box",
 		component: "Box",
+		icon: box,
 	},
 	{
 		value: "Cuboid",
 		component: <TabData />,
+		icon: cuboid,
 	},
 	{
 		value: "Classification",
 		component: "Classification",
+		icon: classification,
 	},
 	{
 		value: "Point",
 		component: "Point",
+		icon: point,
 	},
 	{
 		value: "Polygons",
 		component: <TabData />,
+		icon: polygons,
 	},
 	{
 		value: "Polylines",
 		component: <TabData />,
+		icon: polylines,
 	},
 	{
 		value: "Segmentation",
 		component: "Segmentation",
+		icon: segmentation,
 	},
 	{
 		value: "Transcription",
 		component: <TabData />,
+		icon: transcription,
 	},
 ];

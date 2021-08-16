@@ -29,16 +29,22 @@ export default function SmallBanner({ classes }) {
 					"p-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-end"
 				}
 			>
-				<CustomButton
-					btnColor="green"
-					btnClasses="text-white mr-2"
-					btnText="Request Demo"
-				/>
-				<CustomButton
-					btnColor="white"
-					btnClasses="text-prussian-blue"
-					btnText="Request Demo"
-				/>
+				<Row>
+					<Col xs={12} sm={6}>
+						<CustomButton
+							btnColor="green"
+							btnClasses="text-white mr-2"
+							btnText="Request Demo"
+						/>
+					</Col>
+					<Col xs={12} sm={6}>
+						<CustomButton
+							btnColor="white"
+							btnClasses="text-prussian-blue"
+							btnText="Request Demo"
+						/>
+					</Col>
+				</Row>
 			</Col>
 		</Row>
 	);

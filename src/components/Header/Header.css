@@ -31,6 +31,14 @@
 	border-bottom-left-radius: 0;
 }
 
+@media screen and (max-width: 991px) {
+	.btnReqDemo {
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+		width: max-content;
+	}
+}
+
 .inputReqDemo {
 	height: 39px;
 	font-size: 0.8125rem;
@@ -100,8 +108,15 @@
 	color: #ffffff;
 }
 
-.header.navbar .navbar-collapse.collapse.show {
+.header.navbar .navbar-collapse.collapse.show.prussian-blue {
 	background-color: #12356a;
+}
+.header.navbar .navbar-collapse.collapse.show.white {
+	background-color: #ffffff;
+}
+
+.header.navbar .navbar-collapse.collapse.show.white .nav-link {
+	color: #12356a;
 }
 
 .bg-white.navbar-light .navbar-collapse.collapse.show .navbar-nav .nav-link,

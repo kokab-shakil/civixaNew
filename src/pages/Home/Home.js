@@ -35,7 +35,9 @@ export default function Home({ handleHeaderColor }) {
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<OurServices
-					classes={`${commonClasses} padding-left padding-y flex-wrap flex-column`}
+					classes={`${commonClasses} ${
+						width < 740 ? "padding-left padding-y" : "padding-all"
+					} flex-wrap flex-column`}
 				/>
 			</CustomSection>
 			<CustomSection

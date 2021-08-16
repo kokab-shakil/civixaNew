@@ -11,7 +11,7 @@ export default function SectionTwo({ classes }) {
 	return (
 		<Row className={classes}>
 			<Heading
-				headingClass="font-weight-900 d-flex align-items-center justify-content-center flex-column flex-md-row"
+				headingClass="font-weight-900 d-flex align-items-center justify-content-center flex-column flex-md-row padding-right-sm"
 				HeadingText={[
 					"Behold Our",
 					<span className="position-relative">
@@ -19,7 +19,7 @@ export default function SectionTwo({ classes }) {
 					</span>,
 				]}
 				para
-				paraClass="w-md-50 w-100 text-center"
+				paraClass="w-md-40 text-center padding-right-sm"
 				paraText="Civixa.ai provides the following services. Feel free to reach us out if you need more details."
 			/>
 			<ServicesCarousel />

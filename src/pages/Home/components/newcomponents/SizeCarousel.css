@@ -125,3 +125,7 @@
     left: 50px;
 }
 */
+
+.max-width-md {
+	max-width: 720px;
+}
