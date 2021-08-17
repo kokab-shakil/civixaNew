@@ -4,7 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 // import TabData from "../../../../components/CustomTabs/TabData";
 
 // icons
-import Typeofservice from "../../../images/typeofservice.png";
+// import Typeofservice from "../ ../../../images/typeofservice.png";
+import Typeofservice from "../../../../images/typeofservice.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,17 +15,18 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
-import "./ServiceServicesCarousel.css";
+import "./CovidDemoCarousel.css";
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation } from "swiper/core";
+import { CovidCarrousel } from "./CovidCarrousel";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
-export const ServiceServicesCarousel = () => {
+export const CovidDemoCarousel = () => {
 	const [selected, setSelected] = useState(1);
-	const [child, setChild] = useState(Typeofservice);
+	const [child, setChild] = useState(CovidCarrousel);
 	// const [childSelected, setChildSelected] = useState(1);
 	// const [option, selectedOption] = useState(TabData);
 
@@ -36,8 +38,10 @@ export const ServiceServicesCarousel = () => {
 	// };
 	const handleClick = (e) => {
 		setSelected(e + 1);
+		console.log(e);
 		const item = data.find((a) => a.id === e + 1);
 		setChild(item.component);
+		console.log(child);
 	};
 	return (
 		<>
@@ -65,11 +69,9 @@ export const ServiceServicesCarousel = () => {
 					);
 				})}
 			</Swiper>
-			<Container>
+			<Container className="pt-5">
 				<Row>
-					<Col xs={12}>
-						<img src={child} className="img-fluid" />
-					</Col>
+					<Col xs={12}>{child}</Col>
 				</Row>
 			</Container>
 		</>
@@ -79,17 +81,12 @@ export const ServiceServicesCarousel = () => {
 const data = [
 	{
 		id: 1,
-		name: "Annotation",
-		component: Typeofservice,
+		name: "Socail Distancing",
+		component: CovidCarrousel,
 	},
 	{
 		id: 2,
-		name: "Data Genenration",
-		component: Typeofservice,
-	},
-	{
-		id: 3,
-		name: "Ai as a Service",
-		component: Typeofservice,
+		name: "Mask Detection",
+		component: CovidCarrousel,
 	},
 ];

@@ -50,12 +50,14 @@ export const LogoCarousel = () => {
 							</SwiperSlide>
 						);
 					})}
-					<span className="swiper-button-prev">
-						<i class="fas fa-arrow-left"></i>
-					</span>
-					<span className="swiper-button-next">
-						<i class="fas fa-arrow-right"></i>
-					</span>
+					<div className="d-none">
+						<span className="swiper-button-prev">
+							<i class="fas fa-arrow-left"></i>
+						</span>
+						<span className="swiper-button-next">
+							<i class="fas fa-arrow-right"></i>
+						</span>
+					</div>
 				</Swiper>
 			</Col>
 		</Row>
