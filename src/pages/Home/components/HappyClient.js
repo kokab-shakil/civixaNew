@@ -8,8 +8,9 @@ import car2 from "../../../images/car2.png";
 import CustomCard from "../../../components/CustomCard/CustomCard";
 import Manychat from "../../../images/Manychat.svg";
 import facebook from "../../../images/facebook.svg";
-import { LogoCarousel } from "../../../components/ItemCarousel/LogoCarousel";
+// import { LogoCarousel } from "../../../components/ItemCarousel/LogoCarousel";
 import TestCarousel from "../../../components/ItemCarousel/TestCarousel";
+import { LogoCarousel } from "./newcomponents/LogoCarousel";
 
 export const HappyClient = ({ classes }) => {
 	return (
@@ -30,6 +31,7 @@ export const HappyClient = ({ classes }) => {
 				/>
 			</Col>
 			<Col xs={12} className="py-3">
+				{/* <LogoCarousel /> */}
 				<LogoCarousel />
 			</Col>
 			<Col xs={12} md={12} lg={7}>

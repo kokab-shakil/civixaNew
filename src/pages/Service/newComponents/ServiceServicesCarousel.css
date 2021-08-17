@@ -1,54 +1,54 @@
-.sizeCarousel.swiper-container {
+.ServiceServicesCarousel.swiper-container {
 	width: 100%;
 	height: auto;
 	/* padding-bottom: 3.75rem; */
 	right: 0px;
 }
-.sizeCarousel.swiper-container .swiper-wrapper {
+.ServiceServicesCarousel.swiper-container .swiper-wrapper {
 	border: 2px solid #12356a;
 	border-radius: 10px;
 	overflow: hidden;
 }
 
-.sizeCarousel .swiper-button-next,
+.ServiceServicesCarousel .swiper-button-next,
 .swiper-button-prev {
 	top: auto;
 	bottom: 0;
 }
-.sizeCarousel .swiper-button-prev {
+.ServiceServicesCarousel .swiper-button-prev {
 	left: 0;
 }
 
-.sizeCarousel .swiper-button-next {
+.ServiceServicesCarousel .swiper-button-next {
 	left: 3%;
 }
-.sizeCarousel .swiper-button-next.swiper-button-disabled {
+.ServiceServicesCarousel .swiper-button-next.swiper-button-disabled {
 	left: 3%;
 }
 
-.sizeCarousel .swiper-button-prev.swiper-button-disabled {
+.ServiceServicesCarousel .swiper-button-prev.swiper-button-disabled {
 	left: 0%;
 }
 
 @media screen and (max-width: 700px) {
-	.sizeCarousel .swiper-button-next {
+	.ServiceServicesCarousel .swiper-button-next {
 		left: 8%;
 	}
-	.sizeCarousel .swiper-button-next.swiper-button-disabled {
+	.ServiceServicesCarousel .swiper-button-next.swiper-button-disabled {
 		left: 8%;
 	}
 }
 
 @media screen and (max-width: 375px) {
-	.sizeCarousel .swiper-button-next {
+	.ServiceServicesCarousel .swiper-button-next {
 		left: 10%;
 	}
-	.sizeCarousel .swiper-button-next.swiper-button-disabled {
+	.ServiceServicesCarousel .swiper-button-next.swiper-button-disabled {
 		left: 10%;
 	}
 }
 
-.sizeCarousel .swiper-slide {
+.ServiceServicesCarousel .swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	/* background: #fff; */
@@ -73,7 +73,7 @@
 .swiper-slide {
 	width: 100%;
 }
-.sizeCarousel.swiper-container-android .swiper-slide,
+.ServiceServicesCarousel.swiper-container-android .swiper-slide,
 .swiper-wrapper {
 	transform: none;
 	width: max-content;
@@ -114,7 +114,7 @@
 	cursor: pointer;
 }
 
-/* .sizeCarousel .swiper-container-android .swiper-slide, .swiper-wrapper
+/* .ServiceServicesCarousel .swiper-container-android .swiper-slide, .swiper-wrapper
 
 .swiper-button-prev {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;

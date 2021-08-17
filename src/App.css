@@ -274,4 +274,10 @@ p {
 	}
 }
 
+@media screen and (max-width: 860px) and (min-width: 768px) {
+	.padding-all {
+		padding: 5vw 5vw;
+	}
+}
+
 /* end */

@@ -27,7 +27,7 @@ export default function Home({ handleHeaderColor }) {
 				/>
 			</CustomSection>
 			<CustomSection
-				height="min-full-height"
+				height="h-auto"
 				bgColor="bg-grayish"
 				// classes={""}
 			>

@@ -119,13 +119,13 @@
 	color: #12356a;
 }
 
-.bg-white.navbar-light .navbar-collapse.collapse.show .navbar-nav .nav-link,
+/* .bg-white.navbar-light .navbar-collapse.collapse.show .navbar-nav .nav-link,
 .bg-white.navbar-light
 	.navbar-collapse.collapse.show
 	.navbar-nav
 	.nav-link:hover {
 	color: #ffffff;
-}
+} */
 
 #responsive-navbar-nav .nav-link {
 	/* animation: fadeIn 10s 0 5s 1; */

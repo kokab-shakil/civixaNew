@@ -118,11 +118,11 @@ export const Packages = ({ classes }) => {
 							<CustomButton
 								btnText="GET STARTED IN MINUTES"
 								btnColor="green"
-								btnClasses="text-prussian-blue py-4 pricing-package-button mt-4 mb-md-0 w-100"
+								btnClasses="text-prussian-blue py-4 pricing-package-button mt-4 w-100"
 								btnSize="lg btn-block"
+								marginBottom="mb-0"
 							/>
 						</Row>
-						<Row></Row>
 					</Col>
 					<Col
 						xs={12}

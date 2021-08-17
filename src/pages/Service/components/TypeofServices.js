@@ -2,11 +2,14 @@ import React from "react";
 import { Col, Nav, Row, Tab } from "react-bootstrap";
 import Typeofserviceimage from "../../../images/typeofservice.png";
 
+import { ServiceServicesCarousel } from "../newComponents/ServiceServicesCarousel";
+
 export const TypeofServices = ({ classes }) => {
-  return (
-    <Row className={classes}>
-      <Col md={12} sm={12} xs={12}>
-        <Tab.Container className="serviceTab" defaultActiveKey="annotation">
+	return (
+		<Row className={classes}>
+			<Col md={12} sm={12} xs={12}>
+				<ServiceServicesCarousel />
+				{/* <Tab.Container className="serviceTab" defaultActiveKey="annotation">
           <Row className="position-relative">
             <Col sm={12} className="z-1">
               <Nav
@@ -50,8 +53,8 @@ export const TypeofServices = ({ classes }) => {
               </Tab.Content>
             </Col>
           </Row>
-        </Tab.Container>
-      </Col>
-    </Row>
-  );
+        </Tab.Container> */}
+			</Col>
+		</Row>
+	);
 };

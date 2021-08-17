@@ -48,7 +48,7 @@ export const ServicesCarousel = () => {
 					prevEl: ".swiper-button-prev",
 				}}
 				freeMode={true}
-				className={"sizeCarousel"}
+				className={"sizeCarousel mt-2"}
 				slidesPerView={"auto"}
 			>
 				<div className="">
@@ -69,7 +69,7 @@ export const ServicesCarousel = () => {
 				</div>
 			</Swiper>
 			<Container>
-				<Row className="py-5">
+				<Row className="py-3 d-flex justify-content-center">
 					{childData.map((item, key) => {
 						return (
 							<div
