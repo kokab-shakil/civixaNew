@@ -82,13 +82,17 @@ export const ServicesCarousel = () => {
 											? "childSelected"
 											: ""
 									}`}
-									value="box"
+									value={item.value}
 									onClick={() => handleClick(item.value, key)}
 								>
 									<img
 										src={item.icon}
-										alt="box"
-										className={"tabIcon pr-2"}
+										alt={item.value}
+										className={`tabIcon pr-2 ${
+											childSelected === key
+												? "childSelectedIcon"
+												: ""
+										}`}
 									/>
 									{item.value}
 								</div>
