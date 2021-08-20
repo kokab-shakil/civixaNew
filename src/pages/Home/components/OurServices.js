@@ -19,8 +19,8 @@ export default function SectionTwo({ classes }) {
 					</span>,
 				]}
 				para
-				paraClass="w-md-40 text-center padding-right-sm"
-				paraText="Civixa.ai provides the following services. Feel free to reach us out if you need more details."
+				paraClass="w-lg-50 text-center padding-right-sm"
+				paraText="Your model’s annotation needs can be different according to the requirements of your business. Here are the services Civixa has to offer inorder to annotate your dataset"
 			/>
 			<ServicesCarousel />
 			{/* {width > 768 ? <ParentTab /> : <ServiceCarousel />} */}

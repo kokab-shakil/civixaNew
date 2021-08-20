@@ -86,7 +86,7 @@
 /* Header Sticky CSS*/
 
 .header.sticky.navbar {
-	background-color: #12356a !important;
+	background-color: #12356a;
 }
 
 .header.sticky.navbar .logo-heading {
@@ -94,6 +94,13 @@
 	font-weight: 500;
 	font: normal normal medium 26px/35px Gotham Rounded;
 	color: #ffffff;
+}
+
+.header.navbar .logo-heading {
+	font-size: 26px;
+	font-weight: 500;
+	font: normal normal medium 26px/35px Gotham Rounded;
+	color: #12356a;
 }
 
 .header.sticky.navbar .navbar-nav .nav-link {
@@ -128,7 +135,6 @@
 } */
 
 #responsive-navbar-nav .nav-link {
-	/* animation: fadeIn 10s 0 5s 1; */
 	animation: fadeIn 5s;
 	-webkit-animation: fadeIn 5s;
 	-moz-animation: fadeIn 5s;
@@ -199,4 +205,10 @@
 	/* color: black; */
 	filter: invert(0%) sepia(91%) saturate(7464%) hue-rotate(41deg)
 		brightness(104%) contrast(107%);
+}
+
+.white.navbar-collapse .navbar-nav .nav-link,
+.white.navbar-collapse .navbar-nav .nav-link:focus,
+.white.navbar-collapse .navbar-nav .nav-link:hover {
+	color: #12356a;
 }

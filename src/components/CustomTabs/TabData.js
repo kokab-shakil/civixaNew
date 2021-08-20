@@ -4,7 +4,8 @@ import CustomButton from "../CustomButton/CustomButton";
 import Heading from "../Heading";
 import car from "../../images/car.svg";
 
-export default function TabData() {
+export default function TabData({ cardImage, headingText, paraText }) {
+	console.log("card Image", cardImage);
 	return (
 		<Row className={"d-flex justify-content-center m-0"}>
 			<div
@@ -12,7 +13,7 @@ export default function TabData() {
 			>
 				<Col xs={12} md={6} className="p-0">
 					<img
-						src={car}
+						src={cardImage ? cardImage : car}
 						className="w-100 image-fit border-left"
 						alt="car"
 					/>
@@ -20,9 +21,9 @@ export default function TabData() {
 				<Col xs={12} md={6} className="p-4">
 					<Heading
 						headingClass=""
-						HeadingText="Annotations"
+						HeadingText={headingText}
 						para
-						paraText="We understand that pixel-perfect annotations are the foundation of an efficiently trained AI-model. We have an in-house team of 30+ annotators. We make sure that the resources working on your data are well trained. With the help of our AI tools and algorithms, we provide extremely precise data with up to 99% accuracy."
+						paraText={paraText}
 					/>
 				</Col>
 			</div>

@@ -86,7 +86,13 @@ export default function Header({ headercolor }) {
 							height="50"
 							className="d-inline-block align-top icon-white"
 						/>
-						<span className="pl-2 logo-heading text-uppercase">
+						<span
+							className={`pl-4 logo-heading text-uppercase ${
+								color === "white"
+									? "text-prussian-blue"
+									: "text-white"
+							}`}
+						>
 							Civixa
 						</span>
 					</Link>

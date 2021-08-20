@@ -153,7 +153,7 @@ export const OurWork = ({ classes }) => {
 						HeadingText="FLEXIBILITY"
 						headingClass=""
 						para
-						paraText="We are extremely flexible as far as the requirement of quality and annotations is concerned"
+						paraText="We are extremely flexible as far as the file format (e.g. jpeg, png) is concerned"
 						paraClass="w-70 text-center text-lg-left"
 					/>
 				</Col>
