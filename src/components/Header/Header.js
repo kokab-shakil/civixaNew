@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
+import useWindowSize from "../../WindowSize";
 
 export default function Header({ headercolor }) {
 	const [headersticky, setHeaderSticky] = useState(false);
@@ -17,6 +18,8 @@ export default function Header({ headercolor }) {
 	);
 	const [color, setColor] = useState(headercolor);
 	const history = useHistory();
+	const [width] = useWindowSize();
+	console.log(width);
 
 	useEffect(() => {
 		const scrollCallBack = window.addEventListener("scroll", () => {
@@ -59,15 +62,17 @@ export default function Header({ headercolor }) {
 			sticky="top"
 			collapseOnSelect={true}
 			expand="lg"
-			bg={headercolor}
+			// bg={headercolor}
 			variant="light"
 			expanded={expanded}
 			className={`header py-2 container-fluid w-100 px-0 px-md-auto ${
-				headersticky ? "sticky" : ""
-			}`}
+				color === "white" ? "bg-color-white" : "bg-prussian-blue"
+			} ${headersticky ? "sticky" : ""}`}
 		>
 			<div className="container-lg container-fluid">
-				<Navbar.Brand className="pl-5 pl-lg-0">
+				<Navbar.Brand
+					className={`${width >= 320 ? "pl-5" : "pl-3"} pl-lg-0`}
+				>
 					<Link
 						to="/"
 						className="d-flex align-items-center  navbar-brand"
@@ -90,7 +95,7 @@ export default function Header({ headercolor }) {
 							className={`pl-4 logo-heading text-uppercase ${
 								color === "white"
 									? "text-prussian-blue"
-									: "text-white"
+									: "text-color-white"
 							}`}
 						>
 							Civixa

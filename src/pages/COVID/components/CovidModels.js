@@ -45,7 +45,7 @@ export const CovidModels = ({ classes }) => {
 									iconClass="img-fluid icon mx-3"
 									altText="sideIcon"
 									HeadingText={item.headingText}
-									headingClass="mt-2"
+									headingClass="mt-2 mt-lg-0 line-height-7"
 									para
 									paraText={item.paraText}
 									paraClass=""

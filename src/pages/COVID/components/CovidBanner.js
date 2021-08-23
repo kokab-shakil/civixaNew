@@ -12,7 +12,7 @@ export const CovidBanner = ({ classes }) => {
 			</Col>
 			<Col md={8} xs={12}>
 				<Heading
-					headingClass="text-atomic-tangerine text-lg mt-2 mt-md-0"
+					headingClass="text-atomic-tangerine text-lg mt-2 mt-md-0 line-height-7 mb-4"
 					HeadingText="FOR COMPANIES"
 					para
 					paraClass="text-white"

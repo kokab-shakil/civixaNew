@@ -30,7 +30,7 @@ export const HappyClient = ({ classes }) => {
 					paraClass="text-center"
 				/>
 			</Col>
-			<Col xs={12} className="py-3">
+			<Col xs={12} lg={10} className="py-3">
 				<LogoCarousel />
 				{/* <LogoCarousel /> */}
 			</Col>

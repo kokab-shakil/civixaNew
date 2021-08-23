@@ -93,14 +93,14 @@
 	font-size: 26px;
 	font-weight: 500;
 	font: normal normal medium 26px/35px Gotham Rounded;
-	color: #ffffff;
+	/* color: #ffffff; */
 }
 
 .header.navbar .logo-heading {
 	font-size: 26px;
 	font-weight: 500;
 	font: normal normal medium 26px/35px Gotham Rounded;
-	color: #12356a;
+	/* color: #12356a; */
 }
 
 .header.sticky.navbar .navbar-nav .nav-link {
