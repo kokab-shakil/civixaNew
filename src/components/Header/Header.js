@@ -19,7 +19,6 @@ export default function Header({ headercolor }) {
 	const [color, setColor] = useState(headercolor);
 	const history = useHistory();
 	const [width] = useWindowSize();
-	console.log(width);
 
 	useEffect(() => {
 		const scrollCallBack = window.addEventListener("scroll", () => {

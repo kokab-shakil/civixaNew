@@ -30,11 +30,11 @@ export const HappyClient = ({ classes }) => {
 					paraClass="text-center"
 				/>
 			</Col>
-			<Col xs={12} lg={10} className="py-3">
+			<Col xs={12} className="py-3">
 				<LogoCarousel />
 				{/* <LogoCarousel /> */}
 			</Col>
-			<Col xs={12} md={12} lg={7}>
+			{/* <Col xs={12} md={12} lg={7}>
 				<img src={car2} alt="" style={{ width: "68vw" }}></img>
 			</Col>
 			<Col xs={12} md={12} lg={5}>
@@ -59,7 +59,7 @@ export const HappyClient = ({ classes }) => {
 						</Card.Link>
 					</Card.Body>
 				</Card>
-			</Col>
+			</Col> */}
 		</Row>
 	);
 };

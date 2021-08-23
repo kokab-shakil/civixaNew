@@ -5,7 +5,6 @@ import Heading from "../Heading";
 import car from "../../images/car.svg";
 
 export default function TabData({ cardImage, headingText, paraText }) {
-	console.log("card Image", cardImage);
 	return (
 		<Row className={"d-flex justify-content-center m-0"}>
 			<div

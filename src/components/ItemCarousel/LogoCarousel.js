@@ -1,11 +1,24 @@
 import React, { useState } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 import Carousel, { consts } from "react-elastic-carousel";
 import Udemy from "../../images/CarouselImages/udemy.svg";
 import ForwardArrow from "../../images/ForwardArrow.svg";
 import "./LogoCarousel.css";
 
+// Icons
+import Manychat from "../../images/Manychat.svg";
+import Car from "../../images/car2.png";
+import Facebook from "../../images/facebook.svg";
+
 export const LogoCarousel = () => {
 	const [selected, setSelected] = useState(0);
+	const [selectedItem, setselectedItem] = useState(data[0]);
+
+	const handleClick = (key, item) => {
+		setSelected(key);
+		setselectedItem(item);
+	};
+
 	const myArrow = ({ type, onClick, isEdge }) => {
 		// type === consts.PREV;
 		// console.log(consts);
@@ -30,68 +43,144 @@ export const LogoCarousel = () => {
 		);
 	};
 	return (
-		<div className="logo-carousel">
-			<Carousel
-				renderArrow={myArrow}
-				pagination={false}
-				breakPoints={[
-					{ width: 1, itemsToShow: 1 },
-					{ width: 550, itemsToShow: 2, itemsToScroll: 2 },
-					{ width: 850, itemsToShow: 4 },
-					{ width: 1150, itemsToShow: 5, itemsToScroll: 2 },
-					{ width: 1450, itemsToShow: 5 },
-					{ width: 1750, itemsToShow: 6 },
-				]}
-			>
-				{data.map((item, key) => {
-					return (
-						<div
-							key={key}
-							className={`logoCarousel-items ${
-								selected === key ? "selected" : ""
-							}`}
+		<>
+			<Row className="d-flex align-items-center justify-content-center">
+				<Col xs={12} lg={12}>
+					<div className="logo-carousel">
+						<Carousel
+							renderArrow={myArrow}
+							pagination={false}
+							breakPoints={[
+								{ width: 1, itemsToShow: 1 },
+								{
+									width: 550,
+									itemsToShow: 2,
+									itemsToScroll: 2,
+								},
+								{ width: 850, itemsToShow: 4 },
+								{
+									width: 1150,
+									itemsToShow: 5,
+									itemsToScroll: 2,
+								},
+								{ width: 1450, itemsToShow: 5 },
+								{ width: 1750, itemsToShow: 6 },
+							]}
 						>
-							<img
-								src={item.image}
-								alt={item.name}
-								className={"tabIcon logo"}
-								onClick={() => setSelected(key)}
-							/>
-						</div>
-					);
-				})}
-			</Carousel>
-		</div>
+							{data.map((item, key) => {
+								return (
+									<div
+										key={key}
+										className={`logoCarousel-items ${
+											selected === key ? "selected" : ""
+										}`}
+									>
+										<img
+											src={item.icon}
+											alt={item.name}
+											className={"tabIcon logo"}
+											onClick={() =>
+												handleClick(key, item)
+											}
+										/>
+									</div>
+								);
+							})}
+						</Carousel>
+					</div>
+				</Col>
+				<Col xs={12} md={12} lg={7}>
+					<img src={Car} alt="" style={{ width: "68vw" }}></img>
+				</Col>
+				<Col xs={12} md={12} lg={5}>
+					<Card
+						style={{
+							boxShadow: "0px 3px 6px #00000029",
+						}}
+					>
+						<Card.Body>
+							<Card.Title>
+								<img src={selectedItem.image} alt="" />
+							</Card.Title>
+							<Card.Text className={"border-bottom pb-3"}>
+								{selectedItem.cardText}
+							</Card.Text>
+							<Card.Link href="#">
+								<img src={selectedItem.linkImage} alt="" />
+								<h1 className="text-xs">
+									{selectedItem.linkImageTitle}
+								</h1>
+							</Card.Link>
+						</Card.Body>
+					</Card>
+				</Col>
+			</Row>
+		</>
 	);
 };
 
 const data = [
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 	{
 		name: "Udemy",
-		image: Udemy,
+		icon: Udemy,
+		image: Manychat,
+		linkImage: Facebook,
+		linkImageTitle: "Larry Page",
+		cardText:
+			"7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis d minim veniam, quis",
 	},
 ];
