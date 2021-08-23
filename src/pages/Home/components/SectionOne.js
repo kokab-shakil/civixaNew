@@ -8,6 +8,9 @@ import group2640 from "../../../images/home/Group2640.svg";
 import repeatGrid from "../../../images/RepeatGrid.svg";
 import Heading from "../../../components/Heading";
 
+import Video1 from "../../../videos/video1.mp4";
+import ReactPlayer from "react-player/lazy";
+
 export default function SectionOne({ classes }) {
 	return (
 		<Row className={classes}>
@@ -16,18 +19,23 @@ export default function SectionOne({ classes }) {
 				md={6}
 				className={"position-relative d-none d-md-block"}
 			>
-				<img
-					src={dataLabelImage}
-					className={"upper-grid top"}
-					alt="data-label-web"
-				></img>
+				<div className={"upper-grid top"}>
+					<ReactPlayer
+						url={Video1}
+						playing={true}
+						width={"100%"}
+						height={"100%"}
+						muted={true}
+						loop={true}
+					/>
+				</div>
 				<img
 					className={"hide-grid"}
 					src={repeatGrid}
 					alt="data-label-web"
 				/>
 			</Col>
-			<Col xs={12} md={6} className={"pt-4 pr-0"}>
+			<Col xs={12} md={6} className={"pt-4 pr-0  pl-0 pl-md-5"}>
 				<div className="w-70 ">
 					<h1 className="data-heading ">
 						<div className="d-block justify-content-center text-left">

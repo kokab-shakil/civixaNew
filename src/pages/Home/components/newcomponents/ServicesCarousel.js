@@ -257,17 +257,6 @@ const annotationChildData = [
 		component: "Segmentation",
 		icon: segmentation,
 	},
-	{
-		value: "Transcription",
-		component: (
-			<TabData
-				cardImage={Car}
-				headingText="Annotations"
-				paraText="We understand that pixel-perfect annotations are the foundation of an efficiently trained AI-model. We have an in-house team of 30+ annotators. We make sure that the resources working on your data are well trained. With the help of our AI tools and algorithms, we provide extremely precise data with up to 99% accuracy."
-			/>
-		),
-		icon: transcription,
-	},
 ];
 
 const dataGenerationChildData = [
