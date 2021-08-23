@@ -78,16 +78,14 @@ export default function SectionOne({ classes }) {
 				</Row>
 			</Col>
 			<Col className={"position-relative d-block d-md-none"}>
-				<img
-					src={dataLabelImage}
-					className={"img-fluid"}
-					alt="data-label-web"
-				></img>
-				{/* <img
-					className={"hide-grid"}
-					src={repeatGrid}
-					alt="data-label-web"
-				/> */}
+				<ReactPlayer
+					url={Video1}
+					playing={true}
+					width={"100%"}
+					height={"100%"}
+					muted={true}
+					loop={true}
+				/>
 			</Col>
 		</Row>
 	);
