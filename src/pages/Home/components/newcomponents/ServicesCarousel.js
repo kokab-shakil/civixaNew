@@ -91,7 +91,10 @@ const AnnotationChild = () => {
 		<>
 			{annotationChildData.map((item, key) => {
 				return (
-					<div key={key} className="service-carousel-smallIcon">
+					<div
+						key={key}
+						className="service-carousel-smallIcon pr-3 pr-lg-4"
+					>
 						<div
 							className={`d-flex py-2 cursor-pointer ${
 								childSelected === key ? "childSelected" : ""

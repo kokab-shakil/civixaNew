@@ -53,7 +53,7 @@ export default function Home({ handleHeaderColor }) {
 			<CustomSection
 				height="h-auto"
 				bgColor="bg-prussian-blue"
-				classes=""
+				classes="small-banner"
 			>
 				<SmallBanner classes={`${commonClasses} padding-x py-4`} />
 			</CustomSection>

@@ -34,32 +34,6 @@ export const HappyClient = ({ classes }) => {
 				<LogoCarousel />
 				{/* <LogoCarousel /> */}
 			</Col>
-			{/* <Col xs={12} md={12} lg={7}>
-				<img src={car2} alt="" style={{ width: "68vw" }}></img>
-			</Col>
-			<Col xs={12} md={12} lg={5}>
-				<Card
-					style={{
-						boxShadow: "0px 3px 6px #00000029",
-					}}
-				>
-					<Card.Body>
-						<Card.Title>
-							<img src={Manychat} alt="" />
-						</Card.Title>
-						<Card.Text className={"border-bottom pb-3"}>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Ut enim ad minim veniam, quis d
-							minim veniam, quis
-						</Card.Text>
-						<Card.Link href="#">
-							<img src={facebook} alt="" />
-							<h1 className="text-xs">Larry Page</h1>
-						</Card.Link>
-					</Card.Body>
-				</Card>
-			</Col> */}
 		</Row>
 	);
 };

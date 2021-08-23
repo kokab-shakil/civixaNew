@@ -20,6 +20,7 @@
 
 .logoCarousel-items {
 	padding: 0.6rem 2rem;
+	cursor: pointer;
 }
 
 .logoCarousel-items.selected .logo {

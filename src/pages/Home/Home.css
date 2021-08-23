@@ -13,6 +13,10 @@
 	font-size: 3rem;
 } */
 
+.small-banner {
+	box-shadow: 0px 10px 30px #00000029;
+}
+
 @media screen and (max-width: 1024px) {
 	.homebanner-heading {
 		font-size: 3rem;
