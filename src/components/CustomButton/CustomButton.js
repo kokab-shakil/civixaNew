@@ -16,7 +16,7 @@ export default function CustomButton({
 			size={`${btnSize ? btnSize : "small"}`}
 			className={`customButton text-uppercase font-weight-900 btnSize box-shadow-2 ${
 				marginBottom ? marginBottom : "mb-2"
-			} btn-lg px-4 px-lg-5 ${btnClasses}`}
+			} btn-lg px-4 px-lg-5 py-2 ${btnClasses}`}
 			onClick={handlebtn}
 		>
 			{btnText}

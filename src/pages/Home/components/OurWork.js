@@ -25,7 +25,7 @@ export const OurWork = ({ classes }) => {
 				<Col xs={12} md={6} className={"position-relative"}>
 					<img
 						src={ourworkcar}
-						className={"upper-grid top"}
+						className={"upper-grid top img-fluid"}
 						alt="data-label-web"
 					></img>
 					<img

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, Suspense } from "react";
 import { Col, Row } from "react-bootstrap";
 import SquareIcon from "../../../components/SquareIcon/SquareIcon";
 import dataLabelImage from "../../../images/datalabel.svg";
@@ -9,9 +9,11 @@ import repeatGrid from "../../../images/RepeatGrid.svg";
 import Heading from "../../../components/Heading";
 
 import Video1 from "../../../videos/video1.mp4";
+import Video1Thumbnail from "../../../videos/video1.png";
 import ReactPlayer from "react-player/lazy";
 
 export default function SectionOne({ classes }) {
+	const [ready, setReady] = useState(false);
 	return (
 		<Row className={classes}>
 			<Col
@@ -20,6 +22,13 @@ export default function SectionOne({ classes }) {
 				className={"position-relative d-none d-md-block"}
 			>
 				<div className={"upper-grid top"}>
+					{ready === false && (
+						<img
+							src={Video1Thumbnail}
+							alt="vide-Thumbnail"
+							className="thumbnail-image position-absolute"
+						/>
+					)}
 					<ReactPlayer
 						url={Video1}
 						playing={true}
@@ -27,6 +36,8 @@ export default function SectionOne({ classes }) {
 						height={"100%"}
 						muted={true}
 						loop={true}
+						onStart={() => setReady(true)}
+						className={``}
 					/>
 				</div>
 				<img
@@ -78,14 +89,14 @@ export default function SectionOne({ classes }) {
 				</Row>
 			</Col>
 			<Col className={"position-relative d-block d-md-none"}>
-				<ReactPlayer
+				{/* <ReactPlayer
 					url={Video1}
 					playing={true}
 					width={"100%"}
 					height={"100%"}
 					muted={true}
 					loop={true}
-				/>
+				/> */}
 			</Col>
 		</Row>
 	);

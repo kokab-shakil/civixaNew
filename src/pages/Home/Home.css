@@ -1,6 +1,7 @@
 .question {
 	font: normal normal 300 14px/28px Source Sans Pro;
 	color: #58595b;
+	text-align: right;
 }
 
 .question-underlined {
@@ -15,6 +16,10 @@
 
 .small-banner {
 	box-shadow: 0px 10px 30px #00000029;
+}
+
+.thumbnail-image {
+	width: 90%;
 }
 
 @media screen and (max-width: 1024px) {

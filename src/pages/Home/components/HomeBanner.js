@@ -38,7 +38,7 @@ export default function HomeBanner({ classes }) {
 						btnText="GET your quote"
 						btnClasses="text-white"
 					/>
-					<div className={"px-2"}>
+					<div className={"px-4"}>
 						<p className={"m-0"}>
 							Start annotations with Civixa.ai
 						</p>
