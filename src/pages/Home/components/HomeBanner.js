@@ -31,20 +31,24 @@ export default function HomeBanner({ classes }) {
 						"Civixa.ai empowers organisations by providing a combination of pre-requisite services for the training of any AI-model."
 					}
 				/>
-				<Row className="d-flex align-items-end pl-3">
+				<Row className="d-flex align-items-center pl-3">
 					<CustomButton
 						btnSize="md"
 						btnColor="green"
 						btnText="GET your quote"
 						btnClasses="text-white"
 					/>
-					<div className={"px-4"}>
+					<div
+						className={
+							"px-0 px-sm-4 px-xl-4 px-lg-2 px-md-2 pt-3 pt-sm-0 line-height-05"
+						}
+					>
 						<p className={"m-0"}>
 							Start annotations with Civixa.ai
 						</p>
 						<p className="m-0 question">
 							Questions?
-							<Link className="question-underlined">
+							<Link className="question-underlined pl-1">
 								Contact our sales team
 							</Link>
 						</p>
