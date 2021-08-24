@@ -9,6 +9,7 @@ import "./LogoCarousel.css";
 import Manychat from "../../images/Manychat.svg";
 import Car from "../../images/car2.png";
 import Facebook from "../../images/facebook.svg";
+import useWindowSize from "../../WindowSize";
 
 export const LogoCarousel = () => {
 	const [selected, setSelected] = useState(0);
@@ -18,6 +19,9 @@ export const LogoCarousel = () => {
 		setSelected(key);
 		setselectedItem(item);
 	};
+
+	const [width] = useWindowSize();
+	console.log(width);
 
 	const myArrow = ({ type, onClick, isEdge }) => {
 		// type === consts.PREV;
@@ -89,10 +93,15 @@ export const LogoCarousel = () => {
 						</Carousel>
 					</div>
 				</Col>
-				<Col xs={12} md={12} lg={7}>
-					<img src={Car} alt="" style={{ width: "68vw" }}></img>
+				<Col xs={12} md={12} lg={6}>
+					<img
+						src={Car}
+						alt=""
+						className={`${width >= 992 ? "width-50vw" : "w-100"}`}
+						// style={`{width: ${width >= 992 ? "50vw" : "100%"}}`}
+					></img>
 				</Col>
-				<Col xs={12} md={12} lg={5}>
+				<Col xs={12} md={12} lg={6}>
 					<Card
 						style={{
 							boxShadow: "0px 3px 6px #00000029",
