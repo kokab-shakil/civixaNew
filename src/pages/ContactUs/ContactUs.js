@@ -19,7 +19,7 @@ const ContactUs = ({ handleHeaderColor }) => {
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<ContactDetails
-					classes={`${commonClasses} postion-relative padding-y ${
+					classes={`${commonClasses} postion-relative padding-y-contact ${
 						width > 991 ? "padding-right" : ""
 					}`}
 				/>

@@ -3,23 +3,27 @@
 } */
 
 .contactDetails {
-  padding-top: 15vw;
-  padding-bottom: 15vw;
+	padding-top: 15vw;
+	padding-bottom: 15vw;
 }
 
 .contactIcon {
-  width: 24px;
-  height: 20px;
+	width: 24px;
+	height: 20px;
 }
 
 .contactDetails-card {
-  right: 15%;
-  position: absolute;
+	right: 15%;
+	position: absolute;
+}
+.padding-y-contact {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
 }
 
 @media (max-width: 992px) {
-  .contactDetails-card {
-    right: 0%;
-    position: relative;
-  }
+	.contactDetails-card {
+		right: 0%;
+		position: relative;
+	}
 }
