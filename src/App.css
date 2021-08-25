@@ -58,11 +58,11 @@ p {
 	/* word-break: break-word; */
 }
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
 	.data-heading {
 		word-break: break-word;
 	}
-}
+} */
 
 .underlineSm {
 	z-index: -1;

@@ -178,7 +178,7 @@ export default function Header({ headercolor }) {
 							onChange={hanldeInputChange}
 						/>
 						<button
-							className="btnReqDemo py-2 px-4 my-4 text-white"
+							className="btnReqDemo py-2 px-4 mx-3 mx-md-0 my-4 text-white"
 							onClick={handleEmailSubmit}
 						>
 							Request Demo

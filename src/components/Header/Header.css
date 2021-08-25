@@ -222,10 +222,18 @@
 
 .mobile-version.navbar-collapse.collapse.show {
 	height: 100vh;
+	overflow-y: scroll;
 }
 
+.prussian-blue.mobile-version.navbar-collapse.collapse.show .heading {
+	/* color: #12356a; */
+	color: #ffffff;
+}
+.white.mobile-version.navbar-collapse.collapse.show .heading {
+}
 .mobile-version.navbar-collapse.collapse.show .heading {
 	font-size: 2.5rem;
+	color: #12356a;
 }
 
 .mobile-version.navbar-collapse.collapse.show .nav-link {

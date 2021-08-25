@@ -3,10 +3,18 @@ import { Col, Row } from "react-bootstrap";
 import CustomButton from "../../../components/CustomButton/CustomButton";
 import Heading from "../../../components/Heading";
 import HomeBannerImage from "../../../images/home/HomeBanner.png";
-import Teamcore from "../../../images/home/teamcore.png";
-import Forcast from "../../../images/home/Forcast.png";
-import Tars from "../../../images/home/Tars.png";
+// import Teamcore from "../../../images/home/teamcore.png";
+// import Forcast from "../../../images/home/Forcast.png";
+// import Tars from "../../../images/home/Tars.png";
 import { Link } from "react-router-dom";
+
+// Logos
+import Agunsa from "../../../images/homebanner/agunsa.svg";
+import Ddindustries from "../../../images/homebanner/ddindustries.svg";
+import Forcast from "../../../images/homebanner/forcast.svg";
+import Ignous from "../../../images/homebanner/ignous.svg";
+import Tars from "../../../images/homebanner/tars.svg";
+import Teamcore from "../../../images/homebanner/teamcore.svg";
 
 export default function HomeBanner({ classes }) {
 	return (
@@ -60,10 +68,17 @@ export default function HomeBanner({ classes }) {
 							YOU ARE IN A LOVED COMPANY
 						</span>
 					</Col>
-					<Col className="pt-3">
-						<img src={Teamcore} alt="TeamCore" />
-						<img src={Forcast} alt="Forcast" />
-						<img src={Tars} alt="Tars" />
+					<Col className="pt-3 text-center text-sm-left">
+						{logos.map((item, key) => {
+							return (
+								<img
+									key={key}
+									src={item.image}
+									alt={item.name}
+									className="homebanner-logo img-fluid mr-2 mb-2"
+								/>
+							);
+						})}
 					</Col>
 				</Row>
 			</Col>
@@ -73,3 +88,30 @@ export default function HomeBanner({ classes }) {
 		</Row>
 	);
 }
+
+const logos = [
+	{
+		name: "Agunsa",
+		image: Agunsa,
+	},
+	{
+		name: "Ddindustries",
+		image: Ddindustries,
+	},
+	{
+		name: "Forcast",
+		image: Forcast,
+	},
+	{
+		name: "Ignous",
+		image: Ignous,
+	},
+	{
+		name: "Tars",
+		image: Tars,
+	},
+	{
+		name: "Teamcore",
+		image: Teamcore,
+	},
+];

@@ -26,6 +26,10 @@
 	line-height: 0.5;
 }
 
+.homebanner-logo {
+	min-width: 120px;
+}
+
 @media screen and (max-width: 1024px) {
 	.homebanner-heading {
 		font-size: 3rem;
