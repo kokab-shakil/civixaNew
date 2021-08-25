@@ -20,7 +20,7 @@ export const Classification = ({ classes }) => {
 					iconBefore
 					icon={Construction}
 					altText=""
-					headingClass="font-weight-normal"
+					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="Classification"
 					para
 					paraText="You can also track people not following the rules instantly on your screens using your live CCTV footage."
@@ -40,7 +40,7 @@ export const Classification = ({ classes }) => {
 			<Col xs={12} md={8} className={"pt-4 order-lg-first"}>
 				<img
 					src={copyright}
-					className={"upper-grid"}
+					className={"upper-grid img-fluid"}
 					alt="data-label-web"
 				/>
 			</Col>

@@ -65,8 +65,8 @@ export const ServiceServicesCarousel = () => {
 					);
 				})}
 			</Swiper>
-			<Container>
-				<Row>
+			<Container className="pt-2">
+				<Row className="padding-right">
 					<Col xs={12}>
 						<img src={child} className="img-fluid" />
 					</Col>

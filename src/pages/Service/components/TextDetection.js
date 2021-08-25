@@ -38,12 +38,12 @@ export const TextDetection = ({ classes }) => {
 
 	return (
 		<Row className={classes}>
-			<Col xs={12} md={4}>
+			<Col xs={12} sm={12} md={4}>
 				<Heading
 					iconBefore
 					icon={Construction}
 					altText=""
-					headingClass="font-weight-normal"
+					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="TEXT DETECTION"
 					para
 					paraText="You can also track people not following the rules instantly on your screens using your live CCTV footage."
@@ -67,10 +67,10 @@ export const TextDetection = ({ classes }) => {
 					);
 				})}
 			</Col>
-			<Col xs={12} md={8} className={"pt-4"}>
+			<Col xs={12} sm={12} md={8} className={"pt-4"}>
 				<img
 					src={dataImage}
-					className={"upper-grid"}
+					className={"upper-grid img-fluid"}
 					alt="data-label-web"
 				/>
 			</Col>

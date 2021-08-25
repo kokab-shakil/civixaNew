@@ -224,4 +224,11 @@
 	height: 100vh;
 }
 
-/* .mobile-version.navbar-collapse.collapse.show  */
+.mobile-version.navbar-collapse.collapse.show .heading {
+	font-size: 2.5rem;
+}
+
+.mobile-version.navbar-collapse.collapse.show .nav-link {
+	font-size: 2.2rem;
+	line-height: 2rem;
+}

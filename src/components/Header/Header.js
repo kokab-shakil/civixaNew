@@ -122,7 +122,9 @@ export default function Header({ headercolor }) {
 				>
 					{width <= 991 && (
 						<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
-							<h3 className="px-3">Enabling AI Transformation</h3>
+							<h3 className="px-3 heading">
+								Enabling AI Transformation
+							</h3>
 						</Nav>
 					)}
 					<Nav className="mr-auto pl-5 align-items-lg-center">

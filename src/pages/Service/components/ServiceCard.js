@@ -27,12 +27,12 @@ export const ServiceCard = ({ classes }) => {
 			<Col
 				xs={12}
 				sm={12}
-				className="d-flex flex-wrap justify-content-center"
+				className="d-flex flex-wrap justify-content-center px-xs-0"
 			>
 				{data.map((item) => {
 					return (
 						<CustomCard
-							CardClasses="serviceCard d-flex flex-column align-items-start justify-content-around mr-3 mb-4 px-4 py-3"
+							CardClasses="serviceCard d-flex flex-column align-items-start justify-content-around mr-md-3 mb-4 px-3 px-md-4 py-3"
 							icon={Accuracy}
 							iconClass="pt-4"
 							HeadingText={item.HeadingText}
