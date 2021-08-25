@@ -6,7 +6,7 @@
 	font-size: 0.8125rem;
 	border-radius: 8px;
 	width: 202px;
-	height: 48px;
+	min-height: 48px;
 	box-shadow: 2px 4px 8px #00000029;
 }
 

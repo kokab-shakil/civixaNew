@@ -127,19 +127,20 @@ export const Packages = ({ classes }) => {
 					<Col
 						xs={12}
 						md={6}
-						className="d-flex flex-column justify-content-sm-between padding-all package-details"
+						className="d-flex flex-column justify-content-sm-between package-details-container px-0"
 					>
-						<div>
+						<div className="package-details d-flex flex-column">
 							<SideIcon
 								icon={Enterprise}
 								iconClass="pr-3"
-								sideIconClass=""
+								// sideIconClass=""
 								iconHeading=""
-								sideIconClass="justify-content-center"
+								alignLg="align-items-lg-center"
+								sideIconClass="justify-content-center py-3 package-details-heading"
 								HeadingText="Enterprise"
 								headingClass="text-white mb-0 package-heading text-uppercase"
 							/>
-							<div className="w-max m-auto pt-5">
+							<div className="m-auto pt-5 px-3 px-sm-0">
 								{data.map((item) => {
 									return (
 										<Heading

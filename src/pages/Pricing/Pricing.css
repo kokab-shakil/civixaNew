@@ -1,34 +1,49 @@
 .pricingBanner {
-  height: 430px;
+	height: 430px;
 }
 
 .pricingServiceCard {
-  margin-top: -190px;
+	margin-top: -190px;
+}
+
+@media screen and (max-width: 378px) {
+	.pricingServiceCard {
+		margin-top: -40vw;
+	}
 }
 
 .package-heading {
-  letter-spacing: 3.6px;
+	letter-spacing: 3.6px;
 }
 
 .package-details .package-btn {
-  font-size: 1rem;
-  box-shadow: 2px 4px 8px #00000029;
-  border-radius: 28px;
+	font-size: 1rem;
+	box-shadow: 2px 4px 8px #00000029;
+	border-radius: 28px;
 }
 
 .pricing-table-heading-container {
-  border-bottom: 1px solid #00000029;
+	border-bottom: 1px solid #00000029;
 }
 
 .pricing-table-heading {
-  letter-spacing: 3.6px;
+	letter-spacing: 3.6px;
 }
 
 .btn.btn-lg.pricing-package-button {
-  font-size: 1.35rem;
-  font-weight: bold;
-  border-radius: 0%;
+	font-size: 1.35rem;
+	font-weight: bold;
+	border-radius: 0%;
 }
 .btn.btn-lg.pricing-package-button::after {
-  content: "";
+	content: "";
+}
+
+.package-details-container {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+
+.package-details-heading {
+	border-bottom: 1px solid gray;
 }

@@ -14,12 +14,13 @@ export const SideIcon = ({
 	sideIconClass,
 	alignLeft,
 	children,
+	alignLg,
 }) => {
 	return (
 		<div
 			className={`d-flex flex-column flex-lg-row ${
 				alignLeft ? alignLeft : "align-items-center"
-			} align-items-lg-start  ${sideIconClass}`}
+			} ${alignLg ? alignLg : "align-items-lg-start"}  ${sideIconClass}`}
 		>
 			<img src={icon} alt={altText} className={iconClass} />
 			<div className={iconHeading}>

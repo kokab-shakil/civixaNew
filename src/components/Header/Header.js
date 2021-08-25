@@ -118,8 +118,13 @@ export default function Header({ headercolor }) {
 					id="responsive-navbar-nav"
 					className={`${
 						color === "prussian-blue" ? "prussian-blue" : "white"
-					}`}
+					} ${width <= 991 ? "mobile-version" : "desktop-version"}`}
 				>
+					{width <= 991 && (
+						<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
+							<h3 className="px-3">Enabling AI Transformation</h3>
+						</Nav>
+					)}
 					<Nav className="mr-auto pl-5 align-items-lg-center">
 						<Link
 							eventKey="1"
