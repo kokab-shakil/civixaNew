@@ -42,7 +42,7 @@ export const ContactDetails = ({ classes }) => {
 			>
 				<Heading
 					HeadingText="In 30 Minutes You Will…"
-					headingClass="text-white w-100"
+					headingClass="text-white text-center w-100"
 				/>
 
 				<Row className={`justify-content-center py-3 px-5 px-md-4 `}>

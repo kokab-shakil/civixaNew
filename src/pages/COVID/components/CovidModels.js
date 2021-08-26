@@ -40,7 +40,7 @@ export const CovidModels = ({ classes }) => {
 						<Col xs={12} md={6} className="pb-4">
 							<CustomCard CardClasses="pl-3 pr-2 py-3 covidModelsCard">
 								<SideIcon
-									iconHeading="d-flex flex-column pl-2"
+									iconHeading="d-flex flex-column px-2"
 									icon={item.icon}
 									iconClass="img-fluid icon mx-3"
 									altText="sideIcon"

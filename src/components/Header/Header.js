@@ -201,6 +201,9 @@ const MobileVersion = ({ setExpanded }) => {
 	return (
 		<>
 			<Nav className="mr-auto pl-5 align-items-lg-center">
+				<Nav className="d-flex pl-lg-0 pl-3 align-items-lg-center">
+					<h3 className="heading">Enabling AI Transformation</h3>
+				</Nav>
 				<Link
 					eventKey="1"
 					to="/"
