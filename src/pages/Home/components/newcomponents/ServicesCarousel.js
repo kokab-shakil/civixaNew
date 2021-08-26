@@ -76,8 +76,8 @@ export const ServicesCarousel = () => {
 };
 
 const AnnotationChild = () => {
-	const [childSelected, setChildSelected] = useState(1);
-	const [option, selectedOption] = useState(annotationChildData[1].component);
+	const [childSelected, setChildSelected] = useState(0);
+	const [option, selectedOption] = useState(annotationChildData[0].component);
 
 	const handleClick = (e, selected) => {
 		const optionValue = annotationChildData.find(
@@ -208,17 +208,6 @@ const annotationChildData = [
 			/>
 		),
 		icon: box,
-	},
-	{
-		value: "Cuboid",
-		component: (
-			<TabData
-				cardImage={Car}
-				headingText="Annotations"
-				paraText="We understand that pixel-perfect annotations are the foundation of an efficiently trained AI-model. We have an in-house team of 30+ annotators. We make sure that the resources working on your data are well trained. With the help of our AI tools and algorithms, we provide extremely precise data with up to 99% accuracy."
-			/>
-		),
-		icon: cuboid,
 	},
 	{
 		value: "Classification",

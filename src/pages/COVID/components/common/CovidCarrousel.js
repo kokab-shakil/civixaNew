@@ -13,6 +13,17 @@ export const CovidCarrousel = () => {
 			sideSize={0.1}
 			arrows={true}
 			// scrollOnDevice={true}
+			breakpoints={[
+				{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1,
+						sidesOpacity: 0,
+						sideSize: 0,
+						arrows: false,
+					},
+				},
+			]}
 		>
 			<div>
 				<img alt="" src={Dashboard} className="img-fluid" />

@@ -75,11 +75,6 @@ export const TypesofAnnotion = ({ classes }) => {
 
 const childData = [
 	{
-		value: "Box",
-		img: TypeOfService,
-		icon: box,
-	},
-	{
 		value: "Cuboid",
 		img: TypeOfService,
 		icon: cuboid,
@@ -108,10 +103,5 @@ const childData = [
 		value: "Segmentation",
 		img: TypeOfService,
 		icon: segmentation,
-	},
-	{
-		value: "Transcription",
-		img: TypeOfService,
-		icon: transcription,
 	},
 ];
