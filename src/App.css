@@ -273,7 +273,7 @@ p {
 	width: 40%;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
 	.padding-right-sm {
 		padding-right: 10vw;
 	}

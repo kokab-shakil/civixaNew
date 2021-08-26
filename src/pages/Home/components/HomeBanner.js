@@ -68,7 +68,7 @@ export default function HomeBanner({ classes }) {
 							YOU ARE IN A LOVED COMPANY
 						</span>
 					</Col>
-					<Col className="pt-3 text-center text-sm-left">
+					<Col className="pt-3 text-sm-left">
 						{logos.map((item, key) => {
 							return (
 								<img

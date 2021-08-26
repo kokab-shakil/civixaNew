@@ -18,6 +18,7 @@ import "./ServiceServicesCarousel.css";
 
 // import Swiper core and required modules
 import SwiperCore, { Navigation } from "swiper/core";
+import useWindowSize from "../../../WindowSize";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -25,15 +26,9 @@ SwiperCore.use([Navigation]);
 export const ServiceServicesCarousel = () => {
 	const [selected, setSelected] = useState(1);
 	const [child, setChild] = useState(Typeofservice);
-	// const [childSelected, setChildSelected] = useState(1);
-	// const [option, selectedOption] = useState(TabData);
 
-	// const handleClick = (e, selected) => {
-	// 	const optionValue = childData.find((element) => element.value === e);
-	// 	selectedOption(optionValue.component);
-	// 	setChildSelected(selected);
-	// 	console.log(childSelected);
-	// };
+	const [width] = useWindowSize();
+
 	const handleClick = (e) => {
 		setSelected(e + 1);
 		const item = data.find((a) => a.id === e + 1);
@@ -66,7 +61,7 @@ export const ServiceServicesCarousel = () => {
 				})}
 			</Swiper>
 			<Container className="pt-2">
-				<Row className="padding-right">
+				<Row className={`${width <= 768 && "padding-right"}`}>
 					<Col xs={12}>
 						<img src={child} className="img-fluid" />
 					</Col>

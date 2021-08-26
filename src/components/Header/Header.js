@@ -74,6 +74,11 @@ export default function Header({ headercolor }) {
 				>
 					<Link
 						to="/"
+						onClick={() =>
+							setTimeout(() => {
+								setExpanded(false);
+							}, 200)
+						}
 						className="d-flex align-items-center  navbar-brand"
 					>
 						<img
@@ -120,72 +125,151 @@ export default function Header({ headercolor }) {
 						color === "prussian-blue" ? "prussian-blue" : "white"
 					} ${width <= 991 ? "mobile-version" : "desktop-version"}`}
 				>
-					{width <= 991 && (
-						<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
-							<h3 className="px-3 heading">
-								Enabling AI Transformation
-							</h3>
-						</Nav>
+					{width <= 991 ? (
+						<MobileVersion setExpanded={setExpanded} />
+					) : (
+						<>
+							<Nav
+								className={`mr-auto pl-5 align-items-lg-center`}
+							>
+								<Link
+									eventKey="1"
+									to="/"
+									onClick={() => setExpanded(false)}
+									className="px-3 nav-link"
+								>
+									Home
+								</Link>
+								<Link
+									onClick={() => setExpanded(false)}
+									eventKey="2"
+									to="/pricing"
+									className="px-3 nav-link"
+								>
+									Pricing
+								</Link>
+								<Link
+									onClick={() => setExpanded(false)}
+									eventKey="3"
+									to="/service"
+									className="px-3 nav-link"
+								>
+									Services
+								</Link>
+								<Link
+									onClick={() => setExpanded(false)}
+									eventKey="5"
+									to="/covid"
+									className="px-3 nav-link"
+								>
+									Covid
+								</Link>
+								<Link
+									onClick={() => setExpanded(false)}
+									eventKey="4"
+									to="/contact"
+									className="px-3 nav-link"
+								>
+									Contact Us
+								</Link>
+							</Nav>
+							<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
+								<input
+									type="email"
+									className="inputReqDemo pl-2 d-none d-lg-block"
+									placeholder="test@test.com"
+									value={inputValue}
+									onChange={hanldeInputChange}
+								/>
+								<button
+									className="btnReqDemo py-2 px-4 mx-3 mx-md-0 my-4 text-white"
+									onClick={handleEmailSubmit}
+								>
+									Request Demo
+								</button>
+							</Nav>
+						</>
 					)}
-					<Nav className="mr-auto pl-5 align-items-lg-center">
-						<Link
-							eventKey="1"
-							to="/"
-							onClick={() => setExpanded(false)}
-							className="px-3 nav-link"
-						>
-							Home
-						</Link>
-						<Link
-							onClick={() => setExpanded(false)}
-							eventKey="2"
-							to="/pricing"
-							className="px-3 nav-link"
-						>
-							Pricing
-						</Link>
-						<Link
-							onClick={() => setExpanded(false)}
-							eventKey="3"
-							to="/service"
-							className="px-3 nav-link"
-						>
-							Services
-						</Link>
-						<Link
-							onClick={() => setExpanded(false)}
-							eventKey="5"
-							to="/covid"
-							className="px-3 nav-link"
-						>
-							Covid
-						</Link>
-						<Link
-							onClick={() => setExpanded(false)}
-							eventKey="4"
-							to="/contact"
-							className="px-3 nav-link"
-						>
-							Contact Us
-						</Link>
-					</Nav>
-					<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
-						<input
-							type="email"
-							className="inputReqDemo pl-2 d-none d-lg-block"
-							placeholder="test@test.com"
-							value={inputValue}
-							onChange={hanldeInputChange}
-						/>
-						<button
-							className="btnReqDemo py-2 px-4 mx-3 mx-md-0 my-4 text-white"
-							onClick={handleEmailSubmit}
-						>
-							Request Demo
-						</button>
-					</Nav>
 				</Navbar.Collapse>
 			</div>
 		</Navbar>
 	);
 }
+
+const MobileVersion = ({ setExpanded }) => {
+	const history = useHistory();
+	return (
+		<>
+			<Nav className="mr-auto pl-5 align-items-lg-center">
+				<Link
+					eventKey="1"
+					to="/"
+					onClick={() =>
+						setTimeout(() => {
+							setExpanded(false);
+						}, 200)
+					}
+					className="px-3  mobile-nav-link"
+				>
+					Home
+				</Link>
+				<Link
+					onClick={() =>
+						setTimeout(() => {
+							setExpanded(false);
+						}, 200)
+					}
+					eventKey="2"
+					to="/pricing"
+					className="px-3 mobile-nav-link"
+				>
+					Pricing
+				</Link>
+				<Link
+					onClick={() =>
+						setTimeout(() => {
+							setExpanded(false);
+						}, 200)
+					}
+					eventKey="3"
+					to="/service"
+					className="px-3 mobile-nav-link"
+				>
+					Services
+				</Link>
+				<Link
+					onClick={() =>
+						setTimeout(() => {
+							setExpanded(false);
+						}, 200)
+					}
+					eventKey="5"
+					to="/covid"
+					className="px-3 mobile-nav-link"
+				>
+					Covid
+				</Link>
+				<Link
+					onClick={() =>
+						setTimeout(() => {
+							setExpanded(false);
+						}, 200)
+					}
+					eventKey="4"
+					to="/contact"
+					className="px-3 mobile-nav-link"
+				>
+					Contact Us
+				</Link>
+			</Nav>
+			<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
+				<button
+					className="btnReqDemo py-2 px-4 mx-3 mx-md-0 my-4 text-white"
+					onClick={() => history.push("/contact")}
+				>
+					Request Demo
+				</button>
+			</Nav>
+		</>
+	);
+};

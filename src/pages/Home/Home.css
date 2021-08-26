@@ -27,12 +27,15 @@
 }
 
 .homebanner-logo {
-	min-width: 120px;
+	width: 144px;
 }
 
 @media screen and (max-width: 1024px) {
 	.homebanner-heading {
 		font-size: 3rem;
+	}
+	.homebanner-logo {
+		width: 120px;
 	}
 }
 

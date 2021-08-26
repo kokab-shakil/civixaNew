@@ -27,3 +27,11 @@
 		position: relative;
 	}
 }
+
+.contactusbanner {
+	padding-bottom: 5vw;
+}
+
+.contactusDetails {
+	margin-top: -5vw;
+}

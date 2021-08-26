@@ -52,11 +52,15 @@
   background-color: #05386b !important;
 } */
 
-.header.navbar.navbar-light.bg-prussian-blue .navbar-toggler {
+/* .header.navbar.navbar-light.bg-prussian-blue .navbar-toggler {
 	border: 1px solid white;
 }
 .header.navbar.navbar-light.bg-color-white .navbar-toggler {
 	border: 1px solid #12356a;
+} */
+
+.header.navbar.navbar-light .navbar-toggler {
+	border: none;
 }
 
 .header .navbar-toggler.collapsed .navbar-toggler-icon.icon-prussian-blue {
@@ -141,13 +145,17 @@
 	color: #ffffff;
 } */
 
-#responsive-navbar-nav .nav-link {
-	animation: fadeIn 5s;
-	-webkit-animation: fadeIn 5s;
-	-moz-animation: fadeIn 5s;
-	-o-animation: fadeIn 5s;
-	-ms-animation: fadeIn 5s;
+/* #responsive-navbar-nav {
+	animation: 2s all 3s ease-in-out;
 }
+
+#responsive-navbar-nav .nav-link {
+	animation: fadeIn 0.5s ease-in-out;
+	-webkit-animation: fadeIn 0.5s;
+	-moz-animation: fadeIn 0.5s;
+	-o-animation: fadeIn 0.5s;
+	-ms-animation: fadeIn 0.5s;
+} */
 /* 
 .fade-in-image {
   animation: fadeIn 5s;
@@ -229,14 +237,56 @@
 	/* color: #12356a; */
 	color: #ffffff;
 }
-.white.mobile-version.navbar-collapse.collapse.show .heading {
-}
+
 .mobile-version.navbar-collapse.collapse.show .heading {
-	font-size: 2.5rem;
+	font-size: 1rem;
 	color: #12356a;
 }
 
-.mobile-version.navbar-collapse.collapse.show .nav-link {
+.mobile-version.navbar-collapse.collapse.show .mobile-nav-link {
 	font-size: 2.2rem;
-	line-height: 2rem;
+	line-height: 3rem;
+	text-decoration: none;
 }
+
+.white.mobile-version.navbar-collapse.collapse.show .mobile-nav-link {
+	color: #12356a;
+}
+.prussian-blue.mobile-version.navbar-collapse.collapse.show .mobile-nav-link {
+	color: #ffffff;
+}
+
+.white.desktop-version.navbar-collapse .nav-link {
+	font: normal normal 600 13px/20px Source Sans Pro;
+}
+
+/* For header toggle glitching*/
+
+.mobile-version.navbar-collapse .heading {
+	font-size: 1rem;
+	color: #12356a;
+}
+
+.mobile-version.navbar-collapse .mobile-nav-link {
+	font-size: 2.2rem;
+	line-height: 3rem;
+	text-decoration: none;
+	animation-delay: 0s;
+}
+.white.mobile-version.navbar-collapse {
+	background-color: #ffffff;
+}
+
+.white.mobile-version.navbar-collapse .mobile-nav-link {
+	color: #12356a;
+}
+
+.prussian-blue.mobile-version.navbar-collapse {
+	background-color: #12356a;
+}
+
+.prussian-blue.mobile-version.navbar-collapse .mobile-nav-link {
+	color: #ffffff;
+}
+
+/**/

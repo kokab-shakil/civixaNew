@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import CustomSection from "../../components/CustomSection";
+import useWindowSize from "../../WindowSize";
 import { Classification } from "./components/Classification";
 import { ServiceBanner } from "./components/ServiceBanner";
 import { ServiceCard } from "./components/ServiceCard";
@@ -14,6 +15,9 @@ export default function Service({ handleHeaderColor }) {
 	handleHeaderColor("prussian-blue");
 	const commonClasses =
 		"d-flex align-items-center justify-content-center h-100";
+
+	const [width] = useWindowSize();
+
 	return (
 		<>
 			<CustomSection
@@ -37,7 +41,9 @@ export default function Service({ handleHeaderColor }) {
 				classes="typeofservices"
 			>
 				<TypeofServices
-					classes={`${commonClasses} padding-y padding-left`}
+					classes={`${commonClasses}  ${
+						width >= 768 ? "padding-all" : "padding-y padding-left"
+					}`}
 				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">

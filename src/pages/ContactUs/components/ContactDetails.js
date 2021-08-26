@@ -4,6 +4,9 @@ import CustomButton from "../../../components/CustomButton/CustomButton";
 import CustomCard from "../../../components/CustomCard/CustomCard";
 import Heading from "../../../components/Heading";
 import tick from "../../../images/tick.svg";
+import useWindowSize from "../../../WindowSize";
+
+import "./ContactDetails.css";
 
 const data = [
 	{
@@ -24,6 +27,7 @@ const data = [
 ];
 
 export const ContactDetails = ({ classes }) => {
+	const [width] = useWindowSize();
 	return (
 		<Row
 			className={`${classes} position-relative justify-content-lg-start`}
@@ -32,14 +36,16 @@ export const ContactDetails = ({ classes }) => {
 				xs={12}
 				md={12}
 				lg={8}
-				className="bg-prussian-blue d-flex flex-column align-items-center justify-content-center padding-all img-fluid mb-md-0 mb-4 contactDetails left-0"
+				className={`bg-prussian-blue d-flex flex-column align-items-center justify-content-center padding-all img-fluid mb-md-0 mb-4 contactDetails left-0 ${
+					width <= 992 && "contactusinfo"
+				}`}
 			>
 				<Heading
 					HeadingText="In 30 Minutes You Will…"
 					headingClass="text-white w-100"
 				/>
 
-				<Row className="justify-content-center py-3 px-5 px-md-4">
+				<Row className={`justify-content-center py-3 px-5 px-md-4 `}>
 					{data.map((item) => {
 						return (
 							<Col
@@ -65,7 +71,14 @@ export const ContactDetails = ({ classes }) => {
 					})}
 				</Row>
 			</Col>
-			<Col xs={12} md={12} lg={4} className="contactDetails-card">
+			<Col
+				xs={12}
+				md={12}
+				lg={4}
+				className={`contactDetails-card ${
+					width <= 992 && "contactusinfo-form"
+				}`}
+			>
 				<CustomCard
 					CardClasses="px-5 padding-y my-3 contactCard "
 					HeadingText="Let's meet"
