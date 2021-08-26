@@ -83,14 +83,7 @@ export default function Header({ headercolor }) {
 					>
 						<img
 							alt="Civixa"
-							src={
-								logoColor
-								//   `${
-								// 	headercolor !== "white" || headersticky
-								// 		? civixaWhite
-								// 		: civixa
-								// }`
-							}
+							src={logoColor}
 							width="46"
 							height="50"
 							className="d-inline-block align-top icon-white"

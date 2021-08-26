@@ -204,19 +204,31 @@ const annotationChildData = [
 			<TabData
 				cardImage={Car}
 				headingText="Bouding Box"
-				paraText="Marking objects on the image or video in bounding boxes and tracking selected objects through all the frames with the video."
+				paraText="The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training"
 			/>
 		),
 		icon: box,
 	},
-	{
-		value: "Classification",
-		component: "Classification",
-		icon: classification,
-	},
+	// {
+	// 	value: "Classification",
+	// 	component: (
+	// 		<TabData
+	// 			cardImage={Car}
+	// 			headingText="Bouding Box"
+	// 			paraText="The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training"
+	// 		/>
+	// 	),
+	// 	icon: classification,
+	// },
 	{
 		value: "Point",
-		component: "Point",
+		component: (
+			<TabData
+				cardImage={Car}
+				headingText="Point Annotation"
+				paraText="Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image."
+			/>
+		),
 		icon: point,
 	},
 	{
@@ -224,8 +236,8 @@ const annotationChildData = [
 		component: (
 			<TabData
 				cardImage={Car}
-				headingText="Annotations"
-				paraText="We understand that pixel-perfect annotations are the foundation of an efficiently trained AI-model. We have an in-house team of 30+ annotators. We make sure that the resources working on your data are well trained. With the help of our AI tools and algorithms, we provide extremely precise data with up to 99% accuracy."
+				headingText="Polygons"
+				paraText="Polygons are used to draw precise outlines on different objects in an image. Polygons are usually used in creating datasets for training precise application models."
 			/>
 		),
 		icon: polygons,
@@ -235,15 +247,21 @@ const annotationChildData = [
 		component: (
 			<TabData
 				cardImage={Car}
-				headingText="Annotations"
-				paraText="We understand that pixel-perfect annotations are the foundation of an efficiently trained AI-model. We have an in-house team of 30+ annotators. We make sure that the resources working on your data are well trained. With the help of our AI tools and algorithms, we provide extremely precise data with up to 99% accuracy."
+				headingText="Polylines"
+				paraText="Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads."
 			/>
 		),
 		icon: polylines,
 	},
 	{
 		value: "Segmentation",
-		component: "Segmentation",
+		component: (
+			<TabData
+				cardImage={Car}
+				headingText="Semantic segmentation"
+				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
+			/>
+		),
 		icon: segmentation,
 	},
 ];
