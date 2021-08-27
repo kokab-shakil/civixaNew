@@ -7,7 +7,23 @@
 .question-underlined {
 	font: normal normal 300 14px/28px Source Sans Pro;
 	color: #58595b;
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	border-bottom: 0.5px solid #383737;
+	padding-bottom: 3px;
+}
+.question-underlined:hover {
+	text-decoration: none;
+	color: #58595b;
+}
+
+.header-banner-logo-text {
+	color: #05386b;
+	font: normal normal 300 12px/12px Source Sans Pro;
+}
+
+.header-banner-logo-text1 {
+	color: #05386b;
+	font: normal normal 400 12px/28px Source Sans Pro;
 }
 
 /* .homebanner-heading {
@@ -37,6 +53,25 @@
 	.homebanner-logo {
 		width: 120px;
 	}
+}
+
+.data-square-icon-heading {
+	font: normal normal 600 15px/20px Source Sans Pro;
+	letter-spacing: 0px;
+	color: #12356a;
+}
+
+video {
+	object-fit: cover;
+}
+
+.happyclients-card {
+	box-shadow: 0px 3px 6px #00000029;
+	width: 480px;
+	height: 300px;
+}
+.data-heading.bannerheading {
+	font-size: 28px;
 }
 
 @media screen and (max-width: 440px) {

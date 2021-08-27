@@ -3,12 +3,21 @@ import { Col, Row } from "react-bootstrap";
 import CustomButton from "../CustomButton/CustomButton";
 import Heading from "../Heading";
 import car from "../../images/car.svg";
+import "./TabData.css";
 
-export default function TabData({ cardImage, headingText, paraText }) {
+export default function TabData({
+	cardImage,
+	headingText,
+	paraText,
+	cardClass,
+	twoButton,
+}) {
 	return (
 		<Row className={"d-flex justify-content-center m-0"}>
 			<div
-				className={"card p-0 d-flex flex-wrap flex-row mb-3 border-all"}
+				className={`card p-0 d-flex flex-wrap flex-row mb-3 border-all ${
+					cardClass && cardClass
+				}`}
 			>
 				<Col xs={12} md={6} className="p-0">
 					<img
@@ -17,9 +26,10 @@ export default function TabData({ cardImage, headingText, paraText }) {
 						alt="car"
 					/>
 				</Col>
-				<Col xs={12} md={6} className="p-4">
+				<Col xs={12} md={6} className="tab-data-content-container">
 					<Heading
-						headingClass=""
+						subHeading
+						headingClass="sub-heading"
 						HeadingText={headingText}
 						para
 						paraText={paraText}
@@ -32,6 +42,14 @@ export default function TabData({ cardImage, headingText, paraText }) {
 					btnClasses="text-white "
 					btnColor="green"
 				/>
+				{twoButton && (
+					<CustomButton
+						btnSize="medium"
+						btnText="Get A Quote"
+						btnClasses="text-prussian-blue ml-4 service-carousel-button"
+						btnColor="white"
+					/>
+				)}
 			</div>
 		</Row>
 	);

@@ -3,6 +3,10 @@ div {
 	font-family: "Source Sans Pro", sans-serif;
 }
 
+::placeholder {
+	color: #a5b3c6;
+}
+
 .bg-prussian-blue {
 	background-color: #12356a;
 	color: white;
@@ -50,10 +54,11 @@ h3 {
 p {
 	color: #58595b;
 	font-size: 16px;
+	line-height: 28px;
 }
 
 .data-heading {
-	font-weight: bold;
+	font-weight: 900;
 	font-size: 2.125rem;
 	/* word-break: break-word; */
 }
@@ -78,14 +83,14 @@ p {
 }
 
 .upper-grid.top {
-	padding-left: 6%;
-	padding-bottom: 10%;
+	padding-left: 2%;
+	padding-bottom: 6%;
 }
 
 .hide-grid {
 	position: absolute;
-	left: 0%;
-	bottom: 0%;
+	left: -2%;
+	bottom: -10%;
 	z-index: -1;
 }
 
@@ -304,4 +309,8 @@ select:focus {
 
 .line-height-7 {
 	line-height: 0.7;
+}
+
+.line-height-1 {
+	line-height: 1;
 }

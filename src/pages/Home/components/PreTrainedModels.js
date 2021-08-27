@@ -25,7 +25,7 @@ export default function PreTrainedModels({ classes }) {
 				xs={12}
 				md={9}
 				className={
-					"d-flex flex-wrap justify-content-center justify-content-lg-start"
+					"d-flex flex-wrap justify-content-center justify-content-lg-around px-md-0"
 				}
 			>
 				<CustomCard
@@ -68,7 +68,11 @@ export default function PreTrainedModels({ classes }) {
 					btnClasses="text-white mt-2 mr-3"
 				/>
 			</Col>
-			<Col xs={12} md={3} className="flex-column d-none d-md-block">
+			<Col
+				xs={12}
+				md={3}
+				className="flex-column d-none d-md-flex py-md-3"
+			>
 				<Heading
 					HeadingText={[
 						<span className="position-relative">
@@ -76,7 +80,7 @@ export default function PreTrainedModels({ classes }) {
 						</span>,
 						"models",
 					]}
-					headingClass="font-weight-900 text-left"
+					headingClass="font-weight-900 text-left "
 					para
 					paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
 				/>

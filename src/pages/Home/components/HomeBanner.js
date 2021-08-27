@@ -56,7 +56,7 @@ export default function HomeBanner({ classes }) {
 						</p>
 						<p className="m-0 question">
 							Questions?
-							<Link className="question-underlined pl-1">
+							<Link className="question-underlined ml-1">
 								Contact our sales team
 							</Link>
 						</p>
@@ -64,9 +64,10 @@ export default function HomeBanner({ classes }) {
 				</Row>
 				<Row className="pt-3 pt-md-5 d-flex flex-column">
 					<Col>
-						<span className="text-prussian-blue">
-							YOU ARE IN A LOVED COMPANY
-						</span>
+						<p className="mb-0 header-banner-logo-text">LOVED BY</p>
+						<p className="header-banner-logo-text1">
+							THE WORLD'S LEADING TECHNOLOGY COMPANIES
+						</p>
 					</Col>
 					<Col className="pt-3 text-sm-left">
 						{logos.map((item, key) => {
@@ -83,7 +84,11 @@ export default function HomeBanner({ classes }) {
 				</Row>
 			</Col>
 			<Col xs={12} md={6} className={"p-0 d-none d-lg-block"}>
-				<img src={HomeBannerImage} className={"w-100 h-100"} />
+				<img
+					src={HomeBannerImage}
+					alt="Home Banner"
+					className={"w-100 h-100"}
+				/>
 			</Col>
 		</Row>
 	);

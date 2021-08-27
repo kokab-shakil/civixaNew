@@ -6,8 +6,6 @@ import { ServiceCarousel } from "../../../components/ItemCarousel/ServiceCarouse
 import { ServicesCarousel } from "./newcomponents/ServicesCarousel";
 
 export default function SectionTwo({ classes }) {
-	let width = window.innerWidth;
-
 	return (
 		<Row className={classes}>
 			<Heading

@@ -1,17 +1,16 @@
 .logo-carousel-button {
 	background: transparent;
-	border: 3px solid #12356a;
+	border: none;
 	border-radius: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 4px;
-	height: 30px;
 }
 
 .logo-carousel-icon {
-	width: 15px;
-	height: 12px;
+	height: 28px;
+	width: 28px;
 }
 
 .logo-carousel-icon.left {

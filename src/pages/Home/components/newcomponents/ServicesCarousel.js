@@ -13,6 +13,15 @@ import polylines from "../../../../images/CarouselIcons/polylines.svg";
 import segmentation from "../../../../images/CarouselIcons/segmentation.svg";
 import transcription from "../../../../images/CarouselIcons/Transcription.svg";
 
+// New Icons
+import BoxBlue from "../../../../images/NewCarouselIcons/box-blue.svg";
+import PointBlue from "../../../../images/NewCarouselIcons/point-blue.svg";
+import PolygonsBlue from "../../../../images/NewCarouselIcons/polygons-blue.svg";
+import PolylinesBlue from "../../../../images/NewCarouselIcons/polylines.svg";
+import SegmentationBlue from "../../../../images/NewCarouselIcons/sementation.svg";
+import ClassificationBlue from "../../../../images/NewCarouselIcons/classification-blue.svg";
+import Keypoint from "../../../../images/NewCarouselIcons/keypoin.svg";
+
 import Car from "../../../../images/car.svg";
 
 // Import Swiper React components
@@ -108,6 +117,61 @@ const AnnotationChild = () => {
 								className={`tabIcon pr-2 ${
 									childSelected === key
 										? "childSelectedIcon"
+										: "notSelected"
+								}`}
+							/>
+							{item.value}
+						</div>
+					</div>
+				);
+			})}
+			<Container className="pt-4">
+				<Row className="d-flex justify-content-center align-items-center">
+					<div className="padding-right-sm max-width-865">
+						{option}
+					</div>
+				</Row>
+			</Container>
+		</>
+	);
+};
+
+const DGenerationChild = () => {
+	const [childSelected, setChildSelected] = useState(0);
+	const [option, selectedOption] = useState(
+		dataGenerationChildData[0].component
+	);
+
+	const handleClick = (e, selected) => {
+		const optionValue = dataGenerationChildData.find(
+			(element) => element.value === e
+		);
+		selectedOption(optionValue.component);
+		setChildSelected(selected);
+		console.log(childSelected);
+	};
+
+	return (
+		<>
+			{dataGenerationChildData.map((item, key) => {
+				return (
+					<div
+						key={key}
+						className="service-carousel-smallIcon pr-3 pr-lg-4"
+					>
+						<div
+							className={`d-flex py-2 cursor-pointer ${
+								childSelected === key ? "childSelected" : ""
+							}`}
+							value={item.value}
+							onClick={() => handleClick(item.value, key)}
+						>
+							<img
+								src={item.icon}
+								alt={item.value}
+								className={`tabIcon pr-2 ${
+									childSelected === key
+										? "childSelectedIcon"
 										: ""
 								}`}
 							/>
@@ -118,55 +182,11 @@ const AnnotationChild = () => {
 			})}
 			<Container className="pt-4">
 				<Row className="d-flex justify-content-center align-items-center">
-					<div className="padding-right-sm max-width-md">
+					<div className="padding-right-sm max-width-865">
 						{option}
 					</div>
 				</Row>
 			</Container>
-		</>
-	);
-};
-
-const DGenerationChild = () => {
-	const [child, setChild] = useState(dataGenerationChildData[0]);
-	const [selected, setSelected] = useState(0);
-
-	const handleClick = (item, key) => {
-		setSelected(key);
-		setChild(item);
-	};
-	return (
-		<>
-			<Col xs={12}>
-				<Row className="d-flex justify-content-center padding-right-sm">
-					{dataGenerationChildData.map((item, key) => {
-						return (
-							<Col
-								xs={12}
-								sm={"auto"}
-								className={"text-center p-sm-0"}
-							>
-								<button
-									className={`service-button ${
-										selected === key ? "selected" : ""
-									}`}
-									onClick={() => handleClick(item, key)}
-								>
-									{item.name}
-								</button>
-							</Col>
-						);
-					})}
-				</Row>
-			</Col>
-			<Col xs={12} className="mt-4">
-				<div className="padding-right-sm max-width-md m-auto">
-					<TabData
-						headingText={child.name}
-						paraText={child.paraText}
-					/>
-				</div>
-			</Col>
 		</>
 	);
 };
@@ -202,83 +222,120 @@ const annotationChildData = [
 		value: "Box",
 		component: (
 			<TabData
+				twoButton
 				cardImage={Car}
+				cardClass="serice-carousel-card"
 				headingText="Bouding Box"
 				paraText="The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training"
 			/>
 		),
-		icon: box,
+		icon: BoxBlue,
 	},
-	// {
-	// 	value: "Classification",
-	// 	component: (
-	// 		<TabData
-	// 			cardImage={Car}
-	// 			headingText="Bouding Box"
-	// 			paraText="The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training"
-	// 		/>
-	// 	),
-	// 	icon: classification,
-	// },
+	{
+		value: "Classification",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Image Classification"
+				paraText="Image Classification covers a broader perspective. It is used to identify that an image falls under which class. It can also be broken down into further components like tagging objects under different classes in a single image. It can be used in various use cases like assistance in educational systems, predicting human behaviour, boosting autonomous mobility etc"
+			/>
+		),
+		icon: ClassificationBlue,
+	},
 	{
 		value: "Point",
 		component: (
 			<TabData
+				twoButton
 				cardImage={Car}
+				cardClass="serice-carousel-card"
 				headingText="Point Annotation"
 				paraText="Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image."
 			/>
 		),
-		icon: point,
+		icon: PointBlue,
+	},
+	{
+		value: "Key Point",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Key Point Annotation"
+				paraText="Key point annotation is quite similar to the point annotation. Unlike point annotation it provides the track between the points giving a skeleton of the object. This technique is generally useful when the objects in an image have similar or skeletal structures"
+			/>
+		),
+		icon: Keypoint,
 	},
 	{
 		value: "Polygons",
 		component: (
 			<TabData
+				twoButton
 				cardImage={Car}
+				cardClass="serice-carousel-card"
 				headingText="Polygons"
 				paraText="Polygons are used to draw precise outlines on different objects in an image. Polygons are usually used in creating datasets for training precise application models."
 			/>
 		),
-		icon: polygons,
+		icon: PolygonsBlue,
 	},
 	{
 		value: "Polylines",
 		component: (
 			<TabData
+				twoButton
 				cardImage={Car}
+				cardClass="serice-carousel-card"
 				headingText="Polylines"
 				paraText="Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads."
 			/>
 		),
-		icon: polylines,
+		icon: PolylinesBlue,
 	},
 	{
 		value: "Segmentation",
 		component: (
 			<TabData
+				twoButton
 				cardImage={Car}
+				cardClass="serice-carousel-card"
 				headingText="Semantic segmentation"
 				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
 			/>
 		),
-		icon: segmentation,
+		icon: SegmentationBlue,
 	},
 ];
 
 const dataGenerationChildData = [
 	{
-		id: 1,
-		name: "Data Gathering",
-		paraText:
-			"Our highly trained staff gathers standard quality datasets according to the need of your AI-model. The type of data can be images, video, or contextual data. Our team members gather real-life data from the required source point so you can be provided with the top-notch dataset that is the base requirement for your AI-model.",
-		component: "",
+		value: "Data Gathering",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Data Gathering"
+				paraText="Our highly trained staff gathers standard quality datasets according to the need of your AI-model. The type of data can be images, video, or contextual data. Our team members gather real-life data from the required source point so you can be provided with the top-notch dataset that is the base requirement for your AI-model."
+			/>
+		),
+		icon: box,
 	},
 	{
-		id: 2,
-		name: "Synthetic Data Generation",
-		paraText:
-			"In several edge cases it is not possible to generate an adequate amount of real life datasets. For example, There is a need to train an AI-model which can predict a hurricane’s intensity and the possible destruction afterwards in a particular state. Over the past 100 years 25 hurricanes have hit the states of Florida which doesn’t generate a sufficient amount of dataset to train a model with high accuracy level. In cases like these we generate synthetic datasets which mimic the real-life datasets.",
-		component: "",
+		value: "Synthetic Data Generation",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Synthetic Data Generation"
+				paraText="In several edge cases it is not possible to generate an adequate amount of real life datasets. For example, There is a need to train an AI-model which can predict a hurricane’s intensity and the possible destruction afterwards in a particular state. Over the past 100 years 25 hurricanes have hit the states of Florida which doesn’t generate a sufficient amount of dataset to train a model with high accuracy level. In cases like these we generate synthetic datasets which mimic the real-life datasets."
+			/>
+		),
+		icon: box,
 	},
 ];

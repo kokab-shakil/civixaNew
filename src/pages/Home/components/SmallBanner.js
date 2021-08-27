@@ -8,14 +8,13 @@ export default function SmallBanner({ classes }) {
 		<Row className={classes}>
 			<Col xs={12} md={7}>
 				<Heading
-					headingClass="text-white font-weight-900 text-medium text-left"
+					headingClass="bannerheading font-weight-900 d-flex align-items-center text-white justify-content-start flex-column flex-md-row"
 					HeadingText={[
+						"Make",
 						<span className="position-relative">
-							<span className="pr-2 underlined-bottom">
-								Make Civixa
-							</span>
+							<span className="mx-2 underlined">Civixa</span>
 						</span>,
-						"your competitive advantage",
+						"your competative advantage",
 					]}
 					para
 					paraClass="text-white w-70"
@@ -26,18 +25,18 @@ export default function SmallBanner({ classes }) {
 				xs={12}
 				md={5}
 				className={
-					"p-md-0 d-flex justify-content-start justify-content-md-center justify-content-lg-end"
+					"p-md-0 d-flex justify-content-start justify-content-md-center"
 				}
 			>
 				<Row>
-					<Col xs={12} sm={6}>
+					<Col xs={12} sm={6} className="px-md-1">
 						<CustomButton
 							btnColor="green"
-							btnClasses="text-white mr-2"
+							btnClasses="text-white mr-1"
 							btnText="Request Demo"
 						/>
 					</Col>
-					<Col xs={12} sm={6}>
+					<Col xs={12} sm={6} className="px-md-1">
 						<CustomButton
 							btnColor="white"
 							btnClasses="text-prussian-blue"

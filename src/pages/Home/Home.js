@@ -31,7 +31,9 @@ export default function Home({ handleHeaderColor }) {
 				bgColor="bg-grayish"
 				// classes={""}
 			>
-				<SectionOne classes={`${commonClasses} padding-all`} />
+				<SectionOne
+					classes={`d-flex align-items-stretch justify-content-center h-100 padding-all`}
+				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<OurServices
@@ -48,7 +50,9 @@ export default function Home({ handleHeaderColor }) {
 				<SectionFour classes={`${commonClasses} padding-all`} />
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
-				<PreTrainedModels classes={`${commonClasses} padding-all`} />
+				<PreTrainedModels
+					classes={`d-flex align-items-stretch justify-content-center h-100 padding-all`}
+				/>
 			</CustomSection>
 			<CustomSection
 				height="h-auto"

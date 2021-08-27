@@ -1,3 +1,7 @@
+::placeholder {
+	color: #a5b3c6;
+}
+
 /* Media Queries */
 
 @media only srceen and (min-width: 992) {

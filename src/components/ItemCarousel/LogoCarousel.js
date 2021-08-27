@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Carousel, { consts } from "react-elastic-carousel";
 import Udemy from "../../images/CarouselImages/udemy.svg";
-import ForwardArrow from "../../images/ForwardArrow.svg";
+// import ForwardArrow from "../../images/ForwardArrow.svg";
 import "./LogoCarousel.css";
 
 // Icons
@@ -10,6 +10,7 @@ import Manychat from "../../images/Manychat.svg";
 import Car from "../../images/car2.png";
 import Facebook from "../../images/facebook.svg";
 import useWindowSize from "../../WindowSize";
+import ForwardArrow from "./forwardarrow.svg";
 
 export const LogoCarousel = () => {
 	const [selected, setSelected] = useState(0);
@@ -21,7 +22,6 @@ export const LogoCarousel = () => {
 	};
 
 	const [width] = useWindowSize();
-	console.log(width);
 
 	const myArrow = ({ type, onClick, isEdge }) => {
 		// type === consts.PREV;
@@ -102,12 +102,8 @@ export const LogoCarousel = () => {
 					></img>
 				</Col>
 				<Col xs={12} md={12} lg={6}>
-					<Card
-						style={{
-							boxShadow: "0px 3px 6px #00000029",
-						}}
-					>
-						<Card.Body>
+					<Card className="happyclients-card">
+						<Card.Body className="p-4">
 							<Card.Title>
 								<img src={selectedItem.image} alt="" />
 							</Card.Title>

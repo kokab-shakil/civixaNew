@@ -16,6 +16,7 @@ export default function Heading({
 	iconClass,
 	iconBeforeClass,
 	HeadingContainer,
+	subHeading,
 	children,
 }) {
 	return (
@@ -35,9 +36,13 @@ export default function Heading({
 				{iconBefore && (
 					<img src={icon} alt={altText} className={iconClass} />
 				)}
-				<h1 className={`data-heading ${headingClass}`}>
-					{HeadingText}
-				</h1>
+				{subHeading ? (
+					<h1 className={`${headingClass}`}>{HeadingText}</h1>
+				) : (
+					<h1 className={`data-heading ${headingClass}`}>
+						{HeadingText}
+					</h1>
+				)}
 			</div>
 			{para ? <p className={paraClass}>{paraText}</p> : null}
 			{children}
