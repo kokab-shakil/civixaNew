@@ -4,14 +4,23 @@ import ChildTab from "../../../components/CustomTabs/ChildTab";
 import { ResponsiveCarousel } from "../../../components/CustomTabs/ResponsiveCarousel";
 
 // Icons
-import classification from "../../../images/CarouselIcons/classification.svg";
-import box from "../../../images/CarouselIcons/box.svg";
-import cuboid from "../../../images/CarouselIcons/Cuboid.svg";
-import point from "../../../images/CarouselIcons/point.svg";
-import polygons from "../../../images/CarouselIcons/Polygons.svg";
-import polylines from "../../../images/CarouselIcons/polylines.svg";
-import segmentation from "../../../images/CarouselIcons/segmentation.svg";
-import transcription from "../../../images/CarouselIcons/Transcription.svg";
+import BoxBlue from "../../../images/NewCarouselIcons/box-blue.svg";
+import ClassificationBlue from "../../../images/NewCarouselIcons/classification-blue.svg";
+import KeyPointBlue from "../../../images/NewCarouselIcons/keypoin.svg";
+import PointBlue from "../../../images/NewCarouselIcons/point-blue.svg";
+import PolygonsBlue from "../../../images/NewCarouselIcons/polygons-blue.svg";
+import PolylinesBlue from "../../../images/NewCarouselIcons/polylines.svg";
+import SegmentationBlue from "../../../images/NewCarouselIcons/sementation.svg";
+
+// import classification from "../../../images/CarouselIcons/classification.svg";
+// import box from "../../../images/CarouselIcons/box.svg";
+// import cuboid from "../../../images/CarouselIcons/Cuboid.svg";
+// import point from "../../../images/CarouselIcons/point.svg";
+// import polygons from "../../../images/CarouselIcons/Polygons.svg";
+// import polylines from "../../../images/CarouselIcons/polylines.svg";
+// import segmentation from "../../../images/CarouselIcons/segmentation.svg";
+// import transcription from "../../../images/CarouselIcons/Transcription.svg";
+
 import TabData from "../../../components/CustomTabs/TabData";
 import useWindowSize from "../../../WindowSize";
 import TypeOfService from "../../../images/typeofservice.png";
@@ -37,10 +46,10 @@ const ResponsiveItem = () => {
 								className="service-carousel-smallIcon"
 							>
 								<div
-									className={`d-flex py-2 cursor-pointer ${
+									className={`d-flex py-2 pr-3 cursor-pointer ${
 										childSelected === key
 											? "childSelected"
-											: ""
+											: "notSelected"
 									}`}
 									value="box"
 									onClick={() => handleClick(item.value, key)}
@@ -48,7 +57,11 @@ const ResponsiveItem = () => {
 									<img
 										src={item.icon}
 										alt="box"
-										className={"tabIcon pr-2"}
+										className={`tabIcon pr-2 ${
+											childSelected === key
+												? "childSelectedIcon"
+												: "notSelectedIcon"
+										}`}
 									/>
 									{item.value}
 								</div>
@@ -68,40 +81,51 @@ export const TypesofAnnotion = ({ classes }) => {
 	const width = useWindowSize();
 	return (
 		<Row className={classes}>
-			{width > 992 ? <ChildTab left /> : <ResponsiveItem />}
+			{width > 992 ? (
+				<>
+					<ChildTab left />
+				</>
+			) : (
+				<ResponsiveItem />
+			)}
 		</Row>
 	);
 };
 
 const childData = [
 	{
-		value: "Cuboid",
+		value: "Box Blue",
 		img: TypeOfService,
-		icon: cuboid,
+		icon: BoxBlue,
 	},
 	{
 		value: "Classification",
 		img: TypeOfService,
-		icon: classification,
+		icon: ClassificationBlue,
 	},
 	{
 		value: "Point",
 		img: TypeOfService,
-		icon: point,
+		icon: PointBlue,
+	},
+	{
+		value: "Key Point",
+		img: TypeOfService,
+		icon: KeyPointBlue,
 	},
 	{
 		value: "Polygons",
 		img: TypeOfService,
-		icon: polygons,
+		icon: PolygonsBlue,
 	},
 	{
 		value: "Polylines",
 		img: TypeOfService,
-		icon: polylines,
+		icon: PolylinesBlue,
 	},
 	{
 		value: "Segmentation",
 		img: TypeOfService,
-		icon: segmentation,
+		icon: SegmentationBlue,
 	},
 ];

@@ -30,7 +30,9 @@ export default function Service({ handleHeaderColor }) {
 				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">
-				<TypesofAnnotion classes={`${commonClasses} padding-all`} />
+				<TypesofAnnotion
+					classes={`${commonClasses} position-relative padding-all`}
+				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-lightgray">
 				<SmallBanner classes={`${commonClasses} padding-all`} />

@@ -5,6 +5,7 @@ import { SideIcon } from "../../../components/SideIcon/SideIcon";
 import Enterprise from "../images/Enterprise.svg";
 import tick from "../../../images/tick.svg";
 import CustomButton from "../../../components/CustomButton/CustomButton";
+
 import box from "../TabIcons/box.svg";
 import classification from "../TabIcons/classification.svg";
 import Cuboid from "../TabIcons/Cuboid.svg";

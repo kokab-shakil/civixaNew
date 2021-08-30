@@ -108,10 +108,25 @@
 	background-color: #fff;
 	border-bottom: 3px solid #5cdb95;
 	width: max-content;
+	border-right: 1px solid #d7d7d7;
+}
+
+.notSelected {
+	font: normal normal normal 16px/21px Source Sans Pro;
+	color: #95989d;
+}
+
+.notSelected .notSelectedIcon {
+	filter: invert(70%) sepia(10%) saturate(142%) hue-rotate(178deg)
+		brightness(85%) contrast(87%);
 }
 
 .cursor-pointer {
 	cursor: pointer;
+}
+.responsiveicons {
+	font: normal normal normal 16px/21px Source Sans Pro;
+	color: #95989d;
 }
 
 /* .ServiceServicesCarousel .swiper-container-android .swiper-slide, .swiper-wrapper
