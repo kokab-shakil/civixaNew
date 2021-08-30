@@ -118,7 +118,7 @@ export const Packages = ({ classes }) => {
 							<CustomButton
 								btnText="GET STARTED IN MINUTES"
 								btnColor="green"
-								btnClasses="text-prussian-blue py-4 pricing-package-button mt-4 w-100"
+								btnClasses="d-flex align-items-center justify-content-center text-prussian-blue py-4 pricing-package-button mt-4 w-100"
 								btnSize="lg btn-block"
 								marginBottom="mb-0"
 							/>
@@ -154,7 +154,6 @@ export const Packages = ({ classes }) => {
 								})}
 							</div>
 						</div>
-
 						<div className="d-flex justify-content-center pt-5">
 							<CustomButton
 								btnText="GET IN TOUCH"
