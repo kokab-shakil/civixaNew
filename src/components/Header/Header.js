@@ -169,7 +169,7 @@ export default function Header({ headercolor }) {
 							<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
 								<input
 									type="email"
-									className="inputReqDemo pl-2 d-none d-lg-block"
+									className="inputReqDemo pl-3 d-none d-lg-block"
 									placeholder="test@test.com"
 									value={inputValue}
 									onChange={hanldeInputChange}

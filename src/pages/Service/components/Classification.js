@@ -5,6 +5,8 @@ import copyright from "../../../images/copyright.png";
 import Construction from "../../../images/construction.svg";
 import tick from "../../../images/tick.svg";
 
+import RepeatGrid from "../../../images/RepeatGrid.svg";
+
 const data = [
 	"Custom Pricing for High Volume",
 	"Dedicated Account Managers",
@@ -43,6 +45,7 @@ export const Classification = ({ classes }) => {
 					className={"upper-grid img-fluid"}
 					alt="data-label-web"
 				/>
+				<img src={RepeatGrid} alt="Dots" className="topLeftDots" />
 			</Col>
 		</Row>
 	);

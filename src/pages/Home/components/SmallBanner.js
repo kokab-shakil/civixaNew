@@ -48,14 +48,14 @@ export default function SmallBanner({ classes }) {
 				}
 			>
 				<Row>
-					<Col className="px-md-1 text-center">
+					<Col className="px-md-1 text-left text-md-center">
 						<CustomButton
 							btnColor="green"
 							btnClasses="text-white mr-1"
 							btnText="Request Demo"
 						/>
 					</Col>
-					<Col className="px-md-1 text-center">
+					<Col className="px-md-1 text-left text-md-center">
 						<CustomButton
 							btnColor="white"
 							btnClasses="text-prussian-blue"
