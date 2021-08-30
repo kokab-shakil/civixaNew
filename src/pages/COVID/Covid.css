@@ -75,3 +75,24 @@
 	width: 60px;
 	height: 60px;
 }
+.covidModelsCard {
+	box-shadow: 0px 5px 20px #00000029;
+}
+
+.bottomLeftDots {
+	position: absolute;
+	bottom: -28px;
+	left: -28px;
+}
+
+.topRightDots {
+	position: absolute;
+	top: -40px;
+	right: -40px;
+}
+
+.detaildashboarddots {
+	position: absolute;
+	bottom: -60px;
+	left: -30px;
+}

@@ -7,6 +7,8 @@ import { SideIcon } from "../../../components/SideIcon/SideIcon";
 import FaceMask from "../../../images/face-mask-3.png";
 import KeepDistance from "../../../images/keep-distance.png";
 
+import RepeatGrid from "../../../images/RepeatGrid.svg";
+
 const data = [
 	{
 		headingText: "Social distancing",
@@ -34,7 +36,9 @@ export const CovidModels = ({ classes }) => {
 					paraClass="w-100 text-center"
 				/>
 			</Col>
-			<Row>
+			<Row className="position-relative mt-5">
+				<img src={RepeatGrid} alt="dots" className="bottomLeftDots" />
+				<img src={RepeatGrid} alt="dots" className="topRightDots" />
 				{data.map((item) => {
 					return (
 						<Col xs={12} md={6} className="pb-4">

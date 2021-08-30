@@ -28,7 +28,7 @@ export const DetailInfo1 = ({ classes }) => {
 			<DetailInfo cardData={cardData}>
 				<img
 					src={DetainInfoImage}
-					alt="Detail Info Image 01"
+					alt="Detail Info"
 					className="img-fluid"
 				/>
 			</DetailInfo>

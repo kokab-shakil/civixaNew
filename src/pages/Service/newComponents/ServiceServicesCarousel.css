@@ -87,11 +87,14 @@
 	border: none;
 	transition: 0.5s all ease-out;
 	opacity: 1;
+	margin: 3px;
 }
 
 .service-button.selected {
 	background-color: #12356a;
 	color: #fff;
+	border-radius: 6px;
+	margin: 3px;
 }
 
 .service-button:focus {
