@@ -1,5 +1,5 @@
 .serice-carousel-card {
-	height: 264px;
+	min-height: 264px;
 	/* height: 264px; */
 	overflow-y: hidden;
 }

@@ -50,7 +50,7 @@ export default function ChildTab({ left }) {
 					{left && (
 						<Heading
 							HeadingText="Types Of Annotation"
-							headingClass="text-small font-weight-900"
+							headingClass="text-small font-weight-900 mb-4"
 						/>
 					)}
 					<Nav
