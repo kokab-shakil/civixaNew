@@ -94,6 +94,18 @@ p {
 	z-index: -1;
 }
 
+.object-cover {
+	object-fit: cover;
+}
+
+.zindex0 {
+	z-index: 0;
+}
+
+.zindex1 {
+	z-index: 1;
+}
+
 .light-gray-color {
 	background-color: #05386b1a;
 }
@@ -176,6 +188,10 @@ p {
 	line-height: 1;
 }
 
+.line-height1-1 {
+	line-height: 1.1;
+}
+
 .underlineback {
 	z-index: -1;
 	bottom: 25%;
@@ -207,6 +223,11 @@ p {
 	z-index: -1;
 	/* height: 15px; */
 	/* margin-bottom: 13px; */
+}
+
+.underlined.heading::before {
+	border-bottom: 22px solid #00d9ac;
+	width: 85%;
 }
 /* end */
 

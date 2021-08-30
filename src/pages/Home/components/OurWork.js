@@ -34,11 +34,11 @@ export const OurWork = ({ classes }) => {
 				paraClass="pt-2 w-70 text-center"
 				paraText="All our resources are inhouse and with our ML-assisted tools, we provide 99.99% accuracy while maintaining high-quality standards using our built-in QC workflows and tools."
 			/>
-			<Row className="pt-4">
+			<Row className="pt-4 pb-md-5 zindex0 d-none d-md-flex">
 				<Col xs={12} md={6} className={"position-relative"}>
 					<img
 						src={ourworkcar}
-						className={"upper-grid top img-fluid"}
+						className={"img-fluid h-100 object-cover zindex1"}
 						alt="data-label-web"
 					></img>
 					<img

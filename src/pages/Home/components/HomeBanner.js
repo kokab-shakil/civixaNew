@@ -25,7 +25,7 @@ export default function HomeBanner({ classes }) {
 						"text-lg font-weight-900 d-flex flex-wrap homebanner-heading"
 					}
 					HeadingText={[
-						<span className="pr-2 pr-md-4 underlined">
+						<span className="pr-2 pr-md-4 underlined heading">
 							Enabling
 						</span>,
 						"AI",
@@ -96,12 +96,12 @@ export default function HomeBanner({ classes }) {
 
 const logos = [
 	{
-		name: "Agunsa",
-		image: Agunsa,
-	},
-	{
 		name: "Ddindustries",
 		image: Ddindustries,
+	},
+	{
+		name: "Agunsa",
+		image: Agunsa,
 	},
 	{
 		name: "Forcast",

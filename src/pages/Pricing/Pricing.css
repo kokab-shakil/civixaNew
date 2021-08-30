@@ -34,10 +34,21 @@
 	font-size: 1.35rem;
 	font-weight: bold;
 	border-radius: 0%;
+	/* all: unset; */
 }
-.btn.btn-lg.pricing-package-button::after {
-	content: "";
+.customButton.pricing-package-button {
+	height: auto;
 }
+.customButton.pricing-package-button::after {
+	content: "f061";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+/* .btn.btn-lg.pricing-package-button:focus {
+	all: unset;
+	background-color: #5cdb95;
+} */
 
 .package-details-container {
 	padding-top: 5vw;

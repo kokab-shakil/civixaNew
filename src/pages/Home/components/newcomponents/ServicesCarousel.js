@@ -22,6 +22,11 @@ import SegmentationBlue from "../../../../images/NewCarouselIcons/sementation.sv
 import ClassificationBlue from "../../../../images/NewCarouselIcons/classification-blue.svg";
 import Keypoint from "../../../../images/NewCarouselIcons/keypoin.svg";
 
+// Annotation Icons
+import PointAnnotation from "../../../../images/annotations/point-annotation.png";
+import PolylinesAnnotation from "../../../../images/annotations/polylines.png";
+import SegmentationAnnotation from "../../../../images/annotations/segmentation.png";
+
 import Car from "../../../../images/car.svg";
 
 // Import Swiper React components
@@ -105,7 +110,7 @@ const AnnotationChild = () => {
 						className="service-carousel-smallIcon pr-3 pr-lg-4"
 					>
 						<div
-							className={`d-flex py-2 cursor-pointer ${
+							className={`pr-3 d-flex py-2 cursor-pointer ${
 								childSelected === key ? "childSelected" : ""
 							}`}
 							value={item.value}
@@ -148,7 +153,6 @@ const DGenerationChild = () => {
 		);
 		selectedOption(optionValue.component);
 		setChildSelected(selected);
-		console.log(childSelected);
 	};
 
 	return (
@@ -160,7 +164,7 @@ const DGenerationChild = () => {
 						className="service-carousel-smallIcon pr-3 pr-lg-4"
 					>
 						<div
-							className={`d-flex py-2 cursor-pointer ${
+							className={`d-flex pr-3 py-2 cursor-pointer ${
 								childSelected === key ? "childSelected" : ""
 							}`}
 							value={item.value}
@@ -192,9 +196,54 @@ const DGenerationChild = () => {
 };
 
 const DResourcesChild = () => {
+	const [childSelected, setChildSelected] = useState(0);
+	const [option, selectedOption] = useState(
+		dedicatedResourcesChildData[0].component
+	);
+
+	const handleClick = (e, selected) => {
+		const optionValue = dedicatedResourcesChildData.find(
+			(element) => element.value === e
+		);
+		selectedOption(optionValue.component);
+		setChildSelected(selected);
+	};
 	return (
 		<>
-			<h1>Dedicated Resources Child</h1>
+			{dedicatedResourcesChildData.map((item, key) => {
+				return (
+					<div
+						key={key}
+						className="service-carousel-smallIcon pr-3 pr-lg-4"
+					>
+						<div
+							className={`d-flex pr-3 py-2 cursor-pointer ${
+								childSelected === key ? "childSelected" : ""
+							}`}
+							value={item.value}
+							onClick={() => handleClick(item.value, key)}
+						>
+							<img
+								src={item.icon}
+								alt={item.value}
+								className={`tabIcon pr-2 ${
+									childSelected === key
+										? "childSelectedIcon"
+										: ""
+								}`}
+							/>
+							{item.value}
+						</div>
+					</div>
+				);
+			})}
+			<Container className="pt-4">
+				<Row className="d-flex justify-content-center align-items-center">
+					<div className="padding-right-sm max-width-865">
+						{option}
+					</div>
+				</Row>
+			</Container>
 		</>
 	);
 };
@@ -249,7 +298,7 @@ const annotationChildData = [
 		component: (
 			<TabData
 				twoButton
-				cardImage={Car}
+				cardImage={PointAnnotation}
 				cardClass="serice-carousel-card"
 				headingText="Point Annotation"
 				paraText="Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image."
@@ -288,7 +337,7 @@ const annotationChildData = [
 		component: (
 			<TabData
 				twoButton
-				cardImage={Car}
+				cardImage={PolylinesAnnotation}
 				cardClass="serice-carousel-card"
 				headingText="Polylines"
 				paraText="Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads."
@@ -301,13 +350,42 @@ const annotationChildData = [
 		component: (
 			<TabData
 				twoButton
-				cardImage={Car}
+				cardImage={SegmentationAnnotation}
 				cardClass="serice-carousel-card"
 				headingText="Semantic segmentation"
 				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
 			/>
 		),
 		icon: SegmentationBlue,
+	},
+];
+
+const dedicatedResourcesChildData = [
+	{
+		value: "Data Gathering",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Data Gathering"
+				paraText="There are use-cases where custom datasets are required and the customers want dedicated resources who will be producing datasets just for their AI models on a regular basis. We provide dedicated resources for these kinds of use-cases"
+			/>
+		),
+		icon: box,
+	},
+	{
+		value: "Data Annotation",
+		component: (
+			<TabData
+				twoButton
+				cardImage={Car}
+				cardClass="serice-carousel-card"
+				headingText="Data Annotation"
+				paraText="There are computer vision organisations that produce thousands of images on a weekly basis and need them annotated on the go. For these clients, we provide dedicated resources who are trained and assigned to their projects only."
+			/>
+		),
+		icon: box,
 	},
 ];
 

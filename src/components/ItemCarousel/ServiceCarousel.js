@@ -34,7 +34,6 @@ export const ServiceCarousel = () => {
 	const handleClick = (e) => {
 		const optionValue = data.find((element) => element.value == e);
 		selectedOption(optionValue.component);
-		console.log(optionValue);
 	};
 	return (
 		<Row className="w-100 m-auto">
