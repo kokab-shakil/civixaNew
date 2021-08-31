@@ -15,14 +15,14 @@ export default function TabData({
 	return (
 		<Row className={"d-flex justify-content-center m-0"}>
 			<div
-				className={`card p-0 d-flex flex-wrap flex-row mb-3 border-all ${
+				className={`card p-0 d-flex flex-wrap flex-row mb-3 ${
 					cardClass && cardClass
 				}`}
 			>
 				<Col xs={12} md={6} className="p-0">
 					<img
 						src={cardImage ? cardImage : car}
-						className="w-100 image-fit border-left"
+						className="w-100 image-fit"
 						alt="car"
 					/>
 				</Col>
@@ -36,7 +36,7 @@ export default function TabData({
 					/>
 				</Col>
 			</div>
-			<div className="pt-4">
+			<div className="pt-4 text-center">
 				<CustomButton
 					btnText="Request a Demo"
 					btnClasses="text-white "
@@ -46,7 +46,7 @@ export default function TabData({
 					<CustomButton
 						btnSize="medium"
 						btnText="Get A Quote"
-						btnClasses="text-prussian-blue ml-4 service-carousel-button"
+						btnClasses="text-prussian-blue ml-0 ml-md-3 service-carousel-button"
 						btnColor="white"
 					/>
 				)}

@@ -19,6 +19,7 @@ export const CovidDemo = ({ classes }) => {
 			<Col xs={12} md={12} className="covidTab">
 				<CovidDemoCarousel />
 				{/*Carousel Change*/}
+				
 			</Col>
 		</Row>
 	);

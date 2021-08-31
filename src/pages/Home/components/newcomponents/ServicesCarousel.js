@@ -110,7 +110,7 @@ const AnnotationChild = () => {
 						className="service-carousel-smallIcon pr-3 pr-lg-4"
 					>
 						<div
-							className={`pr-3 d-flex py-2 cursor-pointer ${
+							className={`d-flex py-2 cursor-pointer ${
 								childSelected === key ? "childSelected" : ""
 							}`}
 							value={item.value}
