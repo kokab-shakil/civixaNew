@@ -64,15 +64,22 @@
 }
 
 .header .navbar-toggler.collapsed .navbar-toggler-icon.icon-prussian-blue {
-	background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+	background-image: url(./images//hambugermenu.svg);
+	filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(44deg)
+		brightness(198%) contrast(105%);
 }
 .header .navbar-toggler.collapsed .navbar-toggler-icon.icon-white {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	background-image: url(./images//hambugermenu.svg);
 }
 
 .header .navbar-toggler .navbar-toggler-icon.icon-prussian-blue,
 .header .navbar-toggler .navbar-toggler-icon.icon-white {
 	background-image: url(./images/cross.svg);
+}
+
+.header .navbar-toggler .navbar-toggler-icon.icon-prussian-blue {
+	filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(44deg)
+		brightness(198%) contrast(105%);
 }
 
 .bg-white.navbar-light .navbar-nav .nav-link,
@@ -247,6 +254,7 @@
 	font-size: 2.2rem;
 	line-height: 3rem;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .white.mobile-version.navbar-collapse.collapse.show .mobile-nav-link {
@@ -272,6 +280,7 @@
 	line-height: 3rem;
 	text-decoration: none;
 	animation-delay: 0s;
+	font-weight: bold;
 }
 .white.mobile-version.navbar-collapse {
 	background-color: #ffffff;

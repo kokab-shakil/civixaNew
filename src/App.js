@@ -30,61 +30,81 @@ const Home = lazy(() => import("./pages/Home/Home"));
 // const Pricing = lazy(() => import("./pages/Pricing/Pricing"));
 
 function App() {
-  const [headerColor, setHeaderColor] = useState();
-  const handleHeaderColor = (headerColor) => {
-    setHeaderColor(headerColor);
-  };
+	const [headerColor, setHeaderColor] = useState();
+	const handleHeaderColor = (headerColor) => {
+		setHeaderColor(headerColor);
+	};
 
-  return (
-    <>
-      <Router>
-        <Suspense fallback={<h1>Loading.....</h1>}>
-          <Header headercolor={headerColor} />
-          <ScrollToTop />
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => <Home handleHeaderColor={handleHeaderColor} />}
-            />
-            <Route
-              exact
-              path="/about"
-              render={() => <About handleHeaderColor={handleHeaderColor} />}
-            />
-            <Route
-              exact
-              path="/service"
-              render={() => <Service handleHeaderColor={handleHeaderColor} />}
-            />
-            <Route
-              exact
-              path="/covid"
-              render={() => <Covid handleHeaderColor={handleHeaderColor} />}
-            />
-            <Route
-              exact
-              path="/contact"
-              render={() => <ContactUs handleHeaderColor={handleHeaderColor} />}
-            />
-            <Route
-              exact
-              path="/contact-01"
-              render={() => (
-                <ContactUsOne handleHeaderColor={handleHeaderColor} />
-              )}
-            />
-            <Route
-              exact
-              path="/pricing"
-              render={() => <Pricing handleHeaderColor={handleHeaderColor} />}
-            />
-          </Switch>
-          <Footer />
-        </Suspense>
-      </Router>
-    </>
-  );
+	return (
+		<>
+			<Router>
+				<Suspense fallback={<h1>Loading.....</h1>}>
+					<Header headercolor={headerColor} />
+					<ScrollToTop />
+					<Switch>
+						<Route
+							exact
+							path="/"
+							render={() => (
+								<Home handleHeaderColor={handleHeaderColor} />
+							)}
+						/>
+						<Route
+							exact
+							path="/about"
+							render={() => (
+								<About handleHeaderColor={handleHeaderColor} />
+							)}
+						/>
+						<Route
+							exact
+							path="/service"
+							render={() => (
+								<Service
+									handleHeaderColor={handleHeaderColor}
+								/>
+							)}
+						/>
+						<Route
+							exact
+							path="/covid"
+							render={() => (
+								<Covid handleHeaderColor={handleHeaderColor} />
+							)}
+						/>
+						<Route
+							exact
+							path="/contact"
+							render={() => (
+								<ContactUs
+									handleHeaderColor={handleHeaderColor}
+								/>
+							)}
+						/>
+						<Route
+							exact
+							path="/contact-01"
+							render={() => (
+								<ContactUsOne
+									handleHeaderColor={handleHeaderColor}
+								/>
+							)}
+						/>
+						<Route
+							exact
+							path="/pricing"
+							render={() => (
+								<Pricing
+									handleHeaderColor={handleHeaderColor}
+								/>
+							)}
+						/>
+					</Switch>
+					<Footer />
+				</Suspense>
+			</Router>
+		</>
+	);
 }
 
 export default App;

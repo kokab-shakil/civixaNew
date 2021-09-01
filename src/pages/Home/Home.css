@@ -73,6 +73,15 @@ video {
 .data-heading.bannerheading {
 	font-size: 28px;
 }
+/* .banner-contact-details {
+	padding-left: 0.8rem;
+}
+
+@media screen and (max-width: 486px) {
+	.banner-contact-details {
+		padding-left: 0;
+	}
+} */
 
 @media screen and (max-width: 620px) {
 	.happyclients-card {

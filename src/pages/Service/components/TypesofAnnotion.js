@@ -46,7 +46,7 @@ const ResponsiveItem = () => {
 								className="service-carousel-smallIcon"
 							>
 								<div
-									className={`d-flex py-2 pr-3 cursor-pointer ${
+									className={`d-flex py-2 cursor-pointer ${
 										childSelected === key
 											? "childSelected"
 											: "notSelected"
