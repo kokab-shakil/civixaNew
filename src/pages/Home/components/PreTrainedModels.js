@@ -33,7 +33,8 @@ export default function PreTrainedModels({ classes }) {
 			</Col>
 			<Col
 				xs={12}
-				md={9}
+				md={8}
+				lg={9}
 				className={
 					"d-flex flex-wrap justify-content-center justify-content-lg-around px-md-0"
 				}
@@ -86,8 +87,9 @@ export default function PreTrainedModels({ classes }) {
 			</Col>
 			<Col
 				xs={12}
-				md={3}
-				className="flex-column d-none d-md-flex py-md-3"
+				md={4}
+				lg={3}
+				className="flex-column d-none d-md-flex "
 			>
 				<Heading
 					HeadingText={[

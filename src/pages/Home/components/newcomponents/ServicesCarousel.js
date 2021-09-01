@@ -69,7 +69,7 @@ export const ServicesCarousel = () => {
 							<SwiperSlide>
 								<button
 									className={`service-button ${
-										selected === item.id ? "selected" : ""
+										selected === item.id ? "selected " : ""
 									}`}
 									onClick={() => handleClick(item, key)}
 								>

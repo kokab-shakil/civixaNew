@@ -95,6 +95,18 @@
 	color: #afafaf;
 }
 
+@keyframes bounce {
+	0% {
+		left: 0%;
+	}
+	50% {
+		left: 90%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+
 .service-button.selected {
 	background-color: #12356a;
 	color: #fff;

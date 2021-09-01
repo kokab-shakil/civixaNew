@@ -39,14 +39,14 @@ export default function TabData({
 			<div className="pt-4 text-center">
 				<CustomButton
 					btnText="Request a Demo"
-					btnClasses="text-white "
+					btnClasses="text-white mr-3"
 					btnColor="green"
 				/>
 				{twoButton && (
 					<CustomButton
 						btnSize="medium"
 						btnText="Get A Quote"
-						btnClasses="text-prussian-blue ml-0 ml-md-3 service-carousel-button"
+						btnClasses="text-prussian-blue mr-3 service-carousel-button"
 						btnColor="white"
 					/>
 				)}

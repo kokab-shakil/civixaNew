@@ -19,7 +19,7 @@ import Teamcore from "../../../images/homebanner/teamcore.svg";
 export default function HomeBanner({ classes }) {
 	return (
 		<Row className={classes}>
-			<Col xs={12} md={12} lg={6} className={"z-1 py-3"}>
+			<Col xs={12} md={12} lg={6} className={"z-1 py-3 pl-0"}>
 				<Heading
 					headingClass={
 						"text-lg font-weight-900 d-flex flex-wrap homebanner-heading"

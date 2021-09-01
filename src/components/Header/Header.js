@@ -258,9 +258,9 @@ const MobileVersion = ({ setExpanded }) => {
 					Contact Us
 				</Link>
 			</Nav>
-			<Nav className="d-flex pl-lg-0 pl-5 align-items-lg-center">
+			<Nav className="d-flex pl-lg-0 pl-5 ml-3 align-items-lg-center">
 				<button
-					className="btnReqDemo py-2 px-4 mx-3 mx-md-0 my-4 text-white"
+					className="btnReqDemo py-2 px-4 mx-md-0 my-4 text-white"
 					onClick={() => history.push("/contact")}
 				>
 					Request Demo

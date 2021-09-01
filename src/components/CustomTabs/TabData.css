@@ -1,8 +1,9 @@
 .card.serice-carousel-card {
 	min-height: 264px;
-	/* height: 264px; */
-	/* overflow-y: hidden; */
-	border: none
+	overflow: hidden;
+	border: none;
+	box-shadow: 0px 0px 15px #0000000f;
+	border-radius: 10px;
 }
 
 .sub-heading {
@@ -14,6 +15,4 @@
 .serice-carousel-card .tab-data-content-container {
 	padding-top: 2rem;
 	padding-left: 2rem;
-	border: 1px solid rgba(0,0,0,.125);
-	
 }
