@@ -8,10 +8,10 @@ import tick from "../../../images/tick.svg";
 import RepeatGrid from "../../../images/RepeatGrid.svg";
 
 const data = [
-	"Custom Pricing for High Volume",
-	"Dedicated Account Managers",
-	"24/7 Support",
-	"Custom Workflows",
+	// "Custom Pricing for High Volume",
+	// "Dedicated Account Managers",
+	// "24/7 Support",
+	// "Custom Workflows",
 ];
 
 export const Classification = ({ classes }) => {
@@ -25,7 +25,7 @@ export const Classification = ({ classes }) => {
 					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="Classification"
 					para
-					paraText="You can also track people not following the rules instantly on your screens using your live CCTV footage."
+					paraText=" You can classify the images according to the content. Consider,  grouping millions of similar images according to their visual characteristics. It is a time taking process. Civixa helps you to classify your bulk images in no time."
 					paraClass="my-3"
 				/>
 				{data.map((item) => {

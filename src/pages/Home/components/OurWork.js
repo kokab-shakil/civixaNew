@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
 import repeatGrid from "../../../images/RepeatGrid.svg";
-import ourworkcar from "../../../images//home/ourworkcar.svg";
+import ourworkcar from "../../../images/homebanner/ourworkcar.png";
 import { SideIcon } from "../../../components/SideIcon/SideIcon";
 import sideicon from "../../../images/sideicon.svg";
 
@@ -64,7 +64,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Score"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="97.02%"
+								// paraText="97.02%"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-danger"
 							/>
 						</Col>
@@ -77,7 +77,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Accuracy"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="99.7%"
+								// paraText="99.7%"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-danger"
 							/>
 						</Col>
@@ -90,7 +90,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Confidence"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="93.02%"
+								// paraText="93.02%"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-danger"
 							/>
 						</Col>
@@ -103,7 +103,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Incorrect Geometry"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="2/42"
+								// paraText="2/42"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-gray"
 							/>
 						</Col>
@@ -116,7 +116,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Incorrect Label"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="1/42"
+								// paraText="1/42"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-gray"
 							/>
 						</Col>
@@ -129,7 +129,7 @@ export const OurWork = ({ classes }) => {
 								HeadingText="Incorrect Label"
 								headingClass="text-normal text-center text-lg-left font-weight-600 mb-0"
 								para
-								paraText="41/42"
+								// paraText="41/42"
 								paraClass="line-height-1 text-xs text-center text-lg-left font-weight-bold mb-0 text-gray"
 							/>
 						</Col>

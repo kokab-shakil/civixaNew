@@ -1,11 +1,11 @@
 .question {
-	font: normal normal 300 14px/28px Source Sans Pro;
+	font: normal normal  300 14px/28px Source Sans Pro;
 	color: #58595b;
-	text-align: right;
+	/* text-align: right; */
 }
 
 .question-underlined {
-	font: normal normal 300 14px/28px Source Sans Pro;
+	font: normal normal bold 14px/28px Source Sans Pro;
 	color: #58595b;
 	/* text-decoration: underline; */
 	border-bottom: 0.5px solid #383737;
@@ -23,7 +23,7 @@
 
 .header-banner-logo-text1 {
 	color: #05386b;
-	font: normal normal 400 12px/28px Source Sans Pro;
+	font: normal normal normal 14px/18px Source Sans Pro;
 }
 
 /* .homebanner-heading {

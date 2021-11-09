@@ -9,6 +9,8 @@ export default function CustomButton({
 	btnClasses,
 	handlebtn,
 	marginBottom,
+	border,
+	btnTextColor
 }) {
 	return (
 		<Button
@@ -16,7 +18,7 @@ export default function CustomButton({
 			size={`${btnSize ? btnSize : "small"}`}
 			className={`customButton text-uppercase font-weight-900 btnSize ${
 				marginBottom ? marginBottom : "mb-2"
-			} btn-lg px-4 px-lg-5 py-2 ${btnClasses}`}
+			}  btn-lg px-4 px-lg-5 py-2 ${border} ${btnTextColor}  ${btnClasses}`}
 			onClick={handlebtn}
 		>
 			{btnText}

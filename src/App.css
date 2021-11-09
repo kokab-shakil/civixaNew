@@ -59,6 +59,9 @@ html {
 .bg-grayish {
 	background-color: #12356a33;
 }
+.bg-lightgreen{
+	background: #F7FDFA 0% 0% no-repeat padding-box;
+}
 
 h1,
 h2,
@@ -125,8 +128,12 @@ p {
 	background-color: #05386b1a;
 }
 .text-lg {
-	font-size: 5.5vw;
+	font-size: 55px;
 	font-weight: normal;
+}
+.text-xlg {
+	font-size: 76px;
+	font-weight: bold;
 }
 
 .z-1 {
@@ -270,7 +277,12 @@ p {
 	height: 100%;
 	object-fit: cover;
 }
-
+.colorwhite{
+	color: white;
+}
+.fontBig{
+	font-size: 46px;
+}
 /* end */
 
 /* end */
@@ -300,6 +312,9 @@ p {
 
 .padding-all {
 	padding: 5vw 10vw;
+}
+.padding-Footer{
+	padding: 1vw 10vw;
 }
 
 .padding-left {

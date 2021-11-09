@@ -7,6 +7,7 @@ import { ServiceBanner } from "./components/ServiceBanner";
 import { ServiceCard } from "./components/ServiceCard";
 import { SmallBanner } from "./components/SmallBanner";
 import { TextDetection } from "./components/TextDetection";
+import { TextObjects } from "./components/TextObject";
 import { TypeofServices } from "./components/TypeofServices";
 import { TypesofAnnotion } from "./components/TypesofAnnotion";
 import "./Service.css";
@@ -58,7 +59,8 @@ export default function Service({ handleHeaderColor }) {
 				<Classification classes={`${commonClasses} padding-all`} />
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">
-				<TextDetection classes={`${commonClasses} padding-all`} />
+				<TextObjects classes={`${commonClasses} padding-all`}/>
+				{/* <TextDetection classes={`${commonClasses} padding-all`} /> */}
 			</CustomSection>
 		</>
 	);

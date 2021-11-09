@@ -5,6 +5,9 @@
 .lineHeight {
   line-height: 1vh;
 }
+.paddingMidIcon{
+  padding: 37px 0px
+}
 
 .arrow-after::after {
   content: url(../../images/ForwardArrow.svg);

@@ -36,7 +36,7 @@ export const ServiceServicesCarousel = () => {
 	};
 	return (
 		<>
-			<Swiper
+			{/* <Swiper
 				navigation={{
 					nextEl: ".swiper-button-next",
 					prevEl: ".swiper-button-prev",
@@ -66,7 +66,7 @@ export const ServiceServicesCarousel = () => {
 						<img src={child} className="img-fluid" />
 					</Col>
 				</Row>
-			</Container>
+			</Container> */}
 		</>
 	);
 };

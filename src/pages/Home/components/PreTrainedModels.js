@@ -12,10 +12,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "./newcomponents/ResponsiveCardCarousel.css";
 
+
 import SwiperCore from "swiper/core";
 
 export default function PreTrainedModels({ classes }) {
 	const [width] = useWindowSize();
+	const mail = (e) => {
+		 window.location = "mailto:contact@ivattstorage.co.uk";
+                          e.preventDefault();
+	}
 	return (
 		<Row className={`${width > 502 ? classes : "padding-y padding-left"}`}>
 			<Col className="d-block d-md-none">
@@ -83,6 +88,7 @@ export default function PreTrainedModels({ classes }) {
 					btnColor="green"
 					btnText="Request A Demo"
 					btnClasses="text-white mt-2 mr-3"
+					handlebtn={mail}
 				/>
 			</Col>
 			<Col
@@ -106,6 +112,7 @@ export default function PreTrainedModels({ classes }) {
 					btnColor="green"
 					btnText="Request A Demo"
 					btnClasses="text-white mt-2"
+					handlebtn={mail}
 				/>
 			</Col>
 		</Row>

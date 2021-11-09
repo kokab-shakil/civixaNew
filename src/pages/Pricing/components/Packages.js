@@ -16,7 +16,7 @@ import segmentation from "../TabIcons/segmentation.svg";
 import Transcription from "../TabIcons/Transcription.svg";
 
 const data = [
-	"Custom Pricing for High Volume",
+	"Custom Pricing mko for High Volume",
 	"Dedicated Account Managers",
 	"24/7 Support",
 	"Custom Workflows",
@@ -27,49 +27,49 @@ const packagesDetails = [
 		bg: "bg-lightgray",
 		icon: classification,
 		headingText: "Classification",
-		package: "$0.08/Image + $0.08/Annotation",
+		package: "$0.05/Image + $0.05/Annotation",
 	},
 	{
 		bg: "bg-white",
 		icon: box,
 		headingText: "Bounding Box",
-		package: "$0.08/Image + $0.01/Box",
+		package: "$0.05/Image + $0.05/Box",
 	},
 	{
 		bg: "bg-lightgray",
 		icon: segmentation,
 		headingText: "Segmentation",
-		package: "$0.08/Image + $0.08/Annotation",
+		package: "$0.05/Image + $0.05/Annotation",
 	},
 	{
 		bg: "bg-white",
 		icon: point,
 		headingText: "Point",
-		package: "$0.08/Image + $0.08/Annotation",
+		package: "$0.05/Image + $0.05/Annotation",
 	},
 	{
 		bg: "bg-lightgray",
 		icon: Cuboid,
 		headingText: "Cuboid",
-		package: "$0.08/Image + $0.08/Point",
+		package: "$0.05/Image + $0.05/Point",
 	},
 	{
 		bg: "bg-white",
 		icon: polylines,
 		headingText: "Polylines",
-		package: "$0.08/Image + $0.01/Annotation",
+		package: "$0.05/Image + $0.05/Annotation",
 	},
 	{
 		bg: "bg-lightgray",
 		icon: Polygons,
 		headingText: "Polygons",
-		package: "$0.08/Image + $0.08/Annotation",
+		package: "$0.05/Image + $0.05/Annotation",
 	},
 	{
 		bg: "bg-white",
 		icon: Transcription,
 		headingText: "Transcription",
-		package: "$0.08/Invoice",
+		package: "$0.05/Invoice",
 	},
 ];
 

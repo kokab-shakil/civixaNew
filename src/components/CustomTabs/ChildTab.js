@@ -9,7 +9,8 @@ import PolylinesBlue from "./Images/polylines.svg";
 import PolygonsBlue from "./Images/polygons-blue.svg";
 import SegmentationBlue from "./Images/sementation.svg";
 import CuboidBlue from "./Images/cuboid.svg";
-
+import ClassificationBlue from "../../images/NewCarouselIcons/classification-blue.svg";
+// import classification from '../../ ./Images/classification-blue.svg'
 import RepeatGrid from "../../images/RepeatGrid.svg";
 
 // import classification from "./TabIcons/classification.svg";
@@ -66,7 +67,7 @@ export default function ChildTab({ left }) {
 									alt="BoxBlue"
 									className={"tabIcon pr-2"}
 								/>
-								Box Blue
+								Box 
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item className="mb-2">
@@ -119,6 +120,16 @@ export default function ChildTab({ left }) {
 								Segmentation
 							</Nav.Link>
 						</Nav.Item>
+						<Nav.Item className="mb-2">
+							<Nav.Link eventKey="classification">
+								<img
+									src={ClassificationBlue}
+									alt="classification"
+									className={"tabIcon pr-2"}
+								/>
+								classification
+							</Nav.Link>
+						</Nav.Item>
 					</Nav>
 				</Col>
 				<Col sm={8} md={left ? 9 : 8} className="">
@@ -159,6 +170,13 @@ export default function ChildTab({ left }) {
 							)}
 						</Tab.Pane>
 						<Tab.Pane eventKey="segmentation">
+							{left ? (
+								<TabLeft tabLeftImage={RightImage} />
+							) : (
+								<TabData />
+							)}
+						</Tab.Pane>
+						<Tab.Pane eventKey="classification">
 							{left ? (
 								<TabLeft tabLeftImage={RightImage} />
 							) : (

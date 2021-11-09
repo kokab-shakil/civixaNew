@@ -67,15 +67,15 @@ const Covid = ({ handleHeaderColor }) => {
 					classes={`d-flex justify-content-between h-100 padding-all`}
 				/>
 			</CustomSection>
-			<CustomSection
+			{/* <CustomSection
 				height="h-auto"
-				bgColor="bg-white"
+				bgColor="bg-white"	 
 				classes="detailInfo-01"
 			>
 				<DetailInfo1
 					classes={`d-flex justify-content-between h-100 padding-all`}
 				/>
-			</CustomSection>
+			</CustomSection> */}
 		</>
 	);
 };

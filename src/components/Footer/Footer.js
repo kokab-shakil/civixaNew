@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row,Nav } from "react-bootstrap";
 import CustomButton from "../CustomButton/CustomButton";
 import CustomSection from "../CustomSection";
 import Heading from "../Heading";
@@ -7,34 +7,28 @@ import "./Footer.css";
 import facebook from "../../images/facebook.svg";
 import twitter from "../../images/twitter.svg";
 import linkedin from "../../images/linkedin.svg";
+import chile from "../../images/footer/chile.png";
+import nest from "../../images/footer/io.png";
 import logoFooter from "../../images/footer/logo-footer.svg";
-import nvedia from "../../images/footer/nvedia.png";
-
+// import nvedia from "../../images/footer/Nvidia.png";
+import nvedia from "../../images/footer/Nvidia.png";
+import pasha from "../../images/footer/pasha.png";
+// import chile from "../../images/brandLogos/Chile.png";
+// import nest from "../../images/brandLogos/nest.png"
+import scw from "../../images/brandLogos/scw.png"
+import ino from "../../images/brandLogos/innovert.jpg"
+import { Link } from "react-router-dom";
 export const Footer = () => {
+  const mail = (e) => {
+		 window.location = "mailto:contact@ivattstorage.co.uk";
+                          e.preventDefault();
+	}
   return (
-    <CustomSection bgColor="bg-footer" height="h-auto" classes="">
-      <Row className="padding-all">
-        <Col
-          xs={12}
-          className="d-flex align-items-center justify-content-center flex-column pb-2"
-        >
-          <Heading
-            headingClass="footer-heading text-center text-height-1 d-flex flex-column flex-lg-row justify-content-center align-items-center"
-            HeadingText={[
-              "Get",
-              <span className="position-relative">
-                <span className="px-2 underlined">Started</span>
-              </span>,
-              "With Civixa.Ai Today",
-            ]}
-          />
-          <CustomButton
-            btnColor="green"
-            btnText="Request A Demo"
-            btnClasses="text-white my-4"
-          />
-        </Col>
-        <Col xs={12} className="pt-4 pb-3">
+    <CustomSection height="h-auto" classes="">
+     
+      <Row className="padding-Footer">
+        
+        {/* <Col xs={12} className="pt-4 pb-3">
           <Row className="d-flex justify-content-between px-5">
             <Col xs={12} md={8} className="d-flex flex-wrap ">
               <div className="pb-3">
@@ -76,42 +70,68 @@ export const Footer = () => {
               </div>
             </Col>
           </Row>
-        </Col>
+        </Col> */}
         <Col xs={12}>
-          <Row className="d-flex align-items-end justify-content-center justify-content-md-between pb-0 border-bottom">
-            <Col xs={12} md={6} className="pl-0 pt-2 order-md-first order-last">
+          <Row className="d-flex pBtm align-items-end justify-content-center justify-content-md-between ">
+            <Col xs={12} md={4} className=" d-flex pl-4 pt-2 order-md-first order-last">
               <img src={logoFooter} alt="Logo Footer" />
               <Heading
                 HeadingText="CIVIXA"
                 headingClass="font-weight-normal mb-0 text-left"
                 para
-                paraText="Enabling AI Transformation "
-                paraClass="font-weigt-bold text-xxs w-max border-bottom-green mb-0 pb-3"
+                flex="d-flex align-items-center"
+                // paraText="Enabling AI Transformation "
+                paraClass="font-weigt-bold text-xxs w-max  mb-0  pb-3"
+                pl="pl-3"
               />
             </Col>
-            <Col
+            <Col md={6} className={`p-0 `}>
+            <Nav	className={`mr-auto pl-5 align-items-lg-center d-flex justify-content-end`}>
+							
+								<Link
+									to="/pricing"
+									className="px-3 nav-link"
+								>
+									Pricing
+								</Link>
+								<Link
+									
+									to="/service"
+									className="px-3 nav-link"
+								>
+									Services
+								</Link>
+							
+								<Link
+								
+									to="/contact"
+									className="px-3 nav-link"
+								>
+									Contact Us
+								</Link>
+							</Nav>
+            </Col>
+          </Row>
+          <div className='d-flex'>
+          <div className='borderleft'></div>
+          <div className='borderRight'></div>
+          </div>
+         <Col 
               xs={12}
-              md={6}
-              lg={6}
-              className="d-flex flex-wrap flex-row-reverse justify-content-center justify-content-lg-start pt-2"
+              md={12}
+              lg={12}
+              className="d-flex flex-wrap flex-column  pt-4 justify-content-lg-start p-0"
             >
               <h6 className="text-prussian-blue text-uppercase">
                 Proudly supported by
               </h6>
               <div className="d-flex flex-wrap justify-content-center justify-content-lg-start">
-                <img src={nvedia} alt="Facebook Logo" />
-                <img src={nvedia} alt="Twitter Logo" />
-                <img src={nvedia} alt="LinkedIn Logo" />
-                <img src={nvedia} alt="LinkedIn Logo" />
+                <img className='footerLogo' src={nvedia} alt="Facebook Logo" />
+                <img className='footerLogo' src={chile} alt="LinkedIn Logo" />
+                <img className='footerLogo' src={pasha} alt="LinkedIn Logo" />
+                <img className='footerLogo' src={nest} alt="LinkedIn Logo" />
               </div>
             </Col>
-          </Row>
-          <Row className="d-flex flex-wrap flex-column pt-2">
-            <h1 className="text-xs ">Civixa SPA</h1>
-            <h1 className="text-xxs ">Services</h1>
-            <h1 className="text-xxs ">Services</h1>
-            <h1 className="text-xxs ">Services</h1>
-          </Row>
         </Col>
       </Row>
     </CustomSection>

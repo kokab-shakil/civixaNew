@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 // Logos
 import Agunsa from "../../../images/homebanner/agunsa.svg";
+import brandLogo from "../../../images/homebanner/brandLogo.png";
 import Ddindustries from "../../../images/homebanner/ddindustries.svg";
 import Forcast from "../../../images/homebanner/forcast.svg";
 import Ignous from "../../../images/homebanner/ignous.svg";
@@ -25,16 +26,16 @@ export default function HomeBanner({ classes }) {
 						"text-lg font-weight-900 d-flex flex-wrap homebanner-heading"
 					}
 					HeadingText={[
-						<span className="pr-2 pr-md-4 underlined heading">
-							Enabling
+						<span >
+							Enabling AI
 						</span>,
-						"AI",
+						
 						<span className="text-lg font-weight-900 ml-0 ml-md-2 ml-lg-0 homebanner-heading">
 							Transformation
 						</span>,
 					]}
 					para
-					paraClass={""}
+					paraClass={'w-70'}
 					paraText={
 						"Civixa.ai empowers organisations by providing a combination of pre-requisite services for the training of any AI-model."
 					}
@@ -44,7 +45,9 @@ export default function HomeBanner({ classes }) {
 						btnSize="md"
 						btnColor="green"
 						btnText="GET your quote"
-						btnClasses="text-white mb-3 mr-3"
+						btnClasses=" mb-3 mr-3"
+						border="btnBorder"
+						btnTextColor="btnTextColor"
 					/>
 					<div
 						className={
@@ -58,20 +61,25 @@ export default function HomeBanner({ classes }) {
 						<p className="m-0 question">
 							Questions?
 							<Link className="question-underlined ml-1">
-								Contact our sales team
+								Contact  sales 
 							</Link>
 						</p>
 					</div>
 				</Row>
 				<Row className="pt-3 pt-md-5 d-flex flex-column">
 					<Col>
-						<p className="mb-0 header-banner-logo-text">LOVED BY</p>
+						{/* <p className="mb-0 header-banner-logo-text">LOVED BY</p> */}
 						<p className="header-banner-logo-text1">
-							THE WORLD'S LEADING TECHNOLOGY COMPANIES
+							YOU ARE IN A LOVED COMPANY
 						</p>
 					</Col>
 					<Col className="pt-3 text-sm-left">
-						{logos.map((item, key) => {
+						<img
+									src={brandLogo}
+									// alt={item.name}
+									className="homebanner-logo img-fluid mr-2 mb-2"
+								/>
+						{/* {logos.map((item, key) => {
 							return (
 								<img
 									key={key}
@@ -80,7 +88,7 @@ export default function HomeBanner({ classes }) {
 									className="homebanner-logo img-fluid mr-2 mb-2"
 								/>
 							);
-						})}
+						})} */}
 					</Col>
 				</Row>
 			</Col>

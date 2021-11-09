@@ -3,8 +3,8 @@ import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
 import SquareIcon from "../../../components/SquareIcon/SquareIcon";
 import CivixaAi from "../../../images/home/CivixaAi.svg";
-import Engineers from "../../../images/home/Engineers.svg";
-import RawData from "../../../images/home/RawData.svg";
+import Engineers from "../../../images/home/Engineers.png";
+import RawData from "../../../images/home/RawData.png";
 
 export default function SectionFour({ classes }) {
   return (
@@ -20,7 +20,7 @@ export default function SectionFour({ classes }) {
             "CV COMPANY",
           ]}
           para
-          paraClass="w-70 text-center m-auto"
+          paraClass=" text-center m-auto"
           paraText="We provide complete services for the companies in need to incorporate
           AI in their businesses from scratch. From data gathering to deployment
           of highly trained AI-models, Civixa.ai is the right choice"
@@ -37,6 +37,7 @@ export default function SectionFour({ classes }) {
             titleOne="Civixa.ai"
             Icon={CivixaAi}
             arrowAfter
+            paddingMidIcon ='paddingMidIcon'
           />
           <SquareIcon
             className={"icon-size"}
@@ -47,7 +48,7 @@ export default function SectionFour({ classes }) {
         <Row className="pt-5 d-flex justify-content-lg-start justify-content-center">
           <Col xs={6} md={4}>
             <Heading
-              headingClass={"data-heading text-center text-lg"}
+              headingClass={"data-heading text-center text-xlg"}
               HeadingText={"1M+"}
               para
               paraClass={"text-center text-prussian-blue font-weight-600"}
@@ -56,7 +57,7 @@ export default function SectionFour({ classes }) {
           </Col>
           <Col xs={6} md={4}>
             <Heading
-              headingClass={"data-heading text-center text-lg"}
+              headingClass={"data-heading text-center text-xlg"}
               HeadingText={"7.2M+"}
               para
               paraClass={"text-center text-prussian-blue font-weight-600"}
@@ -65,7 +66,7 @@ export default function SectionFour({ classes }) {
           </Col>
           <Col xs={6} md={4}>
             <Heading
-              headingClass={"data-heading text-center text-lg"}
+              headingClass={"data-heading text-center text-xlg"}
               HeadingText={"06+"}
               para
               paraClass={"text-center text-prussian-blue font-weight-600"}

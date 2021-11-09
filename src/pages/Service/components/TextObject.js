@@ -28,7 +28,7 @@ const data = [
 	// },
 ];
 
-export const TextDetection = ({ classes }) => {
+export const TextObjects = ({ classes }) => {
 	const [dataImage, setDataImage] = useState(TextDetectionImage);
 
 	// const handleClick = (itemImage) => {
@@ -44,9 +44,9 @@ export const TextDetection = ({ classes }) => {
 					icon={Construction}
 					altText=""
 					headingClass="font-weight-normal mb-0 pl-2"
-					HeadingText="TEXT DETECTION"
+					HeadingText="OBJECT DETECTION"
 					para
-					paraText="You can identify different objects in an image"
+					paraText="You can identify different objects in an image according to your AI-model’s need. It could be used for locating the object, keeping the count of any particular object, damage detection, autonomous vehicle etc"
 					paraClass="my-3"
 				/>
 				{data.map((item) => {

@@ -9,6 +9,7 @@ export default function SquareIcon({
 	titleTwo,
 	arrowAfter,
 	xs,
+	paddingMidIcon
 }) {
 	return (
 		<>
@@ -25,7 +26,7 @@ export default function SquareIcon({
 					className={"sq-icon d-flex flex-column align-items-center"}
 				>
 					<img
-						className={className}
+						className={paddingMidIcon}
 						src={Icon}
 						alt="data-label-web"
 					/>

@@ -14,7 +14,12 @@
 /* .btn.btnSize.btn-medium {
 	max-width: 210px;
 } */
-
+.btn.btnBorder{
+	border: 2px solid #12356a;
+}
+.btn.btnTextColor{
+	color: #12356a;
+}
 .btn.btn-white {
 	background-color: white;
 }

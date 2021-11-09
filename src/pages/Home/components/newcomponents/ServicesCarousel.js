@@ -306,19 +306,19 @@ const annotationChildData = [
 		),
 		icon: PointBlue,
 	},
-	{
-		value: "Key Point",
-		component: (
-			<TabData
-				twoButton
-				cardImage={Car}
-				cardClass="serice-carousel-card"
-				headingText="Key Point Annotation"
-				paraText="Key point annotation is quite similar to the point annotation. Unlike point annotation it provides the track between the points giving a skeleton of the object. This technique is generally useful when the objects in an image have similar or skeletal structures"
-			/>
-		),
-		icon: Keypoint,
-	},
+	// {
+	// 	value: "Key Point",
+	// 	component: (
+	// 		<TabData
+	// 			twoButton
+	// 			cardImage={Car}
+	// 			cardClass="serice-carousel-card"
+	// 			headingText="Key Point Annotation"
+	// 			paraText="Key point annotation is quite similar to the point annotation. Unlike point annotation it provides the track between the points giving a skeleton of the object. This technique is generally useful when the objects in an image have similar or skeletal structures"
+	// 		/>
+	// 	),
+	// 	icon: Keypoint,
+	// },
 	{
 		value: "Polygons",
 		component: (
@@ -358,6 +358,20 @@ const annotationChildData = [
 		),
 		icon: SegmentationBlue,
 	},
+	{
+		value: "Transcription",
+		component: (
+			<TabData
+				twoButton
+				cardImage={SegmentationAnnotation}
+				cardClass="serice-carousel-card"
+				headingText="Semantic segmentation"
+				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
+			/>
+		),
+			icon: Keypoint,
+	},
+	
 ];
 
 const dedicatedResourcesChildData = [

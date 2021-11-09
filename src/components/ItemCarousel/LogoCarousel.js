@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Carousel, { consts } from "react-elastic-carousel";
+// import payscale from "../../../images/CarouselImages/payscale.png";
+// import page from "../../../images/CarouselImages/Page-1.png";
+// import mask from "../../../images/CarouselImages/mask.png";
+// import download from "../../../images/CarouselImages/download.png";
 import Udemy from "../../images/CarouselImages/udemy.svg";
 // import ForwardArrow from "../../images/ForwardArrow.svg";
 import "./LogoCarousel.css";

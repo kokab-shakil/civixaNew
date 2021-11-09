@@ -12,6 +12,11 @@ export default function TabData({
 	cardClass,
 	twoButton,
 }) {
+	const mail = (e) => {
+		 window.location = "mailto:contact@ivattstorage.co.uk";
+                          e.preventDefault();
+	}
+	
 	return (
 		<Row className={"d-flex justify-content-center m-0"}>
 			<div
@@ -41,6 +46,7 @@ export default function TabData({
 					btnText="Request a Demo"
 					btnClasses="text-white mr-3"
 					btnColor="green"
+					handlebtn={mail}
 				/>
 				{twoButton && (
 					<CustomButton

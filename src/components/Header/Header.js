@@ -35,8 +35,8 @@ export default function Header({ headercolor }) {
 
 	useEffect(() => {
 		if (headersticky || headercolor === "prussian-blue") {
-			setLogoColor(civixaWhite);
-			setColor("prussian-blue");
+			setLogoColor(civixa);
+			setColor("white");
 		} else {
 			setLogoColor(civixa);
 			setColor("white");
@@ -125,14 +125,22 @@ export default function Header({ headercolor }) {
 							<Nav
 								className={`mr-auto pl-5 align-items-lg-center`}
 							>
-								<Link
+								{/* <Link
 									eventKey="1"
 									to="/"
 									onClick={() => setExpanded(false)}
 									className="px-3 nav-link"
 								>
 									Home
-								</Link>
+								</Link> */}
+										{/* <Link
+									onClick={() => setExpanded(false)}
+									eventKey="5"
+									to="/covid"
+									className="px-3 nav-link"
+								>
+									Covid
+								</Link> */}
 								<Link
 									onClick={() => setExpanded(false)}
 									eventKey="2"
@@ -149,14 +157,7 @@ export default function Header({ headercolor }) {
 								>
 									Services
 								</Link>
-								<Link
-									onClick={() => setExpanded(false)}
-									eventKey="5"
-									to="/covid"
-									className="px-3 nav-link"
-								>
-									Covid
-								</Link>
+							
 								<Link
 									onClick={() => setExpanded(false)}
 									eventKey="4"
@@ -170,7 +171,7 @@ export default function Header({ headercolor }) {
 								<input
 									type="email"
 									className="inputReqDemo pl-3 d-none d-lg-block"
-									placeholder="test@test.com"
+									placeholder="hello@civixa.com"
 									value={inputValue}
 									onChange={hanldeInputChange}
 								/>

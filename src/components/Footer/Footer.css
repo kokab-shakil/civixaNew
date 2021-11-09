@@ -9,3 +9,38 @@
   font: normal normal 600 11px/15px Source Sans Pro;
   letter-spacing: 1.1px;
 }
+.upperFooter{
+  padding: 70px 0px;
+ display: flex;
+    user-select: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #12356a;
+}
+.footerLogo{
+    margin-right: 1rem;
+    width: 89px;
+    object-fit: contain;
+    height: 66px;
+}
+.nav-link {
+	color: #12356a;
+}
+ .nav-link:hover {
+	color:#12356a;
+  font-weight: bold;
+}
+.borderleft{
+  border-bottom: 5px solid #5CDB95;
+  width: 80px;
+    height: 0px;
+}
+.borderRight{
+  border-bottom: 1px solid #5CDB95;
+  width: 100%;
+    height: 0px;
+    padding-top: 4px;
+}
+.pBtm{
+  padding-bottom: 1rem;
+}

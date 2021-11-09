@@ -19,6 +19,7 @@ import ScrollToTop from "./ScrollToTop";
 /* CSS Import */
 import "./styles/global.css";
 import "./App.css";
+import { UpperFooter } from "./components/Footer/upperFooter";
 
 /* Fo LazyLoad */
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -100,6 +101,7 @@ function App() {
 							)}
 						/>
 					</Switch>
+					<UpperFooter/>
 					<Footer />
 				</Suspense>
 			</Router>

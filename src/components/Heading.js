@@ -18,6 +18,8 @@ export default function Heading({
 	HeadingContainer,
 	subHeading,
 	children,
+	flex,
+	pl
 }) {
 	return (
 		<>
@@ -26,7 +28,7 @@ export default function Heading({
 					top ? "flex-column" : ""
 				} ${iconBeforeClass ? iconBeforeClass : ""} ${
 					HeadingContainer ? HeadingContainer : ""
-				}`}
+				} ${flex} ${pl}   `    }
 			>
 				{topHeading && (
 					<h1 className={`data-heading ${topHeadingClass}`}>

@@ -94,7 +94,7 @@ export const TypesofAnnotion = ({ classes }) => {
 
 const childData = [
 	{
-		value: "Box Blue",
+		value: "Box ",
 		img: TypeOfService,
 		icon: BoxBlue,
 	},

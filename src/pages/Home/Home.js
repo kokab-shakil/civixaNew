@@ -28,7 +28,7 @@ export default function Home({ handleHeaderColor }) {
 			</CustomSection>
 			<CustomSection
 				height="h-auto"
-				bgColor="bg-grayish"
+				bgColor="bg-lightgreen"
 				// classes={""}
 			>
 				<SectionOne
@@ -44,7 +44,7 @@ export default function Home({ handleHeaderColor }) {
 			</CustomSection>
 			<CustomSection
 				height="h-auto"
-				bgColor="light-gray-color"
+				bgColor="bg-lightgreen"
 				classes={""}
 			>
 				<SectionFour classes={`${commonClasses} padding-all`} />
@@ -61,7 +61,7 @@ export default function Home({ handleHeaderColor }) {
 			>
 				<SmallBanner classes={`${commonClasses} padding-x py-4`} />
 			</CustomSection>
-			<CustomSection height="h-auto" bgColor="bg-lightgray" classes="">
+			<CustomSection height="h-auto" bgColor="bg-lightgreen" classes="">
 				<OurWork classes={`${commonClasses} padding-all`} />
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">

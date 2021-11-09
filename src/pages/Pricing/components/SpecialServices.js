@@ -10,7 +10,7 @@ import technicalSupport from "../images/technical-support.svg";
 const data = [
 	{
 		HeadingText: "Process huge Volumes",
-		paraText: "We love supporting you. Any way you choose.",
+		paraText: "We process large volumes of data efficiently with the help our AI tools and algorithms",
 		icon: Process,
 	},
 	{
@@ -20,12 +20,12 @@ const data = [
 	},
 	{
 		HeadingText: "Pay as you go",
-		paraText: "We love supporting you. Any way you choose.",
+		paraText: "We do not charge any advance fees. Our AI-suite charges you as per your usage.",
 		icon: Target,
 	},
 	{
 		HeadingText: "Dedicated resources",
-		paraText: "We love supporting you. Any way you choose.",
+		paraText: "If you have a tool of your own and need resources to annotate your dataset, we provide dedicated resources to work only on your project.",
 		icon: technicalSupport,
 	},
 ];
@@ -42,7 +42,7 @@ export const SpecialServices = ({ classes }) => {
 									xs={12}
 									md={6}
 									lg={3}
-									className="p-0 p-md-4"
+									// className="p-0 p-md-4"
 								>
 									<Card.Body>
 										<Heading

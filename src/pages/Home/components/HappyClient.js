@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
-import udemy from "../../../images/CarouselImages/udemy.svg";
+
 import InfiniteCarousel from "react-leaf-carousel";
 import { CustomCarousel } from "../../../components/CustomCarousel/CustomCarousel";
 import car2 from "../../../images/car2.png";

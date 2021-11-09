@@ -94,7 +94,7 @@
 
 .bg-prussian-blue.navbar-light .navbar-nav .nav-link,
 .bg-prussian-blue.navbar-light .navbar-nav .nav-link:hover {
-	color: #ffffff !important;
+	color: #12356a !important;
 }
 
 .navbar.bg-prussian-blue .logo-heading {
@@ -104,7 +104,7 @@
 /* Header Sticky CSS*/
 
 .header.sticky.navbar {
-	background-color: #12356a;
+	background-color: #ffffff;
 }
 
 .header.sticky.navbar .logo-heading {
@@ -122,7 +122,7 @@
 }
 
 .header.sticky.navbar .navbar-nav .nav-link {
-	color: #ffffff;
+	color: #12356a;
 }
 
 /* .header.navbar-light .navbar-nav .nav-link:hover {

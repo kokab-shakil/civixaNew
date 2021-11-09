@@ -10,19 +10,19 @@ import "./ContactDetails.css";
 
 const data = [
 	{
-		headingText: "Learn How Your Business Can Use Civixa",
+		headingText: "Know how Civixa can be beneficial for your business.",
 		paraText:
-			"No memorized scripts. No generic sales pitches. Your demo is yours. We’ll share actionable advice on how you can use Sleeknote on your website. 🚀",
+			" We will share our insights such as which type of annotation is suitable for your data. We will guide you through the whole process of how to share your data on our portal for annotation.",
 	},
 	{
 		headingText: "See Our Products in Action",
 		paraText:
-			"We can keep writing about how amazing our products and features are, but it’s nothing compared to seeing them in action. Let us show you how you can use Sleeknote on your site, so you can collect more emails and increase your sales with our top features. 💫",
+			"We will give you a complete tour of our tool, our annotation process and our QA process",
 	},
 	{
 		headingText: "Get Insights From Insiders",
 		paraText:
-			"We have 1,500+ happy customers in over 15 industries. Some of them are just like you. Learn their secrets to getting more subscribers and increasing sales day by day (and how you can, too.) 😉",
+			"We have happy customers in over 11 industries. Some of them are just like you. We will be sharing their thoughts and feedback of our work so that you could be at peace regarding data privacy and quality standards.😉",
 	},
 ];
 
