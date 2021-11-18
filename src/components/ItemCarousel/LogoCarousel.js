@@ -97,15 +97,15 @@ export const LogoCarousel = () => {
 						</Carousel>
 					</div>
 				</Col>
-				<Col xs={12} md={12} lg={6}>
+				{width <= 800 ? null : <Col xs={12} md={6} lg={6}>
 					<img
 						src={Car}
 						alt=""
-						className={`${width >= 992 ? "width-50vw" : "w-100"}`}
+						className={`${width >= 800 ? "width-50vw" : "w-100"}`}
 						// style={`{width: ${width >= 992 ? "50vw" : "100%"}}`}
 					></img>
-				</Col>
-				<Col xs={12} md={12} lg={6}>
+				</Col>}
+				<Col xs={12} md={6} lg={6}>
 					<Card className="happyclients-card">
 						<Card.Body className="p-4">
 							<Card.Title>

@@ -159,5 +159,26 @@
 	filter: invert(70%) sepia(10%) saturate(142%) hue-rotate(178deg)
 		brightness(85%) contrast(87%);
 }
+.anotationChildDataBox{
+	padding-top: 40px;
+	width: 100%;
+}
+/* .paddingXs{
 
+} */
 /* Changes For Child Components */
+@media only screen and (max-width: 600px) {
+ .paddingXs{
+   padding: 0;
+}
+.beholdIconXs{
+	width: 25px;
+}
+.beholdNotationXs{
+	font-size: 10px;
+}
+.anotationChildDataBox{
+	padding-left: 10vw;
+	padding-top: 10px;
+}
+}

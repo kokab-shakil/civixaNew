@@ -48,14 +48,14 @@ export default function TabData({
 					btnColor="green"
 					handlebtn={mail}
 				/>
-				{twoButton && (
+				{/* {twoButton && (
 					<CustomButton
 						btnSize="medium"
 						btnText="Get A Quote"
 						btnClasses="text-prussian-blue mr-3 service-carousel-button"
 						btnColor="white"
 					/>
-				)}
+				)} */}
 			</div>
 		</Row>
 	);

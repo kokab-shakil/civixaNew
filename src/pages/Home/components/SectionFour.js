@@ -11,7 +11,7 @@ export default function SectionFour({ classes }) {
     <Row className={classes}>
       <Col>
         <Heading
-          headingClass="font-weight-900 d-flex align-items-center justify-content-center flex-column flex-md-row"
+          headingClass="font-weight-900 d-flex align-items-center xs-fontSize-boldHeading justify-content-center  flex-md-row"
           HeadingText={[
             "A",
             <span className="position-relative">
@@ -46,30 +46,30 @@ export default function SectionFour({ classes }) {
           />
         </Row>
         <Row className="pt-5 d-flex justify-content-lg-start justify-content-center">
-          <Col xs={6} md={4}>
+          <Col xs={4} md={4} className="p-1">
             <Heading
               headingClass={"data-heading text-center text-xlg"}
               HeadingText={"1M+"}
               para
-              paraClass={"text-center text-prussian-blue font-weight-600"}
+              paraClass={"text-center paraMedia text-prussian-blue font-weight-600"}
               paraText={"Data Generated"}
             />
           </Col>
-          <Col xs={6} md={4}>
+          <Col xs={4} md={4}  className="p-1">
             <Heading
               headingClass={"data-heading text-center text-xlg"}
               HeadingText={"7.2M+"}
               para
-              paraClass={"text-center text-prussian-blue font-weight-600"}
+              paraClass={"text-center paraMedia text-prussian-blue font-weight-600"}
               paraText={"Images annotated"}
             />
           </Col>
-          <Col xs={6} md={4}>
+          <Col xs={4} md={4}  className="p-1">
             <Heading
               headingClass={"data-heading text-center text-xlg"}
               HeadingText={"06+"}
               para
-              paraClass={"text-center text-prussian-blue font-weight-600"}
+              paraClass={"text-center paraMedia text-prussian-blue font-weight-600"}
               paraText={"Deployed"}
             />
           </Col>

@@ -49,7 +49,7 @@ export default function SectionOne({ classes }) {
 					alt="data-label-web"
 				/>
 			</Col>
-			<Col xs={12} md={6} className={"pt-4 pr-0  pl-0 pl-md-5"}>
+			<Col xs={12} md={6} className={"pt-4   paddingStop"}>
 				<div className="">
 					<h1 className="data-heading ">
 						<div className="d-block justify-content-center text-left">
@@ -67,7 +67,7 @@ export default function SectionOne({ classes }) {
 						deployment of trained AI-models
 					</p>
 				</div>
-				<Row className="data-square-icon  d-flex justify-content-between align-items-center pt-4 m-0">
+				<Row className="data-square-icon  d-flex justify-content-between align-items-center pr-md-0 pr-lg-5 pt-4 m-0">
 					{data.map((item, key) => {
 						return (
 							<div
@@ -77,7 +77,7 @@ export default function SectionOne({ classes }) {
 								<img
 									src={item.img}
 									alt=""
-									className="img-fluid"
+									className="icon-img-xs"
 								/>
 								<p className="mb-0 data-square-icon-heading">
 									{item.heading}

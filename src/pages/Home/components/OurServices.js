@@ -9,7 +9,7 @@ export default function SectionTwo({ classes }) {
 	return (
 		<Row className={classes}>
 			<Heading
-				headingClass="font-weight-900 d-flex align-items-center justify-content-center flex-column flex-md-row padding-right-sm"
+				headingClass="font-weight-900 xs-fontSize-boldHeading d-flex align-items-center justify-content-center  flex-md-row padding-right-sm"
 				HeadingText={[
 					"Behold Our",
 					<span className="position-relative">

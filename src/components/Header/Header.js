@@ -70,7 +70,7 @@ export default function Header({ headercolor }) {
 		>
 			<div className="container-lg container-fluid">
 				<Navbar.Brand
-					className={`${width >= 320 ? "pl-5" : "pl-3"} pl-lg-0`}
+					className={`${width >= 320 ? "padding-left" : "pl-3"} pl-lg-0`}
 				>
 					<Link
 						to="/"

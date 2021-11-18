@@ -136,6 +136,9 @@ p {
 	font-weight: bold;
 }
 
+.paraMedia{
+font-size: 1rem;
+}
 .z-1 {
 	z-index: 1;
 }
@@ -281,7 +284,7 @@ p {
 	color: white;
 }
 .fontBig{
-	font-size: 46px;
+	font-size: 2.215rem;
 }
 /* end */
 
@@ -301,8 +304,8 @@ p {
 /* Padding */
 
 .padding-x {
-	padding-left: 10vw;
-	padding-right: 10vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
 }
 
 .padding-y {
@@ -311,14 +314,14 @@ p {
 }
 
 .padding-all {
-	padding: 5vw 10vw;
+	padding: 5vw 8vw;
 }
 .padding-Footer{
-	padding: 1vw 10vw;
+	padding: 1vw 8.5vw;
 }
 
 .padding-left {
-	padding-left: 10vw;
+	padding-left: 8.5vw;
 }
 
 .padding-right {
@@ -338,7 +341,7 @@ p {
 	}
 }
 
-@media screen and (max-width: 860px) and (min-width: 768px) {
+@media screen and (max-width: 1100px) and (min-width: 600px) {
 	.padding-all {
 		padding: 5vw 5vw;
 	}
@@ -364,4 +367,39 @@ select:focus {
 
 .line-height-1 {
 	line-height: 1;
+}
+.icon-img-xs{
+	width: auto;
+}
+@media only screen and (max-width: 600px) {
+  .text-xlg {
+	font-size: 20px;
+	font-weight: bold;
+}
+.paraMedia{
+font-size: 10px;
+}
+.icon-img-xs{
+	width: 40px;
+}
+.xs-fontSize-boldHeading{
+	font-size: 18px;
+}
+.logoFontxs{
+	font-size: 12px;
+}
+.padding-all {
+		padding: 5vw 0vw;
+	}
+.padding-Footer{
+	padding: 1vw 5vw;
+}
+.underlined:before {
+	
+	border-bottom: 5px solid #00d9ac;
+	z-index: -1;
+	/* height: 15px; */
+	/* margin-bottom: 13px; */
+}
+
 }

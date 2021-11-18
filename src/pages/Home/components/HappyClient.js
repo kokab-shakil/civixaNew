@@ -17,7 +17,7 @@ export const HappyClient = ({ classes }) => {
 		<Row className={classes}>
 			<Col xs={12}>
 				<Heading
-					headingClass="d-flex justify-content-center"
+					headingClass="xs-fontSize-boldHeading d-flex justify-content-center"
 					HeadingText={[
 						"Our",
 						<span className="position-relative">

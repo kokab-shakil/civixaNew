@@ -45,7 +45,7 @@ export default function Home({ handleHeaderColor }) {
 			<CustomSection
 				height="h-auto"
 				bgColor="bg-lightgreen"
-				classes={""}
+				classes={"paddingCv"}
 			>
 				<SectionFour classes={`${commonClasses} padding-all`} />
 			</CustomSection>

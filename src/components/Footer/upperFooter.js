@@ -27,7 +27,7 @@ export const UpperFooter = () => {
       <div className="upperFooter">
       
           <Heading
-            headingClass="footer-heading fontBig colorwhite text-center text-height-1 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+            headingClass="footer-heading xs-fontSize-boldHeading fontBig colorwhite text-center text-height-1 d-flex  flex-lg-row justify-content-center align-items-center"
             HeadingText={[
               "Get",
               <span className="position-relative">

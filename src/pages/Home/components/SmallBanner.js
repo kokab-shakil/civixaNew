@@ -7,7 +7,7 @@ export default function SmallBanner({ classes }) {
 	const [width] = useWindowSize();
 	return (
 		<Row className={classes}>
-			<Col xs={12} md={7}>
+			<Col xs={12} md={7} className="p-0">
 				{width >= 1165 ? (
 					<h1 className="d-flex text-white font-weight-900 text-medium text-left">
 						<span>Make</span>
@@ -48,14 +48,14 @@ export default function SmallBanner({ classes }) {
 				}
 			>
 				<Row>
-					<Col className="px-md-1 text-left text-md-center">
+					<Col className="px-md-1 text-left text-md-center p-0">
 						<CustomButton
 							btnColor="green"
-							btnClasses="text-white mr-1"
+							btnClasses="text-white mr-1 "
 							btnText="Request Demo"
 						/>
 					</Col>
-					<Col className="px-md-1 text-left text-md-center">
+					<Col className="px-md-1 text-left text-md-center p-0">
 						<CustomButton
 							btnColor="white"
 							btnClasses="text-prussian-blue"

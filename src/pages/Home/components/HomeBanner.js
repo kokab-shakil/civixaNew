@@ -73,7 +73,7 @@ export default function HomeBanner({ classes }) {
 							YOU ARE IN A LOVED COMPANY
 						</p>
 					</Col>
-					<Col className="pt-3 text-sm-left">
+					<Col >
 						<img
 									src={brandLogo}
 									// alt={item.name}

@@ -23,7 +23,7 @@ export default function PreTrainedModels({ classes }) {
 	}
 	return (
 		<Row className={`${width > 502 ? classes : "padding-y padding-left"}`}>
-			<Col className="d-block d-md-none">
+			<Col className="d-block d-md-none p-0">
 				<Heading
 					HeadingText={[
 						<span className="position-relative">
@@ -31,7 +31,7 @@ export default function PreTrainedModels({ classes }) {
 						</span>,
 						"models",
 					]}
-					headingClass="font-weight-900 text-left"
+					headingClass="font-weight-900 xs-fontSize-boldHeading  text-left"
 					para
 					paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
 				/>
@@ -41,7 +41,7 @@ export default function PreTrainedModels({ classes }) {
 				md={8}
 				lg={9}
 				className={
-					"d-flex flex-wrap justify-content-center justify-content-lg-around px-md-0"
+					"d-flex flex-wrap justify-content-center justify-content-lg-around p-0 px-md-0"
 				}
 			>
 				{width > 502 ? (
@@ -83,7 +83,7 @@ export default function PreTrainedModels({ classes }) {
 					<ResponsiveCardCarousel />
 				)}
 			</Col>
-			<Col className="d-block d-md-none text-left">
+			<Col className="d-block p-0 d-md-none text-left">
 				<CustomButton
 					btnColor="green"
 					btnText="Request A Demo"
