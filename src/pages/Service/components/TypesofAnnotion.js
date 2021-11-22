@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row ,Col} from "react-bootstrap";
 import ChildTab from "../../../components/CustomTabs/ChildTab";
 import { ResponsiveCarousel } from "../../../components/CustomTabs/ResponsiveCarousel";
 
@@ -23,12 +23,19 @@ import SegmentationBlue from "../../../images/NewCarouselIcons/sementation.svg";
 
 import TabData from "../../../components/CustomTabs/TabData";
 import useWindowSize from "../../../WindowSize";
-import TypeOfService from "../../../images/typeofservice.png";
+// import TypeOfService from "../../../images/typeofservice.png";
+
+import segmentation from "../../../images/bigAnnotation/segmentation.png";
+import box from "../../../images/bigAnnotation/box.png";
+import polylines from "../../../images/bigAnnotation/polylines.png";
+import point from "../../../images/bigAnnotation/point.png";
+import classification from "../../../images/bigAnnotation/classification.png";
+import polygons from "../../../images/bigAnnotation/polygons.png";
 
 const ResponsiveItem = () => {
 	const [selected, setSelected] = useState(1);
 	const [childSelected, setChildSelected] = useState(1);
-	const [option, selectedOption] = useState(TypeOfService);
+	const [option, selectedOption] = useState(box);
 
 	const handleClick = (e, selected) => {
 		const optionValue = childData.find((element) => element.value === e);
@@ -38,15 +45,15 @@ const ResponsiveItem = () => {
 	return (
 		<>
 			<Container>
-				<Row className="py-3 d-flex justify-content-center">
+				<Row className="py-3 d-flex justify-content-start justify-content-sm-center justify-content-md-center">
 					{childData.map((item, key) => {
 						return (
-							<div
+							<Col xs={4} sm={'auto'}
 								key={key}
 								className="service-carousel-smallIcon"
 							>
 								<div
-									className={`d-flex py-2 cursor-pointer ${
+									className={`d-flex fontSize-Annotate py-2 cursor-pointer ${
 										childSelected === key
 											? "childSelected"
 											: "notSelected"
@@ -57,7 +64,7 @@ const ResponsiveItem = () => {
 									<img
 										src={item.icon}
 										alt="box"
-										className={`tabIcon pr-2 ${
+										className={`tabIcon iconAnotate-xs pr-2 ${
 											childSelected === key
 												? "childSelectedIcon"
 												: "notSelectedIcon"
@@ -65,12 +72,12 @@ const ResponsiveItem = () => {
 									/>
 									{item.value}
 								</div>
-							</div>
+							</Col>
 						);
 					})}
 				</Row>
 			</Container>
-			<div className="padding-right-sm max-width-md">
+			<div className=" max-width-md">
 				<img src={option} className="img-fluid" />
 			</div>
 		</>
@@ -94,38 +101,42 @@ export const TypesofAnnotion = ({ classes }) => {
 
 const childData = [
 	{
-		value: "Box ",
-		img: TypeOfService,
+		value: "Segmentation",
+		img: segmentation,
+		icon: SegmentationBlue,
+	},
+	{
+		value: "bounding box ",
+		img:  box,
 		icon: BoxBlue,
 	},
 	{
-		value: "Classification",
-		img: TypeOfService,
-		icon: ClassificationBlue,
-	},
-	{
-		value: "Point",
-		img: TypeOfService,
-		icon: PointBlue,
-	},
-	{
-		value: "Key Point",
-		img: TypeOfService,
-		icon: KeyPointBlue,
-	},
-	{
-		value: "Polygons",
-		img: TypeOfService,
-		icon: PolygonsBlue,
-	},
-	{
 		value: "Polylines",
-		img: TypeOfService,
+		img: polylines,
 		icon: PolylinesBlue,
 	},
 	{
-		value: "Segmentation",
-		img: TypeOfService,
-		icon: SegmentationBlue,
+		value: "Point",
+		img: point,
+		icon: PointBlue,
 	},
+	{
+		value: "Classification",
+		img: classification,
+		icon: ClassificationBlue,
+	},
+	{
+		value: "Polygons",
+		img: polygons,
+		icon: PolygonsBlue,
+	},
+	
+	{
+		value: "Transcription",
+		img: point,
+		icon: KeyPointBlue,
+	},
+	
+	
+	
 ];

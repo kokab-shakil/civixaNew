@@ -14,9 +14,11 @@ import handle from "../Icons/handle.png";
 import overlap from "../Icons/overLap.png";
 import round from "../Icons/roundObject.png";
 
-import WorkAccuracy from "../Icons/work-accuracy.svg";
-import Excellence from "../Icons/excellence.svg";
-import Transparency from "../Icons/transparency.svg";
+// import WorkAccuracy from "../Icons/work-accuracy.svg";
+import Excellence from "../../../images/annotations/excellence.png";
+import Transparency from "../../../images/annotations/transparency.png";
+import  WorkAccuracy from "../../../images/annotations/acc.png";
+// import Transparency from "../Icons/transparency.svg";
 
 export const OurWork = ({ classes }) => {
 	return (
@@ -145,7 +147,7 @@ export const OurWork = ({ classes }) => {
 						iconClass="mb-auto pb-3 pr-md-2"
 						altText="sideIcon"
 						HeadingText="TRANSPARENCY"
-						headingClass="xs-fontSize-boldHeading"
+						headingClass="xs-fontSize-boldHeading2"
 						para
 						paraText="We keep our whole process transparent for you by keeping you involved in each step."
 						paraClass="text-center text-lg-left"
@@ -158,7 +160,7 @@ export const OurWork = ({ classes }) => {
 						iconClass="mb-auto pb-3 pr-md-2"
 						altText="sideIcon"
 						HeadingText="ACCURACY"
-						headingClass="xs-fontSize-boldHeading"
+						headingClass="xs-fontSize-boldHeading2"
 						para
 						paraText="All our team is in-house and we focus on training them as per customer needs. We take pride in our accuracy that is up to 99.99%"
 						paraClass="text-center text-lg-left"
@@ -171,7 +173,7 @@ export const OurWork = ({ classes }) => {
 						iconClass="mb-auto pb-3 pr-md-2"
 						altText="sideIcon"
 						HeadingText="FLEXIBILITY"
-						headingClass="xs-fontSize-boldHeading"
+						headingClass="xs-fontSize-boldHeading2"
 						para
 						paraText="We are extremely flexible as far as the file format (e.g. jpeg, png) is concerned"
 						paraClass="text-center text-lg-left"

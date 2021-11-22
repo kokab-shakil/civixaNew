@@ -8,7 +8,7 @@
 .card.serviceCard {
 	width: 304px;
 	height: auto;
-	box-shadow: 0px 5px 20px #00000029;
+	box-shadow: 0px 5px 7px #00000029;
 	border-radius: 10px;
 }
 .serviceCardHeading {
@@ -38,12 +38,14 @@
 	color: white;
 	border-radius: 20px;
 }
-
+.iconWidth{
+	width: 30%;
+}
 /* .top-heading-bottom {
   margin-bottom: -26px;
   font-size: 57px;
 } */
-.h-500 {
+.h-service {
 	height: 500px;
 }
 .top-heading {
@@ -54,6 +56,9 @@
 	font-size: 4rem;
 }
 
+.heightpara{
+	height: 14rem;
+}
 @media (max-width: 575px) {
 	.typeofservices .nav.nav-pills {
 		border: none;
@@ -61,4 +66,17 @@
 	.top-heading-bottom {
 		font-size: 2rem;
 	}
+
+}
+@media (max-width: 800px) {
+	.card.serviceCard {
+	width: 100%;
+	
+}
+.heightpara{
+	height: auto;
+}
+.h-service {
+	height: auto;
+}
 }

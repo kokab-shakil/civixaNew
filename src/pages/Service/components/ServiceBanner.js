@@ -7,12 +7,12 @@ import tool from "../../../images/tool.png";
 export const ServiceBanner = ({ classes }) => {
 	return (
 		<Row className={classes}>
-			<Col md={4} sm={6} xs={12} className="text-md-center">
-				<img src={tool} alt="Tool" />
+			<Col md={4} sm={4} xs={3} className="text-md-center p-0">
+				<img src={tool} alt="Tool" className='serviceSideBanner' />
 			</Col>
-			<Col md={8} sm={6} xs={12}>
+			<Col md={8} sm={8} xs={9}>
 				<Heading
-					headingClass="text-green text-lg font-weight-bold top-heading"
+					headingClass="text-green text-lg text-sm font-weight-bold top-heading"
 					HeadingText="Annotations"
 					para
 					paraClass="text-white"

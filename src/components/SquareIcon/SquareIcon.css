@@ -20,3 +20,12 @@
     padding: 30px;
   }
 }
+@media screen and (max-width: 600px) {
+  .arrow-after::after {
+    transform: rotateZ(90deg);
+    padding: 15px;
+  }
+  .paddingMidIcon{
+  padding: 0px 0px
+}
+}

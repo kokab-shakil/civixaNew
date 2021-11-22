@@ -20,7 +20,7 @@ const Pricing = ({ handleHeaderColor }) => {
 				classes=""
 			>
 				<PricingBanner
-					classes={`${commonClasses} flex-column padding-all`}
+					classes={`${commonClasses} flex-column padding-pricing `}
 				/>
 			</CustomSection>
 			<CustomSection

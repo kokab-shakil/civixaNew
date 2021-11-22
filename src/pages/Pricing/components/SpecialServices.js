@@ -16,17 +16,17 @@ const data = [
 	{
 		HeadingText: "24/7 Support",
 		paraText: "We love supporting you. Any way you choose.",
-		icon: Payment,
+		icon: technicalSupport ,
 	},
 	{
 		HeadingText: "Pay as you go",
 		paraText: "We do not charge any advance fees. Our AI-suite charges you as per your usage.",
-		icon: Target,
+		icon: Payment ,
 	},
 	{
 		HeadingText: "Dedicated resources",
 		paraText: "If you have a tool of your own and need resources to annotate your dataset, we provide dedicated resources to work only on your project.",
-		icon: technicalSupport,
+		icon: Target,
 	},
 ];
 

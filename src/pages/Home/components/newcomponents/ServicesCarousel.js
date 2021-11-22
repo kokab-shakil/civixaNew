@@ -28,11 +28,13 @@ import PolylinesAnnotation from "../../../../images/annotations/polylines.png";
 import SegmentationAnnotation from "../../../../images/annotations/segmentation.png";
 import boundingBox from "../../../../images/annotations/boundingBox.png";
 import pointa from "../../../../images/annotations/point.png";
-import transcriptionA from "../../../../images/annotations/transcription.png";
+import transcriptionA from "../../../../images/annotations/transcriptio.png";
 import polyline from "../../../../images/annotations/polyline.png";
 import classify from "../../../../images/annotations/child.png";
 import papaya from "../../../../images/annotations/papayaNatural.png";
+import boxSide from "../../../../images/annotations/sideBox.png";
 import alvin from "../../../../images/annotations/alvin.png";
+import meeting from "../../../../images/annotations/meeting.png";
 
 import Car from "../../../../images/car.svg";
 
@@ -141,7 +143,7 @@ const AnnotationChild = () => {
 				</div>
 			<Container className="pt-4">
 				<Row className="d-flex justify-content-center align-items-center">
-					<div className="padding-right-sm max-width-865">
+					<div className=" max-width-865">
 						{option}
 					</div>
 				</Row>
@@ -280,13 +282,17 @@ const annotationChildData = [
 	{
 		value: "Segmentation",
 		component: (
+			<>
 			<TabData
 				twoButton
 				cardImage={SegmentationAnnotation}
 				cardClass="serice-carousel-card"
 				headingText="Semantic segmentation"
-				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
-			/>
+				paraText={["Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>, <br />, ]}
+				list={['Geo-sensing for land usage', 'Autonomous driving', 'Precision agriculture', 'Industrial inspection', 'Medical imaging analysis']}	
+				/>
+			 
+			</>
 		),
 		icon: SegmentationBlue,
 	},
@@ -298,7 +304,9 @@ const annotationChildData = [
 				cardImage={boundingBox}
 				cardClass="serice-carousel-card"
 				headingText="Bouding Box"
-				paraText="The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training"
+				paraText={["The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
+				list={['Defect detection', 'Object detection for eCommerce', 'Drone training', 'Robot training']}	
+				
 			/>
 		),
 		icon: BoxBlue,
@@ -311,7 +319,8 @@ const annotationChildData = [
 				cardImage={polyline}
 				cardClass="serice-carousel-card"
 				headingText="Polylines"
-				paraText="Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads."
+				paraText={["Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads.", , <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[  'Recognise lanes and boundaries',  'Object detection for eCommerce',  'Sidewalks',  'Railroads',  'Coastal lines',  'Air strips']}	
 			/>
 		),
 		icon: PolylinesBlue,
@@ -324,7 +333,8 @@ const annotationChildData = [
 				cardImage={pointa}
 				cardClass="serice-carousel-card"
 				headingText="Point Annotation"
-				paraText="Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image."
+				paraText={["Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[  'Quantifying objects',  'Landmark detection']}	
 			/>
 		),
 		icon: PointBlue,
@@ -338,7 +348,8 @@ const annotationChildData = [
 				cardImage={classify}
 				cardClass="serice-carousel-card"
 				headingText="Image Classification"
-				paraText="Image Classification covers a broader perspective. It is used to identify that an image falls under which class. It can also be broken down into further components like tagging objects under different classes in a single image. It can be used in various use cases like assistance in educational systems, predicting human behaviour, boosting autonomous mobility etc"
+				paraText={["Image Classification covers a broader perspective. It is used to identify that an image falls under which class. It can also be broken down into further components like tagging objects under different classes in a single image. It can be used in various use cases like assistance in educational systems, predicting human behaviour, boosting autonomous mobility etc", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[  'Assistance in educational systems ',  'Human behaviour prediction',  'Improving medical imagery',  'Autonomous mobility', 'Iris recognition']}	
 			/>
 		),
 		icon: ClassificationBlue,
@@ -353,7 +364,8 @@ const annotationChildData = [
 				cardImage={Car}
 				cardClass="serice-carousel-card"
 				headingText="Polygons"
-				paraText="Polygons are used to draw precise outlines on different objects in an image. Polygons are usually used in creating datasets for training precise application models."
+				paraText={["Polygons are used to draw precise outlines on different objects in an image. Polygons are usually used in creating datasets for training precise application models.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
+				list={[ 'Satellite imagery',  'Drone imagery',  'Autonomous mobility']}	
 			/>
 		),
 		icon: PolygonsBlue,
@@ -366,8 +378,9 @@ const annotationChildData = [
 				twoButton
 				cardImage={transcriptionA}
 				cardClass="serice-carousel-card"
-				headingText="Semantic segmentation"
-				paraText="Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class"
+				headingText="Transcription"
+				paraText={["In this type of annotation, all the text is extracted from an image. The aim is to translate the image into an undersrstandable text document.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[  "Creating notes through images",  "Identifying printing mistakes"]}	
 			/>
 		),
 			icon: Keypoint,
@@ -381,7 +394,7 @@ const dedicatedResourcesChildData = [
 		component: (
 			<TabData
 				twoButton
-				cardImage={papaya}
+				cardImage={boxSide}
 				cardClass="serice-carousel-card"
 				headingText="Data Gathering"
 				paraText="There are use-cases where custom datasets are required and the customers want dedicated resources who will be producing datasets just for their AI models on a regular basis. We provide dedicated resources for these kinds of use-cases"
@@ -394,7 +407,7 @@ const dedicatedResourcesChildData = [
 		component: (
 			<TabData
 				twoButton
-				cardImage={alvin}
+				cardImage={meeting}
 				cardClass="serice-carousel-card"
 				headingText="Data Annotation"
 				paraText="There are computer vision organisations that produce thousands of images on a weekly basis and need them annotated on the go. For these clients, we provide dedicated resources who are trained and assigned to their projects only."

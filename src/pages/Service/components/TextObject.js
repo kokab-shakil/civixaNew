@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
-import TextDetectionImage from "../../../images/TextDetection-img.png";
+import TextDetectionImage from "../../../images/textDetection2.png";
 import Construction from "../../../images/construction.svg";
 import tick from "../../../images/tick.svg";
 
@@ -49,7 +49,8 @@ export const TextObjects = ({ classes }) => {
 					paraText="You can identify different objects in an image according to your AI-model’s need. It could be used for locating the object, keeping the count of any particular object, damage detection, autonomous vehicle etc"
 					paraClass="my-3"
 				/>
-				{data.map((item) => {
+				
+				{/* {data.map((item) => {
 					return (
 						<div
 							onClick={() => {
@@ -65,12 +66,12 @@ export const TextObjects = ({ classes }) => {
 							/>
 						</div>
 					);
-				})}
+				})} */}
 			</Col>
-			<Col xs={12} sm={12} md={8} className={"pt-4"}>
+			<Col  xs={12} sm={12} md={8} className={"pt-4 "}>
 				<img
 					src={dataImage}
-					className={"upper-grid img-fluid"}
+					className={"upper-grid img-fluid w-100"}
 					alt="data-label-web"
 				/>
 			</Col>

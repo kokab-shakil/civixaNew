@@ -116,7 +116,7 @@ export default function Header({ headercolor }) {
 					id="responsive-navbar-nav"
 					className={`${
 						color === "prussian-blue" ? "prussian-blue" : "white"
-					} ${width <= 991 ? "mobile-version" : "desktop-version"}`}
+					} ${width <= 991 ? "mobile-version pl" : "desktop-version"}`}
 				>
 					{width <= 991 ? (
 						<MobileVersion setExpanded={setExpanded} />
@@ -194,9 +194,14 @@ const MobileVersion = ({ setExpanded }) => {
 	const history = useHistory();
 	return (
 		<>
-			<Nav className="mr-auto pl-5 align-items-lg-center">
+			<Nav className="mr-auto align-items-lg-center ">
 				<Nav className="d-flex pl-lg-0 pl-3 align-items-lg-center">
-					<h3 className="heading">Enabling AI Transformation</h3>
+					<h3 className="heading">Civixa.ai empowers organisations by providing a combination
+                   of pre-requisite services for the training of any AI-model.
+					</h3>
+					<h3 className="headingWork">
+						OUR WORK
+					</h3>
 				</Nav>
 				<Link
 					eventKey="1"
@@ -206,7 +211,7 @@ const MobileVersion = ({ setExpanded }) => {
 							setExpanded(false);
 						}, 200)
 					}
-					className="px-3  mobile-nav-link"
+					className="mx-3 pb-1 mb-4 mobile-nav-link"
 				>
 					Home
 				</Link>
@@ -218,7 +223,7 @@ const MobileVersion = ({ setExpanded }) => {
 					}
 					eventKey="2"
 					to="/pricing"
-					className="px-3 mobile-nav-link"
+					className="mx-3 pb-1 mb-4 mobile-nav-link"
 				>
 					Pricing
 				</Link>
@@ -230,11 +235,11 @@ const MobileVersion = ({ setExpanded }) => {
 					}
 					eventKey="3"
 					to="/service"
-					className="px-3 mobile-nav-link"
+					className="mx-3 pb-1 mb-4 mobile-nav-link"
 				>
 					Services
 				</Link>
-				<Link
+				{/* <Link
 					onClick={() =>
 						setTimeout(() => {
 							setExpanded(false);
@@ -245,7 +250,7 @@ const MobileVersion = ({ setExpanded }) => {
 					className="px-3 mobile-nav-link"
 				>
 					Covid
-				</Link>
+				</Link> */}
 				<Link
 					onClick={() =>
 						setTimeout(() => {
@@ -254,14 +259,14 @@ const MobileVersion = ({ setExpanded }) => {
 					}
 					eventKey="4"
 					to="/contact"
-					className="px-3 mobile-nav-link"
+					className="mx-3 pb-1 mb-4 mobile-nav-link"
 				>
 					Contact Us
 				</Link>
 			</Nav>
-			<Nav className="d-flex pl-lg-0 pl-5 ml-3 align-items-lg-center">
+			<Nav className="d-flex  ml-3 align-items-lg-center">
 				<button
-					className="btnReqDemo py-2 px-4 mx-md-0 my-4 text-white"
+					className="btnNav py-2 px-4 mx-md-0 my-4 "
 					onClick={() => history.push("/contact")}
 				>
 					Request Demo

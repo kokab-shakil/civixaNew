@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
-import TextDetectionImage from "../../../images/TextDetection-img.png";
+import TextDetectionImage from "../../../images/annotations/transcriptio.png";
 import Construction from "../../../images/construction.svg";
 import tick from "../../../images/tick.svg";
 
@@ -46,10 +46,10 @@ export const TextDetection = ({ classes }) => {
 					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="TEXT DETECTION"
 					para
-					paraText="You can identify different objects in an image"
+					paraText="You can extract valuable insights from enormous text data and can train your AI-model to automate your textual dealings, for example, automated customer care . Civixa helps you to annotate the data for three types of different use cases:"
 					paraClass="my-3"
 				/>
-				{data.map((item) => {
+				{/* {data.map((item) => {
 					return (
 						<div
 							onClick={() => {
@@ -65,12 +65,12 @@ export const TextDetection = ({ classes }) => {
 							/>
 						</div>
 					);
-				})}
+				})} */}
 			</Col>
 			<Col xs={12} sm={12} md={8} className={"pt-4"}>
 				<img
 					src={dataImage}
-					className={"upper-grid img-fluid"}
+					className={"upper-grid w-100 img-fluid"}
 					alt="data-label-web"
 				/>
 			</Col>

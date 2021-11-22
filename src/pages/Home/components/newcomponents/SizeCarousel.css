@@ -2,7 +2,7 @@
 	width: 100%;
 	height: auto;
 	/* padding-bottom: 3.75rem; */
-	right: 0px;
+	/* right: 23px; */
 }
 .sizeCarousel.swiper-container .swiper-wrapper {
 	border: 1px solid #12356a;
@@ -151,7 +151,7 @@
 */
 
 .max-width-865 {
-	max-width: 865px;
+	max-width: 915px;
 	/* height: 264px; */
 }
 
@@ -180,5 +180,8 @@
 .anotationChildDataBox{
 	padding-left: 10vw;
 	padding-top: 10px;
+}
+.fontSize-Annotate{
+	font-size: 11px;
 }
 }

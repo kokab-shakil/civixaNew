@@ -23,7 +23,7 @@ import ino from "../../images/brandLogos/innovert.jpg"
 import { Link } from "react-router-dom";
 export const Footer = () => {
   const mail = (e) => {
-		 window.location = "mailto:contact@ivattstorage.co.uk";
+		 window.location = "mailto:hello@civixa.com";
                           e.preventDefault();
 	}
   return (
@@ -138,7 +138,7 @@ export const Footer = () => {
                 <img className='footerLogo' src={pasha} alt="LinkedIn Logo" />
                 <img className='footerLogo' src={nest} alt="LinkedIn Logo" />
               </div>
-              <div className="d-flex flex-wrap  col-lg-auto col-md-auto col-sm-auto col-12 ">
+              <div className="d-flex flex-wrap pb-2 col-lg-auto col-md-auto col-sm-auto col-12 ">
                 <img className='footerSocialLogo' src={fb} alt="Facebook Logo" />
                 <img className='footerSocialLogo' src={tw} alt="LinkedIn Logo" />
                 <img className='footerSocialLogo' src={ln} alt="LinkedIn Logo" />

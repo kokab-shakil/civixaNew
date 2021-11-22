@@ -22,23 +22,23 @@ export default function Service({ handleHeaderColor }) {
 	return (
 		<>
 			<CustomSection
-				height="h-500 "
+				height="h-service"
 				bgColor="bg-prussian-blue"
 				classes=""
 			>
 				<ServiceBanner
-					classes={`${commonClasses} align-items-lg-start padding-all`}
+					classes={`${commonClasses}  padding-service`}
 				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">
 				<TypesofAnnotion
-					classes={`${commonClasses} position-relative padding-all`}
+					classes={`${commonClasses} position-relative padding-service`}
 				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-lightgray">
 				<SmallBanner classes={`${commonClasses} padding-all`} />
 			</CustomSection>
-			<CustomSection
+			{/* <CustomSection
 				height="h-auto"
 				bgColor="bg-white"
 				classes="typeofservices"
@@ -48,19 +48,21 @@ export default function Service({ handleHeaderColor }) {
 						width >= 768 ? "padding-all" : "padding-y padding-left"
 					}`}
 				/>
-			</CustomSection>
+			</CustomSection> */}
 			<CustomSection height="h-auto" bgColor="bg-white">
 				<ServiceCard classes={`${commonClasses} padding-all`} />
 			</CustomSection>
+			
+			
 			<CustomSection height="h-auto" bgColor="bg-white">
-				<TextDetection classes={`${commonClasses} padding-all`} />
+				<TextObjects classes={`${commonClasses} padding-all`}/>
+				{/* <TextDetection classes={`${commonClasses} padding-all`} /> */}
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">
 				<Classification classes={`${commonClasses} padding-all`} />
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="bg-white">
-				<TextObjects classes={`${commonClasses} padding-all`}/>
-				{/* <TextDetection classes={`${commonClasses} padding-all`} /> */}
+				<TextDetection classes={`${commonClasses} padding-all`} />
 			</CustomSection>
 		</>
 	);

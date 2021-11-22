@@ -102,3 +102,11 @@
 .responsive-carousel .InfiniteCarouselArrowIcon {
 	padding: 5px;
 }
+
+@media only screen and (max-width: 1000px) {
+ .topLeftDots {
+	display: none;
+}
+
+
+}

@@ -12,15 +12,16 @@ import CuboidBlue from "./Images/cuboid.svg";
 import ClassificationBlue from "../../images/NewCarouselIcons/classification-blue.svg";
 // import classification from '../../ ./Images/classification-blue.svg'
 import RepeatGrid from "../../images/RepeatGrid.svg";
+import transcriptionA from "../../images/annotations/transcriptio.png";
 
-// import classification from "./TabIcons/classification.svg";
-// import box from "./TabIcons/box.svg";
-// import cuboid from "./TabIcons/Cuboid.svg";
-// import point from "./TabIcons/point.svg";
-// import polygons from "./TabIcons/Polygons.svg";
-// import polylines from "./TabIcons/polylines.svg";
-// import segmentation from "./TabIcons/segmentation.svg";
-// import transcription from "./TabIcons/Transcription.svg";
+
+import segmentation from "../../images/bigAnnotation/segmentation.png";
+import box from "../../images/bigAnnotation/box.png";
+import polylines from "../../images/bigAnnotation/polylines.png";
+import point from "../../images/bigAnnotation/point.png";
+import classification from "../../images/bigAnnotation/classification.png";
+import polygons from "../../images/bigAnnotation/polygons.png";
+
 import TabData from "./TabData";
 import Heading from "../Heading";
 import { TabLeft } from "./TabLeft";
@@ -61,13 +62,23 @@ export default function ChildTab({ left }) {
 						}`}
 					>
 						<Nav.Item className="mb-2">
+							<Nav.Link eventKey="segmentation">
+								<img
+									src={SegmentationBlue}
+									alt="Segmentation"
+									className={"tabIcon pr-2"}
+								/>
+								Segmentation
+							</Nav.Link>
+						</Nav.Item>
+						<Nav.Item className="mb-2">
 							<Nav.Link eventKey="BoxBlue">
 								<img
 									src={BoxBlue}
 									alt="BoxBlue"
 									className={"tabIcon pr-2"}
 								/>
-								Box 
+								Bounding Box 
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item className="mb-2">
@@ -91,15 +102,16 @@ export default function ChildTab({ left }) {
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item className="mb-2">
-							<Nav.Link eventKey="cuboid">
+							<Nav.Link eventKey="classification">
 								<img
-									src={CuboidBlue}
-									alt="Cuboid"
+									src={ClassificationBlue}
+									alt="classification"
 									className={"tabIcon pr-2"}
 								/>
-								Cuboid
+								Classification
 							</Nav.Link>
 						</Nav.Item>
+						
 						<Nav.Item className="mb-2">
 							<Nav.Link eventKey="polygons">
 								<img
@@ -107,50 +119,42 @@ export default function ChildTab({ left }) {
 									alt="Polygons"
 									className={"tabIcon pr-2"}
 								/>
-								Polyons
+								Polygons
 							</Nav.Link>
 						</Nav.Item>
 						<Nav.Item className="mb-2">
-							<Nav.Link eventKey="segmentation">
+							<Nav.Link eventKey="cuboid">
 								<img
-									src={SegmentationBlue}
-									alt="Segmentation"
+									src={KeyPointBlue}
+									alt="Cuboid"
 									className={"tabIcon pr-2"}
 								/>
-								Segmentation
+								Transcription
 							</Nav.Link>
 						</Nav.Item>
-						<Nav.Item className="mb-2">
-							<Nav.Link eventKey="classification">
-								<img
-									src={ClassificationBlue}
-									alt="classification"
-									className={"tabIcon pr-2"}
-								/>
-								classification
-							</Nav.Link>
-						</Nav.Item>
+						
+						
 					</Nav>
 				</Col>
 				<Col sm={8} md={left ? 9 : 8} className="">
 					<Tab.Content>
 						<Tab.Pane eventKey="BoxBlue">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={box} />
 							) : (
 								<TabData />
 							)}
 						</Tab.Pane>
 						<Tab.Pane eventKey="polylines">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={polylines} />
 							) : (
 								<TabData />
 							)}
 						</Tab.Pane>
 						<Tab.Pane eventKey="points">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={point} />
 							) : (
 								<TabData />
 							)}
@@ -164,21 +168,21 @@ export default function ChildTab({ left }) {
 						</Tab.Pane>
 						<Tab.Pane eventKey="polygons">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={polygons} />
 							) : (
 								<TabData />
 							)}
 						</Tab.Pane>
 						<Tab.Pane eventKey="segmentation">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={segmentation} />
 							) : (
 								<TabData />
 							)}
 						</Tab.Pane>
 						<Tab.Pane eventKey="classification">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={classification} />
 							) : (
 								<TabData />
 							)}

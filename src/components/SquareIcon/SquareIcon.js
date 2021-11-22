@@ -30,7 +30,7 @@ export default function SquareIcon({
 						src={Icon}
 						alt="data-label-web"
 					/>
-					<p className={"mt-2 text-center mb-0 text-prussian-blue"}>
+					<p className={"mt-0 mt-md-2  text-center mb-0 text-prussian-blue"}>
 						{titleOne}
 					</p>
 					<p

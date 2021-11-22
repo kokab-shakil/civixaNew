@@ -9,7 +9,7 @@ export default function SectionTwo({ classes }) {
 	return (
 		<Row className={classes}>
 			<Heading
-				headingClass="font-weight-900 xs-fontSize-boldHeading d-flex align-items-center justify-content-center  flex-md-row padding-right-sm"
+				headingClass="font-weight-900 xs-fontSize-boldHeading d-flex align-items-center justify-content-center  flex-md-row "
 				HeadingText={[
 					"Behold Our",
 					<span className="position-relative">
@@ -17,8 +17,10 @@ export default function SectionTwo({ classes }) {
 					</span>,
 				]}
 				para
-				paraClass="w-lg-50 text-center padding-right-sm"
-				paraText="Your model’s annotation needs can be different according to the requirements of your business. Here are the services Civixa has to offer inorder to annotate your dataset"
+				paraClass="w-lg-80 text-center "
+				paraText="Civixa.ai provides the following services. Feel free to reach out if you need more details.
+New: Your model’s annotation needs can be different according to the requirements of your business. Here are the services Civixa has to offer inorder to annotate your dataset.
+"
 			/>
 			<ServicesCarousel />
 			{/* {width > 768 ? <ParentTab /> : <ServiceCarousel />} */}

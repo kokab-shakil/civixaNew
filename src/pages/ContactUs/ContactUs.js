@@ -14,7 +14,7 @@ const ContactUs = ({ handleHeaderColor }) => {
 		<>
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<ContactBanner
-					classes={`${commonClasses} flex-column padding-all`}
+					classes={`${commonClasses} flex-column padding-pricing`}
 				/>
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">

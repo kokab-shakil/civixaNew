@@ -20,7 +20,7 @@ import ino from "../../images/brandLogos/innovert.jpg"
 import { Link } from "react-router-dom";
 export const UpperFooter = () => {
   const mail = (e) => {
-		 window.location = "mailto:contact@ivattstorage.co.uk";
+		 window.location = "mailto:hello@civixa.com";
                           e.preventDefault();
 	}
     return (
@@ -30,10 +30,8 @@ export const UpperFooter = () => {
             headingClass="footer-heading xs-fontSize-boldHeading fontBig colorwhite text-center text-height-1 d-flex  flex-lg-row justify-content-center align-items-center"
             HeadingText={[
               "Get",
-              <span className="position-relative">
-                <span className="px-2 underlined">Started</span>
-              </span>,
-                "With Civixa.Ai Today",
+              
+                " Started With Civixa.Ai Today",
             
                 ]}
                 // paraClass="colorwhite"

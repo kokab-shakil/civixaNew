@@ -23,12 +23,7 @@ import { UpperFooter } from "./components/Footer/upperFooter";
 
 /* Fo LazyLoad */
 const Home = lazy(() => import("./pages/Home/Home"));
-// const About = lazy(() => import("./pages/About/About"));
-// const Service = lazy(() => import("./pages/Service/Service"));
-// const Covid = lazy(() => import("./pages/COVID/Covid"));
-// const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
-// const ContactUsOne = lazy(() => import("./pages/ContactUsOne/ContactUsOne"));
-// const Pricing = lazy(() => import("./pages/Pricing/Pricing"));
+
 
 function App() {
 	const [headerColor, setHeaderColor] = useState();

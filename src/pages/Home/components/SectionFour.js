@@ -21,9 +21,7 @@ export default function SectionFour({ classes }) {
           ]}
           para
           paraClass=" text-center m-auto"
-          paraText="We provide complete services for the companies in need to incorporate
-          AI in their businesses from scratch. From data gathering to deployment
-          of highly trained AI-models, Civixa.ai is the right choice"
+          paraText="We provide complete services for the companies in need to incorporate AI in their businesses from scratch. From data gathering to deployment of highly trained AI-models, Civixa.ai provides a complete suite."
         />
         <Row className="data-square-icon d-flex align-items-center flex-column flex-xl-row flex-lg-row w-70 m-auto">
           <SquareIcon

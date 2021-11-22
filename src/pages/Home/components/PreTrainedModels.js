@@ -18,12 +18,12 @@ import SwiperCore from "swiper/core";
 export default function PreTrainedModels({ classes }) {
 	const [width] = useWindowSize();
 	const mail = (e) => {
-		 window.location = "mailto:contact@ivattstorage.co.uk";
+		 window.location = "mailto:hello@civixa.com";
                           e.preventDefault();
 	}
 	return (
-		<Row className={`${width > 502 ? classes : "padding-y padding-left"}`}>
-			<Col className="d-block d-md-none p-0">
+		<Row className={`${width > 502 ? classes : "padding-y paddingStop"}`}>
+			<Col className="d-block d-flex align-items-center flex-column d-md-none p-0">
 				<Heading
 					HeadingText={[
 						<span className="position-relative">
@@ -31,8 +31,9 @@ export default function PreTrainedModels({ classes }) {
 						</span>,
 						"models",
 					]}
-					headingClass="font-weight-900 xs-fontSize-boldHeading  text-left"
+					headingClass="font-weight-900 xs-fontSize-boldHeading text-center text-md-left"
 					para
+					paraClass=" text-center text-md-left"
 					paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
 				/>
 			</Col>
@@ -83,7 +84,7 @@ export default function PreTrainedModels({ classes }) {
 					<ResponsiveCardCarousel />
 				)}
 			</Col>
-			<Col className="d-block p-0 d-md-none text-left">
+			<Col className="d-block p-0 d-md-none text-center text-md-left">
 				<CustomButton
 					btnColor="green"
 					btnText="Request A Demo"

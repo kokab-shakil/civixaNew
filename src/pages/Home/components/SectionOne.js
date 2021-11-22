@@ -52,19 +52,17 @@ export default function SectionOne({ classes }) {
 			<Col xs={12} md={6} className={"pt-4   paddingStop"}>
 				<div className="">
 					<h1 className="data-heading ">
-						<div className="d-block justify-content-center text-left">
+						<div className="d-block justify-content-center text-center text-md-left">
 							One stop shop for
-							<div className="d-flex justify-content-md-start">
+							<div className="d-flex justify-content-center justify-content-md-start text-center">
 								<span className="pr-2 underlined">data</span>
 								labeling
 							</div>
 						</div>
 					</h1>
-					<p>
-						Civixa.ai is a trustable partner for all your computer
-						vision needs. We help organisations in automating their
-						business processes, from data generation to the
-						deployment of trained AI-models
+					<p className=" text-center text-md-left" >
+						Civixa.ai is a trustable partner for all your computer vision needs. We help organisations in automating their business processes, from data generation to the deployment of trained AI models so they could invest their time where it is needed the most.
+
 					</p>
 				</div>
 				<Row className="data-square-icon  d-flex justify-content-between align-items-center pr-md-0 pr-lg-5 pt-4 m-0">

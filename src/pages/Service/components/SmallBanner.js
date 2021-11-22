@@ -7,7 +7,7 @@ import Civixa from "../../../images/civixa.svg";
 export const SmallBanner = ({ classes }) => {
 	return (
 		<Row className={classes}>
-			<Col md={4} sm={12} xs={12}>
+			<Col className='d-none d-md-flex'  md={4} sm={12} xs={12}>
 				<Heading
 					iconBefore
 					icon={Civixa}
@@ -22,7 +22,7 @@ export const SmallBanner = ({ classes }) => {
 					headingClass="font-weight-900 text-left"
 					HeadingText="Accelerate the Development of AI Applications"
 					para
-					paraText="We provide assisted data collection, labeling and, model training with the help of our AI tools and ML algorithms. We have a rich interface of APIs for our clients to push huge volumes of data to our system and integrate results back to their systems."
+					paraText="Develop highly accurate AI models with the help of our data collection and data annotation services. Request a demo now for a complete tour of our processes."
 				>
 					<CustomButton
 						btnText="REQUEST DEMO"

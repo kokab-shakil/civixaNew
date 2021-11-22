@@ -39,6 +39,7 @@
 	.ResponsiveCardCarousel .swiper-button-next.swiper-button-disabled {
 		left: 8%;
 	}
+
 }
 
 @media screen and (max-width: 375px) {
@@ -95,3 +96,16 @@
     left: 50px;
 }
 */
+@media screen and (max-width: 600px) {
+  .arrow-after::after {
+    transform: rotateZ(90deg);
+    padding: 15px;
+  }
+  .paddingMidIcon{
+  padding: 0px 0px
+}
+	.ResponsiveCardCarousel .swiper-slide {
+
+	max-width: 210px;
+}
+}

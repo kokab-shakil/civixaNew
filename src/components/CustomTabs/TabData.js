@@ -5,15 +5,17 @@ import Heading from "../Heading";
 import car from "../../images/car.svg";
 import "./TabData.css";
 
+
 export default function TabData({
 	cardImage,
 	headingText,
 	paraText,
 	cardClass,
 	twoButton,
+	list
 }) {
 	const mail = (e) => {
-		 window.location = "mailto:contact@ivattstorage.co.uk";
+		 window.location = "mailto:hello@civixa.com";
                           e.preventDefault();
 	}
 	
@@ -38,7 +40,16 @@ export default function TabData({
 						HeadingText={headingText}
 						para
 						paraText={paraText}
+						paraClass="mb-0"
 					/>
+					<Row>
+					{list.map(listItem =><Col md={'auto'} className='d-flex pr-0'>
+						<div md={1} className='pr-2 d-flex align-items-center'>
+							<i class="bi bi-circle listIcon"></i>
+						</div>
+						<div md={11}> <p className="listFont mb-0">{listItem}</p> </div>
+					</Col>)}
+					</Row>
 				</Col>
 			</div>
 			<div className="pt-4 text-center">

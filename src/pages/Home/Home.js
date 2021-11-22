@@ -23,7 +23,7 @@ export default function Home({ handleHeaderColor }) {
 		<>
 			<CustomSection height="h-auto " bgColor="white" classes={"p-0"}>
 				<HomeBanner
-					classes={`${commonClasses} m-0 padding-left pb-0`}
+					classes={`${commonClasses} m-0 paddingStop pb-0`}
 				/>
 			</CustomSection>
 			<CustomSection
@@ -38,7 +38,7 @@ export default function Home({ handleHeaderColor }) {
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<OurServices
 					classes={`${commonClasses} ${
-						width < 740 ? "padding-left padding-y" : "padding-all"
+						width < 740 ? "paddingStop padding-y" : "padding-all"
 					} flex-wrap flex-column`}
 				/>
 			</CustomSection>
@@ -64,9 +64,9 @@ export default function Home({ handleHeaderColor }) {
 			<CustomSection height="h-auto" bgColor="bg-lightgreen" classes="">
 				<OurWork classes={`${commonClasses} padding-all`} />
 			</CustomSection>
-			<CustomSection height="h-auto" bgColor="white" classes="">
+			{/* <CustomSection height="h-auto" bgColor="white" classes="">
 				<HappyClient classes={`${commonClasses} padding-all`} />
-			</CustomSection>
+			</CustomSection> */}
 		</>
 	);
 }

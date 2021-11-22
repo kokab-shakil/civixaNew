@@ -316,6 +316,9 @@ font-size: 1rem;
 .padding-all {
 	padding: 5vw 8vw;
 }
+.padding-pricing{
+	padding: 5vw 8vw;
+}
 .padding-Footer{
 	padding: 1vw 8.5vw;
 }
@@ -330,6 +333,10 @@ font-size: 1rem;
 
 .w-md-40 {
 	width: 40%;
+}
+.listIcon{
+	color: #12356a;
+	font-size: 9px;
 }
 
 @media screen and (max-width: 603px) {
@@ -352,7 +359,9 @@ font-size: 1rem;
 		width: 100%;
 	}
 }
-
+.padding-service{
+	padding: 5vw 5vw;
+}
 /* end */
 
 input:focus,
@@ -371,6 +380,9 @@ select:focus {
 .icon-img-xs{
 	width: auto;
 }
+.listFont{
+	font-size: 14px;
+}
 @media only screen and (max-width: 600px) {
   .text-xlg {
 	font-size: 20px;
@@ -383,6 +395,9 @@ font-size: 10px;
 	width: 40px;
 }
 .xs-fontSize-boldHeading{
+	font-size: 22px;
+}
+.xs-fontSize-boldHeading2{
 	font-size: 18px;
 }
 .logoFontxs{
@@ -391,6 +406,9 @@ font-size: 10px;
 .padding-all {
 		padding: 5vw 0vw;
 	}
+.padding-pricing{
+	padding: 5vw 5vw;
+}
 .padding-Footer{
 	padding: 1vw 5vw;
 }
@@ -401,5 +419,19 @@ font-size: 10px;
 	/* height: 15px; */
 	/* margin-bottom: 13px; */
 }
-
+.serviceSideBanner{
+	width:100%
+}
+.text-sm{
+	font-size: 3rem;
+}
+.iconAnotate-xs{
+	width: 20px;
+}
+.fontSize-Annotate{
+	font-size: 11px;
+}
+.listFont{
+	font-size: 12px;
+}
 }

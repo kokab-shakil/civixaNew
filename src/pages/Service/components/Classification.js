@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Heading from "../../../components/Heading";
-import copyright from "../../../images/copyright.png";
+import copyright from "../../../images/constraction.png";
 import Construction from "../../../images/construction.svg";
 import tick from "../../../images/tick.svg";
 
@@ -42,7 +42,7 @@ export const Classification = ({ classes }) => {
 			<Col xs={12} md={8} className={"pt-4 order-lg-first"}>
 				<img
 					src={copyright}
-					className={"upper-grid img-fluid"}
+					className={"upper-grid img-fluid w-100"}
 					alt="data-label-web"
 				/>
 				<img src={RepeatGrid} alt="Dots" className="topLeftDots" />

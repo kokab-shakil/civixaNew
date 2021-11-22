@@ -7,10 +7,11 @@ import HomeBannerImage from "../../../images/home/HomeBanner.png";
 // import Forcast from "../../../images/home/Forcast.png";
 // import Tars from "../../../images/home/Tars.png";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 // Logos
 import Agunsa from "../../../images/homebanner/agunsa.svg";
-import brandLogo from "../../../images/homebanner/brandLogo.png";
+import brandLogo from "../../../images/homebanner/brandLog.png";
 import Ddindustries from "../../../images/homebanner/ddindustries.svg";
 import Forcast from "../../../images/homebanner/forcast.svg";
 import Ignous from "../../../images/homebanner/ignous.svg";
@@ -18,6 +19,7 @@ import Tars from "../../../images/homebanner/tars.svg";
 import Teamcore from "../../../images/homebanner/teamcore.svg";
 
 export default function HomeBanner({ classes }) {
+	const history = useHistory();
 	return (
 		<Row className={classes}>
 			<Col xs={12} md={12} lg={6} className={"z-1 py-3 pl-0"}>
@@ -31,7 +33,7 @@ export default function HomeBanner({ classes }) {
 						</span>,
 						
 						<span className="text-lg font-weight-900 ml-0 ml-md-2 ml-lg-0 homebanner-heading">
-							Transformation
+							Transformations
 						</span>,
 					]}
 					para
@@ -40,7 +42,7 @@ export default function HomeBanner({ classes }) {
 						"Civixa.ai empowers organisations by providing a combination of pre-requisite services for the training of any AI-model."
 					}
 				/>
-				<Row className="d-flex align-items-start pl-3">
+				<Row className="d-flex align-items-start container">
 					<CustomButton
 						btnSize="md"
 						btnColor="green"
@@ -48,6 +50,8 @@ export default function HomeBanner({ classes }) {
 						btnClasses=" mb-3 mr-3"
 						border="btnBorder"
 						btnTextColor="btnTextColor"
+						handlebtn={() => history.push("/contact")}
+						
 					/>
 					<div
 						className={
