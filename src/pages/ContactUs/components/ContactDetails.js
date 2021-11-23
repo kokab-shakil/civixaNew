@@ -1,12 +1,16 @@
 import React from "react";
+import { useState, useEffect } from 'react';
 import { Col, Container, Row } from "react-bootstrap";
 import CustomButton from "../../../components/CustomButton/CustomButton";
 import CustomCard from "../../../components/CustomCard/CustomCard";
 import Heading from "../../../components/Heading";
 import tick from "../../../images/tick.svg";
 import useWindowSize from "../../../WindowSize";
-
+import { Link, useHistory } from "react-router-dom";
 import "./ContactDetails.css";
+const axios = require("axios");
+
+
 
 const data = [
 	{
@@ -26,8 +30,36 @@ const data = [
 	},
 ];
 
+
 export const ContactDetails = ({ classes }) => {
+	const history = useHistory();
+	const [UserEmail, setEmail] = useState("");
+     const [msgs, setMsg] = useState('');
 	const [width] = useWindowSize();
+
+	const handleEmailInput = (e) => {
+		setEmail(e.target.value)
+	}
+	const handleSubmit = (e) => {
+    e.preventDefault();
+
+   
+    let email = UserEmail;
+    let msg = msgs
+    axios
+		.post("http://localhost:5000/register", {
+		 
+			email: email,
+			message: msg,
+      })
+		.then(function (response) {
+        history.push("/");
+        window.location.reload();
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
 	return (
 		<Row
 			className={`${classes} position-relative justify-content-lg-start`}
@@ -94,11 +126,14 @@ export const ContactDetails = ({ classes }) => {
 						class="form-control form-control-lg my-4"
 						type="text"
 						placeholder=""
+						value={UserEmail}
+						onChange={handleEmailInput}
 					></input>
 					<CustomButton
 						btnColor="prussian-blue"
 						btnClasses="text-white m-auto"
 						btnText="Get Started"
+						handlebtn={handleSubmit}
 						// btnSize="small"
 					/>
 				</CustomCard>
