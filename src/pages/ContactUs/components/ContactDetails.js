@@ -122,6 +122,7 @@ export const ContactDetails = ({ classes }) => {
 					paraClass="text-center text-prussian-blue"
 					paraText="Enter your email address and we’ll connect you with the right person."
 				>
+					{/*  */}
 					<input
 						class="form-control form-control-lg my-4"
 						type="text"
