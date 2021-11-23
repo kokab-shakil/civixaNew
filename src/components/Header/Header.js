@@ -8,6 +8,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import useWindowSize from "../../WindowSize";
+import CustomButton from "../CustomButton/CustomButton";
 
 export default function Header({ headercolor }) {
 	const [headersticky, setHeaderSticky] = useState(false);
@@ -68,7 +69,7 @@ export default function Header({ headercolor }) {
 				color === "white" ? "bg-color-white" : "bg-prussian-blue"
 			} ${headersticky ? "sticky" : ""}`}
 		>
-			<div className="container-lg container-fluid">
+			<div className="container-lg p-0 container-fluid">
 				<Navbar.Brand
 					className={`${width >= 320 ? "padding-left" : "pl-3"} pl-lg-0`}
 				>
@@ -192,6 +193,12 @@ export default function Header({ headercolor }) {
 
 const MobileVersion = ({ setExpanded }) => {
 	const history = useHistory();
+	const handleMobileRequestBtn = e  => {
+		history.push("/contact")
+		setTimeout(() => {
+								setExpanded(false);
+							}, 200)
+	}
 	return (
 		<>
 			<Nav className="mr-auto align-items-lg-center ">
@@ -265,12 +272,14 @@ const MobileVersion = ({ setExpanded }) => {
 				</Link>
 			</Nav>
 			<Nav className="d-flex  ml-3 align-items-lg-center">
-				<button
-					className="btnNav py-2 px-4 mx-md-0 my-4 "
-					onClick={() => history.push("/contact")}
-				>
-					Request Demo
-				</button>
+			
+				<CustomButton
+								btnText="GET IN TOUCH"
+								btnClasses="text-prussian-blue package-btn"
+								btnColor="green"
+								handlebtn={handleMobileRequestBtn}
+							/>
+				
 			</Nav>
 		</>
 	);

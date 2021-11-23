@@ -9,13 +9,13 @@ import technicalSupport from "../images/technical-support.svg";
 
 const data = [
 	{
-		HeadingText: "Process huge Volumes",
-		paraText: "We process large volumes of data efficiently with the help our AI tools and algorithms",
+		HeadingText: "Large volumes of data:",
+		paraText: "We process large volumes of data efficiently with the help our AI tools and algorithms.",
 		icon: Process,
 	},
 	{
 		HeadingText: "24/7 Support",
-		paraText: "We love supporting you. Any way you choose.",
+		paraText: "We love supporting you round the clock. For any query, we are only a message away.",
 		icon: technicalSupport ,
 	},
 	{
@@ -35,7 +35,7 @@ export const SpecialServices = ({ classes }) => {
 		<Row className={`${classes} pricingServices`}>
 			<Card CardClasses="w-auto">
 				<Container>
-					<Row className="p-xl-5 p-lg-3">
+					<Row className="p-xl-3 p-lg-3">
 						{data.map((item) => {
 							return (
 								<Col

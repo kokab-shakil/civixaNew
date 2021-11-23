@@ -34,7 +34,7 @@ export const OurWork = ({ classes }) => {
 				HeadingContainer="w-100"
 				para
 				paraClass="pt-2 w-70 text-center paddingCv  "
-				paraText="All our resources are inhouse and with our ML-assisted tools, we provide 99.99% accuracy while maintaining high-quality standards using our built-in QC workflows and tools."
+				paraText="All of our resources for data labeling services are in house. With our ML-assisted tools, we provide 99.99% accuracy while maintaining high-quality standards using our built-in QC workflows and tools"
 			/>
 			<Row className="pt-4 pb-md-5 zindex0 d-none d-md-flex">
 				<Col xs={12} md={6} className={"position-relative"}>
@@ -149,7 +149,7 @@ export const OurWork = ({ classes }) => {
 						HeadingText="TRANSPARENCY"
 						headingClass="xs-fontSize-boldHeading2"
 						para
-						paraText="We keep our whole process transparent for you by keeping you involved in each step."
+						paraText="We keep our whole process transparent by keeping you involved in each step of the process."
 						paraClass="text-center text-lg-left"
 					/>
 				</Col>
@@ -162,7 +162,7 @@ export const OurWork = ({ classes }) => {
 						HeadingText="ACCURACY"
 						headingClass="xs-fontSize-boldHeading2"
 						para
-						paraText="All our team is in-house and we focus on training them as per customer needs. We take pride in our accuracy that is up to 99.99%"
+						paraText="We provide machine learning backed AI-tools quality checks for annotating huge volumes of data efficiently."
 						paraClass="text-center text-lg-left"
 					/>
 				</Col>
@@ -175,7 +175,7 @@ export const OurWork = ({ classes }) => {
 						HeadingText="FLEXIBILITY"
 						headingClass="xs-fontSize-boldHeading2"
 						para
-						paraText="We are extremely flexible as far as the file format (e.g. jpeg, png) is concerned"
+						paraText="We are extremely flexible as far as the file format (e.g. jpeg, png,avi,mp4) is concerned"
 						paraClass="text-center text-lg-left"
 					/>
 				</Col>

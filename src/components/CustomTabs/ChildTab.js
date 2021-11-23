@@ -12,7 +12,7 @@ import CuboidBlue from "./Images/cuboid.svg";
 import ClassificationBlue from "../../images/NewCarouselIcons/classification-blue.svg";
 // import classification from '../../ ./Images/classification-blue.svg'
 import RepeatGrid from "../../images/RepeatGrid.svg";
-import transcriptionA from "../../images/annotations/transcriptio.png";
+import transcription from "../../images/annotations/bigTranscription.png";
 
 
 import segmentation from "../../images/bigAnnotation/segmentation.png";
@@ -161,7 +161,7 @@ export default function ChildTab({ left }) {
 						</Tab.Pane>
 						<Tab.Pane eventKey="cuboid">
 							{left ? (
-								<TabLeft tabLeftImage={RightImage} />
+								<TabLeft tabLeftImage={transcription} />
 							) : (
 								<TabData />
 							)}

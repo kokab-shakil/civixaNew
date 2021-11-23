@@ -23,7 +23,7 @@ export default function PreTrainedModels({ classes }) {
 	}
 	return (
 		<Row className={`${width > 502 ? classes : "padding-y paddingStop"}`}>
-			<Col className="d-block d-flex align-items-center flex-column d-md-none p-0">
+			<Col className="d-block d-flex align-items-center flex-column d-md-flex d-lg-flex  d-xl-none p-0">
 				<Heading
 					HeadingText={[
 						<span className="position-relative">
@@ -34,18 +34,20 @@ export default function PreTrainedModels({ classes }) {
 					headingClass="font-weight-900 xs-fontSize-boldHeading text-center text-md-left"
 					para
 					paraClass=" text-center text-md-left"
-					paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
+					paraText="Your specific business needs will always be listened to."
 				/>
 			</Col>
 			<Col
 				xs={12}
-				md={8}
-				lg={9}
+				sm={12}
+				md={12}
+				lg={12}
+				xl={8}
 				className={
 					"d-flex flex-wrap justify-content-center justify-content-lg-around p-0 px-md-0"
 				}
 			>
-				{width > 502 ? (
+				{width > 800 ? (
 					<>
 						<CustomCard
 							icon={CovidModel}
@@ -96,7 +98,8 @@ export default function PreTrainedModels({ classes }) {
 				xs={12}
 				md={4}
 				lg={3}
-				className="flex-column d-none d-md-flex "
+				xl={4}
+				className="flex-column justify-content-center d-sm-none d-md-none pl-4 d-lg-none d-xl-flex "
 			>
 				<Heading
 					HeadingText={[
@@ -107,7 +110,7 @@ export default function PreTrainedModels({ classes }) {
 					]}
 					headingClass="font-weight-900 text-left "
 					para
-					paraText="We have pre developed models which you can plug in your system. Reach out to us for more details."
+					paraText="Your specific business needs will always be listened to."
 				/>
 				<CustomButton
 					btnColor="green"
@@ -163,7 +166,7 @@ const data = [
 		img: CovidModel,
 	},
 	{
-		name: "Autonomous Mobility",
+		name: "Loan Prediction",
 		img: CovidModel,
 	},
 	{

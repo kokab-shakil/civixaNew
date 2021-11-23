@@ -24,7 +24,7 @@ export default function SectionOne({ classes }) {
 			<Col
 				xs={12}
 				md={6}
-				className={"position-relative d-none d-md-block"}
+				className={"position-relative p-0 d-none d-md-block"}
 			>
 				{ready === false && (
 					<img
@@ -42,6 +42,7 @@ export default function SectionOne({ classes }) {
 					loop={true}
 					onStart={() => setReady(true)}
 					className={"video-tag"}
+					// style={{borderRadius: 10}}
 				/>
 				<img
 					className={"hide-grid"}
@@ -49,19 +50,19 @@ export default function SectionOne({ classes }) {
 					alt="data-label-web"
 				/>
 			</Col>
-			<Col xs={12} md={6} className={"pt-4   paddingStop"}>
+			<Col xs={12} md={6} className={"pt-4 paddingPartner"}>
 				<div className="">
 					<h1 className="data-heading ">
-						<div className="d-block justify-content-center text-center text-md-left">
-							One stop shop for
+						<div className="d-flex xs-fontSize-boldHeading justify-content-md-start justify-content-center text-center text-md-left text-lg-left">
+							Your Partner In 
 							<div className="d-flex justify-content-center justify-content-md-start text-center">
-								<span className="pr-2 underlined">data</span>
-								labeling
+								<span className="ml-2 underlined">Automation</span>
 							</div>
 						</div>
 					</h1>
 					<p className=" text-center text-md-left" >
-						Civixa.ai is a trustable partner for all your computer vision needs. We help organisations in automating their business processes, from data generation to the deployment of trained AI models so they could invest their time where it is needed the most.
+                        Civixa.ai is a trustable partner for all your computer vision and ai annotation needs. We will help your organisation in automating your business processes. From data generation to the deployment of trained AI models. Only so you can invest your time where it is needed the most
+
 
 					</p>
 				</div>
@@ -77,7 +78,7 @@ export default function SectionOne({ classes }) {
 									alt=""
 									className="icon-img-xs"
 								/>
-								<p className="mb-0 data-square-icon-heading">
+								<p className="mb-0 data-square-icon-heading pt-3">
 									{item.heading}
 								</p>
 								<p className="mb-0 data-square-icon-heading">

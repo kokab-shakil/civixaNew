@@ -6,12 +6,7 @@ import TabData from "../../../../components/CustomTabs/TabData";
 // icons
 import classification from "../../../../images/CarouselIcons/classification.svg";
 import box from "../../../../images/CarouselIcons/box.svg";
-import cuboid from "../../../../images/CarouselIcons/Cuboid.svg";
-import point from "../../../../images/CarouselIcons/point.svg";
-import polygons from "../../../../images/CarouselIcons/Polygons.svg";
-import polylines from "../../../../images/CarouselIcons/polylines.svg";
-import segmentation from "../../../../images/CarouselIcons/segmentation.svg";
-import transcription from "../../../../images/CarouselIcons/Transcription.svg";
+
 
 // New Icons
 import BoxBlue from "../../../../images/NewCarouselIcons/box-blue.svg";
@@ -19,12 +14,12 @@ import PointBlue from "../../../../images/NewCarouselIcons/point-blue.svg";
 import PolygonsBlue from "../../../../images/NewCarouselIcons/polygons-blue.svg";
 import PolylinesBlue from "../../../../images/NewCarouselIcons/polylines.svg";
 import SegmentationBlue from "../../../../images/NewCarouselIcons/sementation.svg";
-import ClassificationBlue from "../../../../images/NewCarouselIcons/classification-blue.svg";
+import Classification from "../../../../images/NewCarouselIcons/check.svg";
+
 import Keypoint from "../../../../images/NewCarouselIcons/keypoin.svg";
 
 // Annotation Icons
-import PointAnnotation from "../../../../images/annotations/point-annotation.png";
-import PolylinesAnnotation from "../../../../images/annotations/polylines.png";
+
 import SegmentationAnnotation from "../../../../images/annotations/segmentation.png";
 import boundingBox from "../../../../images/annotations/boundingBox.png";
 import pointa from "../../../../images/annotations/point.png";
@@ -288,8 +283,8 @@ const annotationChildData = [
 				cardImage={SegmentationAnnotation}
 				cardClass="serice-carousel-card"
 				headingText="Semantic segmentation"
-				paraText={["Semantic segmentation is one of the precise annotation techniques. In this technique, each pixel is associated with a class. In other words, there is not a single pixel in the image left unassigned with a class", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>, <br />, ]}
-				list={['Geo-sensing for land usage', 'Autonomous driving', 'Precision agriculture', 'Industrial inspection', 'Medical imaging analysis']}	
+				paraText={["If you have a pixel in your image or video frame, we have our eyes on it. With simple and focused ai annotation handling, we will offer Semantic segmentation.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>, <br />, ]}
+				list={['Geo-sensing for land usage', 'Precision agriculture', 'Industrial inspection', 'Medical imaging analysis']}	
 				/>
 			 
 			</>
@@ -304,7 +299,7 @@ const annotationChildData = [
 				cardImage={boundingBox}
 				cardClass="serice-carousel-card"
 				headingText="Bouding Box"
-				paraText={["The process of marking a square/rectangle around the objects needed to be identified in an image or a video frame is known as bounding box annotation or simply box annotation. It is mostly used for autonomous vehicle training", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
+				paraText={["With our bounding box technique, you can detect any small or large defect in your dataset. Our data annotation specialist can distinguish the tiniest of objects from each other. It is a simple process where we follow every step towards precision.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
 				list={['Defect detection', 'Object detection for eCommerce', 'Drone training', 'Robot training']}	
 				
 			/>
@@ -319,8 +314,8 @@ const annotationChildData = [
 				cardImage={polyline}
 				cardClass="serice-carousel-card"
 				headingText="Polylines"
-				paraText={["Polylines are a type of polygonal annotation. In this technique, we draw several lines irrespective of their start and end points. They are generally useful in highlighting several line marks on roads.", , <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
-				list={[  'Recognise lanes and boundaries',  'Object detection for eCommerce',  'Sidewalks',  'Railroads',  'Coastal lines',  'Air strips']}	
+				paraText={["Lines may be boring but we will spend our dedicated time in getting them recognised for your model. With our immaculate data labeling services for polyline methods, you can expect all the boundaries and lines to be distinguished from each other.", , <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[ 'Sidewalks',  'Railroads',  'Coastal lines',  'Air strips']}	
 			/>
 		),
 		icon: PolylinesBlue,
@@ -333,7 +328,7 @@ const annotationChildData = [
 				cardImage={pointa}
 				cardClass="serice-carousel-card"
 				headingText="Point Annotation"
-				paraText={["Point annotation is also known as landmark annotation. As described from its name, a single point is used on an object for its representation. This technique could be really useful in counting the number of objects in a certain image.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				paraText={["Our experts can help you quantify a large number of dataset using point annotation technique. With our perfectly balanced hands combined with professional data labeling services, you can detect the desired objects needed for your specific AI model.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
 				list={[  'Quantifying objects',  'Landmark detection']}	
 			/>
 		),
@@ -348,11 +343,11 @@ const annotationChildData = [
 				cardImage={classify}
 				cardClass="serice-carousel-card"
 				headingText="Image Classification"
-				paraText={["Image Classification covers a broader perspective. It is used to identify that an image falls under which class. It can also be broken down into further components like tagging objects under different classes in a single image. It can be used in various use cases like assistance in educational systems, predicting human behaviour, boosting autonomous mobility etc", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
-				list={[  'Assistance in educational systems ',  'Human behaviour prediction',  'Improving medical imagery',  'Autonomous mobility', 'Iris recognition']}	
+				paraText={["Image classification is a technique where we don't compromise. We will help your model to be trained such that it doesn't leave any object behind. Any error in image annotation service will be removed by our team of experts. ", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				list={[  'Human behaviour prediction',  'Improving medical imagery', 'Iris recognition']}	
 			/>
 		),
-		icon: ClassificationBlue,
+		icon: Classification,
 	},
 	
 	
@@ -364,7 +359,7 @@ const annotationChildData = [
 				cardImage={Car}
 				cardClass="serice-carousel-card"
 				headingText="Polygons"
-				paraText={["Polygons are used to draw precise outlines on different objects in an image. Polygons are usually used in creating datasets for training precise application models.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
+				paraText={["With our precise polygons, you can easily identify the small-sized objects, even from space. Our labeled data in machine learning is immaculate. We use this technique for training highly precise application models.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>]}
 				list={[ 'Satellite imagery',  'Drone imagery',  'Autonomous mobility']}	
 			/>
 		),
@@ -379,7 +374,7 @@ const annotationChildData = [
 				cardImage={transcriptionA}
 				cardClass="serice-carousel-card"
 				headingText="Transcription"
-				paraText={["In this type of annotation, all the text is extracted from an image. The aim is to translate the image into an undersrstandable text document.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
+				paraText={["Bring all the used documents to our service because we will help you extract all possible data from it. We understand that labeled data in machine learning needs to be translated easily. Hence, any margin of error will be avoided.", <br />, <span style={{ color: "#12356a" }}> Use cases:</span>,]}
 				list={[  "Creating notes through images",  "Identifying printing mistakes"]}	
 			/>
 		),
@@ -397,7 +392,8 @@ const dedicatedResourcesChildData = [
 				cardImage={boxSide}
 				cardClass="serice-carousel-card"
 				headingText="Data Gathering"
-				paraText="There are use-cases where custom datasets are required and the customers want dedicated resources who will be producing datasets just for their AI models on a regular basis. We provide dedicated resources for these kinds of use-cases"
+				paraText="There are use-cases where custom datasets are required and the customers want dedicated resources. They need data annotation specialists who will be producing datasets just for their AI models on a regular basis. We are one of the best data labeling companies to offer such resources. "
+				list={[ ]}
 			/>
 		),
 		icon: box,
@@ -411,6 +407,7 @@ const dedicatedResourcesChildData = [
 				cardClass="serice-carousel-card"
 				headingText="Data Annotation"
 				paraText="There are computer vision organisations that produce thousands of images on a weekly basis and need them annotated on the go. For these clients, we provide dedicated resources who are trained and assigned to their projects only."
+				list={[ ]}
 			/>
 		),
 		icon: box,
@@ -426,7 +423,12 @@ const dataGenerationChildData = [
 				cardImage={papaya}
 				cardClass="serice-carousel-card"
 				headingText="Data Gathering"
-				paraText="Our highly trained staff gathers standard quality datasets according to the need of your AI-model. The type of data can be images, video, or contextual data. Our team members gather real-life data from the required source point so you can be provided with the top-notch dataset that is the base requirement for your AI-model."
+				paraText="Our highly trained staff gathers standard quality datasets according to the data annotation needs of your AI-model.
+                The type of data can be different images, large videos, or contextual data, depending upon your business operation.
+                 Our team members gather real-life data from the required source point. 
+                 We ensure that you receive a top-notch dataset that strengthens the foundation of your AI-model.
+                "
+				list={[ ]}
 			/>
 		),
 		icon: box,
@@ -439,7 +441,9 @@ const dataGenerationChildData = [
 				cardImage={alvin}
 				cardClass="serice-carousel-card"
 				headingText="Synthetic Data Generation"
-				paraText="In several edge cases it is not possible to generate an adequate amount of real life datasets. For example, There is a need to train an AI-model which can predict a hurricane’s intensity and the possible destruction afterwards in a particular state. Over the past 100 years 25 hurricanes have hit the states of Florida which doesn’t generate a sufficient amount of dataset to train a model with high accuracy level. In cases like these we generate synthetic datasets which mimic the real-life datasets."
+				paraText="In several edge cases, it is impossible to generate an adequate amount of real-life datasets. For example, over the past 100 years, 25 hurricanes have hit the states of Florida. 
+                 This isn't enough to generate a sufficient amount of dataset to train a model accurately. In data annotation cases like these, we generate synthetic datasets which mimic real-life datasets."
+				list={[]}
 			/>
 		),
 		icon: box,

@@ -77,7 +77,7 @@ p {
 
 .data-heading {
 	font-weight: 900;
-	font-size: 2.125rem;
+	font-size: 35px;
 	/* word-break: break-word; */
 }
 
@@ -302,6 +302,10 @@ font-size: 1rem;
 /* end */
 
 /* Padding */
+.video-tag video{
+	border-radius: 10px;
+	box-shadow: 0px 10px 40px #bbbdbc;
+}
 
 .padding-x {
 	padding-left: 8vw;
@@ -339,6 +343,12 @@ font-size: 1rem;
 	font-size: 9px;
 }
 
+
+@media screen and (max-width: 900px) {
+	.iconPricingWidth{
+	width: 15%
+}
+}
 @media screen and (max-width: 603px) {
 	.padding-right-sm {
 		padding-right: 10vw;
@@ -383,6 +393,12 @@ select:focus {
 .listFont{
 	font-size: 14px;
 }
+@media only screen and (max-width: 1200px){
+	.xs-fontSize-boldHeading2{
+	font-size: 22px;
+}
+}
+
 @media only screen and (max-width: 600px) {
   .text-xlg {
 	font-size: 20px;
@@ -395,7 +411,7 @@ font-size: 10px;
 	width: 40px;
 }
 .xs-fontSize-boldHeading{
-	font-size: 22px;
+	font-size: 19px;
 }
 .xs-fontSize-boldHeading2{
 	font-size: 18px;
@@ -423,7 +439,7 @@ font-size: 10px;
 	width:100%
 }
 .text-sm{
-	font-size: 3rem;
+	font-size: 2.7rem;
 }
 .iconAnotate-xs{
 	width: 20px;
@@ -433,5 +449,11 @@ font-size: 10px;
 }
 .listFont{
 	font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 300px) {
+ .fontSize-Annotate{
+	font-size: 8px;
 }
 }

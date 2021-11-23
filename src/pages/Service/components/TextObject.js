@@ -42,11 +42,12 @@ export const TextObjects = ({ classes }) => {
 				<Heading
 					iconBefore
 					icon={Construction}
+					iconClass='iconPricingWidth'
 					altText=""
 					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="OBJECT DETECTION"
 					para
-					paraText="You can identify different objects in an image according to your AI-model’s need. It could be used for locating the object, keeping the count of any particular object, damage detection, autonomous vehicle etc"
+					paraText="You can identify different objects in an image according to your AI models’ needs. No object in data annotation is hidden from our expert team. It could be used for anything from locating the object, keeping the count of any particular object to damage detection etc."
 					paraClass="my-3"
 				/>
 				

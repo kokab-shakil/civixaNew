@@ -28,10 +28,10 @@ const Pricing = ({ handleHeaderColor }) => {
 				bgColor="white"
 				classes="pricingServiceCard"
 			>
-				<SpecialServices classes={`${commonClasses} padding-all`} />
+				<SpecialServices classes={`${commonClasses} padding-service`} />
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
-				<Packages classes={`${commonClasses}  padding-all`} />
+				<Packages classes={`${commonClasses}  padding-service`} />
 			</CustomSection>
 		</>
 	);

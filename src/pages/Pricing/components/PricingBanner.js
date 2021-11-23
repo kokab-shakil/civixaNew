@@ -4,6 +4,10 @@ import CustomButton from "../../../components/CustomButton/CustomButton";
 import Heading from "../../../components/Heading";
 
 export const PricingBanner = ({ classes }) => {
+	const mail = (e) => {
+		 window.location = "mailto:hello@civixa.com";
+                          e.preventDefault();
+	}
 	return (
 		<Row className={classes}>
 			<Heading
@@ -17,6 +21,7 @@ export const PricingBanner = ({ classes }) => {
 					btnText="REQUEST DEMO"
 					btnColor="green"
 					btnClasses="text-white"
+					handlebtn={mail}
 				/>
 			</Heading>
 		</Row>

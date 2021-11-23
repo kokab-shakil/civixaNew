@@ -15,13 +15,13 @@ export default function SectionFour({ classes }) {
           HeadingText={[
             "A",
             <span className="position-relative">
-              <span className="px-2 underlined">FULLSTACK</span>
+              <span className="mx-2 underlined">RESOURCEFUL</span>
             </span>,
-            "CV COMPANY",
+            "AI PARTNER",
           ]}
           para
           paraClass=" text-center m-auto"
-          paraText="We provide complete services for the companies in need to incorporate AI in their businesses from scratch. From data gathering to deployment of highly trained AI-models, Civixa.ai provides a complete suite."
+          paraText="At Civixa, you can expect a comprehensive package that will incorporate AI in your business from scratch. "
         />
         <Row className="data-square-icon d-flex align-items-center flex-column flex-xl-row flex-lg-row w-70 m-auto">
           <SquareIcon

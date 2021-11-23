@@ -138,10 +138,13 @@ export const Footer = () => {
                 <img className='footerLogo' src={pasha} alt="LinkedIn Logo" />
                 <img className='footerLogo' src={nest} alt="LinkedIn Logo" />
               </div>
-              <div className="d-flex flex-wrap pb-2 col-lg-auto col-md-auto col-sm-auto col-12 ">
-                <img className='footerSocialLogo' src={fb} alt="Facebook Logo" />
-                <img className='footerSocialLogo' src={tw} alt="LinkedIn Logo" />
-                <img className='footerSocialLogo' src={ln} alt="LinkedIn Logo" />
+              <div className="d-flex align-items-center flex-wrap pb-2 col-lg-auto col-md-auto col-sm-auto col-12 ">
+                <a style={{textDecoration: 'none' }} href="https://www.facebook.com/civixaai" target="_blank"> <img className='footerSocialLogo' src={fb} alt="Facebook Logo" /> </a>
+                <a style={{textDecoration: 'none' }} href="http://twitter.com/CivixaAI" target="_blank"> <img className='footerSocialLogo' src={tw} alt="twitter" /> </a>
+                <a style={{textDecoration: 'none' }} href="https://www.linkedin.com/company/civixa/" target="_blank"> <img className='footerSocialLogo' src={ln} alt="LinkedIn Logo" /></a>
+               
+                
+                
                 </div>
               </div>
             </Col>

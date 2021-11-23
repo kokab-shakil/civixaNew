@@ -12,17 +12,17 @@ const data = [
 	{
 		headingText: "Know how Civixa can be beneficial for your business.",
 		paraText:
-			" We will share our insights such as which type of annotation is suitable for your data. We will guide you through the whole process of how to share your data on our portal for annotation.",
+			" We will share our insights such as which type of annotation is suitable for your data. We will guide you through the whole process of how to share your data on our portal.",
 	},
 	{
 		headingText: "See Our Products in Action",
 		paraText:
-			"We will give you a complete tour of our tool, our annotation process and our QA process",
+			"We will give you a complete tour of our tool, our annotation process and our QA process.",
 	},
 	{
 		headingText: "Get Insights From Insiders",
 		paraText:
-			"We have happy customers in over 11 industries. Some of them are just like you. We will be sharing their thoughts and feedback of our work so that you could be at peace regarding data privacy and quality standards.😉",
+			"We have happy customers in over 11 countries. Some of them are just like you. We will be sharing their thoughts and feedback of our work so that you could be at peace regarding data privacy and quality standards.😉",
 	},
 ];
 
@@ -45,13 +45,14 @@ export const ContactDetails = ({ classes }) => {
 					headingClass="text-white text-center w-100"
 				/>
 
-				<Row className={`justify-content-center py-3 px-5 px-md-4 `}>
+				<Row className={`justify-content-center py-3 px-3 px-md-4 `}>
 					{data.map((item) => {
 						return (
 							<Col
-								md={7}
+								lg={7}
+								md={12}
 								xs={12}
-								className="d-flex flex-nowrap align-items-start pb-3 m-auto"
+								className="d-flex flex-nowrap align-items-start pb-3 "
 							>
 								<img
 									src={tick}

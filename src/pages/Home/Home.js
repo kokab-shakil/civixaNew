@@ -51,7 +51,7 @@ export default function Home({ handleHeaderColor }) {
 			</CustomSection>
 			<CustomSection height="h-auto" bgColor="white" classes="">
 				<PreTrainedModels
-					classes={`d-flex align-items-stretch justify-content-center h-100 padding-all`}
+					classes={`d-flex align-items-stretch justify-content-between h-100 padding-all`}
 				/>
 			</CustomSection>
 			<CustomSection

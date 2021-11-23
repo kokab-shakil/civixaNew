@@ -36,6 +36,7 @@
 
 .thumbnail-image {
 	width: 90%;
+	border-radius: 10px;
 }
 
 .line-height-05 {
@@ -45,6 +46,7 @@
 .homebanner-logo {
 	/* width: 144px; */
 }
+
 
 @media screen and (max-width: 1024px) {
 	.homebanner-heading {
@@ -65,6 +67,9 @@
 	/* padding-right: 1rem; */
 }
 
+.paddingPartner{
+	padding-left: 66px;
+}
 video {
 	object-fit: cover;
 }
@@ -118,5 +123,8 @@ video {
 .paddingStop{
 	/* padding-left: 8vw; */
 	padding-right: 8vw;
+}
+.paddingPartner{
+	padding-left: 8vw;
 }
 }

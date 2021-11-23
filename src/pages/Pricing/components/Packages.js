@@ -14,12 +14,12 @@ import Polygons from "../TabIcons/Polygons.svg";
 import polylines from "../TabIcons/polylines.svg";
 import segmentation from "../TabIcons/segmentation.svg";
 import Transcription from "../TabIcons/Transcription.svg";
-
+import { useHistory } from "react-router-dom";
 const data = [
-	"Custom Pricing mko for High Volume",
-	"Dedicated Account Managers",
-	"24/7 Support",
-	"Custom Workflows",
+	"Custom pricing for high volumes",
+	"Dedicated account managers",
+	"24/7 support",
+	"Custom workflows",
 ];
 
 const packagesDetails = [
@@ -27,53 +27,54 @@ const packagesDetails = [
 		bg: "bg-lightgray",
 		icon: classification,
 		headingText: "Classification",
-		package: "$0.05/Image + $0.05/Annotation",
+		package: "$0.01/annotation",
 	},
 	{
 		bg: "bg-white",
 		icon: box,
 		headingText: "Bounding Box",
-		package: "$0.05/Image + $0.05/Box",
+		package: "$0.05/annotation",
 	},
 	{
 		bg: "bg-lightgray",
 		icon: segmentation,
 		headingText: "Segmentation",
-		package: "$0.05/Image + $0.05/Annotation",
+		package: "Custom pricing",
 	},
 	{
 		bg: "bg-white",
 		icon: point,
 		headingText: "Point",
-		package: "$0.05/Image + $0.05/Annotation",
+		package: "$0.03/annotation",
 	},
-	{
-		bg: "bg-lightgray",
-		icon: Cuboid,
-		headingText: "Cuboid",
-		package: "$0.05/Image + $0.05/Point",
-	},
+	// {
+	// 	bg: "bg-lightgray",
+	// 	icon: Cuboid,
+	// 	headingText: "Cuboid",
+	// 	package: "$0.05/Image + $0.05/Point",
+	// },
 	{
 		bg: "bg-white",
 		icon: polylines,
 		headingText: "Polylines",
-		package: "$0.05/Image + $0.05/Annotation",
+		package: "$0.03/annotation",
 	},
 	{
 		bg: "bg-lightgray",
 		icon: Polygons,
 		headingText: "Polygons",
-		package: "$0.05/Image + $0.05/Annotation",
+		package: "$0.1/annotation",
 	},
-	{
-		bg: "bg-white",
-		icon: Transcription,
-		headingText: "Transcription",
-		package: "$0.05/Invoice",
-	},
+	// {
+	// 	bg: "bg-white",
+	// 	icon: Transcription,
+	// 	headingText: "Transcription",
+	// 	package: "$0.05/Invoice",
+	// },
 ];
 
 export const Packages = ({ classes }) => {
+	const history = useHistory();
 	return (
 		<Row className={`pricing ${classes}`}>
 			<Container className="bg-prussian-blue m-0 py-2">
@@ -122,6 +123,7 @@ export const Packages = ({ classes }) => {
 								btnClasses="d-flex align-items-center justify-content-center text-prussian-blue py-4 pricing-package-button mt-4 w-100"
 								btnSize="lg btn-block"
 								marginBottom="mb-0"
+								handlebtn={() => history.push("/contact")}
 							/>
 						</Row>
 					</Col>
@@ -160,6 +162,7 @@ export const Packages = ({ classes }) => {
 								btnText="GET IN TOUCH"
 								btnClasses="text-prussian-blue package-btn"
 								btnColor="green"
+								handlebtn={() => history.push("/contact")}
 							/>
 						</div>
 					</Col>

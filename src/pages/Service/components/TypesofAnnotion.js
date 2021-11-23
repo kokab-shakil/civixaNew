@@ -31,6 +31,7 @@ import polylines from "../../../images/bigAnnotation/polylines.png";
 import point from "../../../images/bigAnnotation/point.png";
 import classification from "../../../images/bigAnnotation/classification.png";
 import polygons from "../../../images/bigAnnotation/polygons.png";
+import transcription from "../../../images/annotations/bigTranscription.png";
 
 const ResponsiveItem = () => {
 	const [selected, setSelected] = useState(1);
@@ -133,7 +134,7 @@ const childData = [
 	
 	{
 		value: "Transcription",
-		img: point,
+		img:transcription,
 		icon: KeyPointBlue,
 	},
 	

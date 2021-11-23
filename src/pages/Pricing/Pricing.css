@@ -3,13 +3,16 @@
 }
 
 .pricingServiceCard {
-	margin-top: -190px;
+	margin-top: -233px;
 }
 
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 800px) {
 	.pricingServiceCard {
-		margin-top: -40vw;
+		margin-top: 0vw;
 	}
+	.pricingBanner {
+	height: auto;
+}
 }
 
 .package-heading {

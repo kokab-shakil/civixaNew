@@ -42,11 +42,12 @@ export const TextDetection = ({ classes }) => {
 				<Heading
 					iconBefore
 					icon={Construction}
+					iconClass='iconPricingWidth'
 					altText=""
 					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="TEXT DETECTION"
 					para
-					paraText="You can extract valuable insights from enormous text data and can train your AI-model to automate your textual dealings, for example, automated customer care . Civixa helps you to annotate the data for three types of different use cases:"
+					paraText="You can extract valuable insights from any kind of enormous text data. You can easily train your AI model to automate your textual dealings, like for automated customer care. Civixa provide all kinds of text annotations. "
 					paraClass="my-3"
 				/>
 				{/* {data.map((item) => {

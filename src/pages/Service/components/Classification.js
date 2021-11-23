@@ -20,12 +20,13 @@ export const Classification = ({ classes }) => {
 			<Col xs={12} md={4} className="order-lg-last">
 				<Heading
 					iconBefore
+					iconClass='iconPricingWidth'
 					icon={Construction}
 					altText=""
 					headingClass="font-weight-normal mb-0 pl-2"
 					HeadingText="Classification"
 					para
-					paraText=" You can classify the images according to the content. Consider,  grouping millions of similar images according to their visual characteristics. It is a time taking process. Civixa helps you to classify your bulk images in no time."
+					paraText="You can classify the images according to the requirements of the AI model. Consider  grouping millions of similar images according to their visual characteristics. It can be incredibly time consuming unless we help. Civixa will help you classify your bulk images in no time."
 					paraClass="my-3"
 				/>
 				{data.map((item) => {

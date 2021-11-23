@@ -13,14 +13,13 @@ export default function SectionTwo({ classes }) {
 				HeadingText={[
 					"Behold Our",
 					<span className="position-relative">
-						<span className="pl-2 underlined">Services</span>
+						<span className="ml-2 underlined">Services</span>
 					</span>,
 				]}
 				para
 				paraClass="w-lg-80 text-center "
-				paraText="Civixa.ai provides the following services. Feel free to reach out if you need more details.
-New: Your model’s annotation needs can be different according to the requirements of your business. Here are the services Civixa has to offer inorder to annotate your dataset.
-"
+				paraText="Our annotation services are personalised with your business needs to help you gain a competitive edge."
+
 			/>
 			<ServicesCarousel />
 			{/* {width > 768 ? <ParentTab /> : <ServiceCarousel />} */}

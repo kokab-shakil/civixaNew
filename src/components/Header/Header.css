@@ -5,7 +5,7 @@
 }
 
 .header.navbar {
-	height: 65px;
+	height: 71px;
 }
 
 .header .navbar-nav .nav-link {
@@ -34,6 +34,8 @@
 	border: 2px solid #12356a;
 	background-color: #ffffff;
 	color: #12356a;
+	font-size: .8125rem;
+	font-weight: 900
 }
 .btnReqDemo {
 	font-size: .8125rem;
@@ -43,6 +45,8 @@
     background-color: #5cdb95;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+	font-size: 0.8125rem;
+    font-weight: 900;
 
 	
 	
@@ -303,7 +307,7 @@
 	font-weight: bold;
 }
 .white.mobile-version.navbar-collapse {
-	background-color: #ffffff;
+	background-color: #12356a;
 }
 
 .white.mobile-version.navbar-collapse .mobile-nav-link {
